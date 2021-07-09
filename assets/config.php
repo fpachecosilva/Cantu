@@ -1,18 +1,12 @@
-<!--
-		Hello, guys!! :)
-
-		Todo o site foi desenvolvido pela bs.agency em 2020. 
-		Façam bom uso!
--->
 <?
-	$empresa = 'Mercê do Bairro';
+	$empresa = 'V1';
 	
 	// Local
-	// $url = 'http://localhost/merce/';
+	$url = 'http://localhost/v1/';
 	
 	// Server
-	// $url = 'http://previewbsagency.com.br/merce/';
-	$url = 'https://mercedobairro.com/guia-de-marca';
+	// $url = 'http://previewbsagency.com.br/v1/';
+	
 
 	$images = $url.'assets/img/';
 	$download = $url.'assets/download/';

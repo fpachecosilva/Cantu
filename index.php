@@ -259,7 +259,6 @@
                     </article>
                 </section>
 
-
                 <section id="sessao3">
                     <article>
                         <div class="grid--2colunas-auto">
@@ -334,7 +333,6 @@
                     </article>
                 </section>
 
-
                 <section id="sessao4">
                     <article>
                         <p class="txt--padrao40">Assim, nasceu nossa identidade</p>
@@ -349,8 +347,7 @@
                             <img src="<? echo $images ?>/pranchas/Loja.png" alt="">
                         </div>
                     </article>
-                </section>
-                
+                </section>                
 
                 <? include ('assets/download.php') ?>
                 <? include ('assets/footer.php') ?>

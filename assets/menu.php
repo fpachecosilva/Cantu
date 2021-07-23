@@ -1,6 +1,6 @@
 <nav class="menu">
-            <img class="logo desktopitem" src="assets/img/LogoDesktop.png" alt=""/>
-            <img class="logo mobileitem" src="assets/img/LogoMobile.png" alt=""/>
+            <img class="logo desktopitem" src="assets/img/logo.svg" alt=""/>
+            <img class="logo mobileitem" src="assets/img/logo_mobile.svg" alt=""/>
             <a href="javascript:void(0)" class="MobileItem" id="abrirmenu">
                 <span id="Cima"></span>
                 <span id="Meio"></span>
@@ -10,32 +10,41 @@
             <div class="links">
             
                 <ul>
-                    <a class="link-abre active" href="index.php?direct">Essência Mercê</a>
+                    <a class="link-abre active" href="index.php?direct">DNA</a>
                 </ul>
                 
                 <ul>
-                    <a class="link-abre" href="logotipo.php">Logotipo</a>
+                    <a class="link-abre" href="logotipo.php">Logotipos & Símbolo</a>
 
                     <li>
-                        <a href="#sessao1">Descrição</a>
+                        <a href="#sessao1">Arquitetura</a>
                     </li>
                     <li>
-                        <a href="#sessao2">Versões</a>
+                        <a href="#sessao2">Versões de marca</a>
                     </li>
                     <li>
-                        <a href="#sessao3">Redução</a>
+                        <a href="#sessao3">Redução máxima</a>
                     </li>
                     <li>
                         <a href="#sessao4">Área de proteção</a>
                     </li>
                     <li>
-                        <a href="#sessao5">Usos incorretos</a>
+                        <a href="#sessao5">Aplicação sobre cores e fundos</a>
                     </li>
                     <li>
-                        <a href="#sessao6">Customização</a>
+                        <a href="#sessao6">Aplicação escrita</a>
                     </li>
                     <li>
-                        <a href="#sessao7">Ícone</a>
+                        <a href="#sessao7">Usos incorretos</a>
+                    </li>
+                    <li>
+                        <a href="#sessao8">Campanhas e Programas internos</a>
+                    </li>
+                    <li>
+                        <a href="#sessao9">Símbolo</a>
+                    </li>
+                    <li>
+                        <a href="#sessao10">Para se inspirar</a>
                     </li>
                 </ul>
         

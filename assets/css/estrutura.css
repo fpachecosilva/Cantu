@@ -69,12 +69,12 @@ body p {
 
 /* Variaveis: */
 :root {
-  --principal: #311659;
-  --secundaria:#DB0047;
-  --terciaria:#FFF757;
+  --principal: #4E008E;
+  --secundaria:#4E008E;
+  --terciaria:#9059ED;
   --bgcinza: #E6E6E6;
-  --auxiliar1: #B3003A;
-  --auxiliar2: #FFE34C;
+  --auxiliar1: #9153F0;
+  --auxiliar2: #FFE959;
   --margin: 30px;
   --tempo: 500ms;
   --radius: 10px;
@@ -1071,7 +1071,7 @@ main {
 #download article .grid div > a, #download article .grid--2colunas div > a, #download article .grid--2colunas-auto div > a, #download article .grid--2colunas-centralizadas div > a, #download article .grid--3colunas div > a, #download article .grid--4colunas div > a, #download article .grid--5colunas-home div > a, #download article .grid--2linhas div > a, #download article .grid--3linhas div > a, #download article .grid--4linhas div > a, #download article .grid--4linhas-auto div > a, #download article .grid--2colunas2linhas div > a, #download article .grid--2colunas4linhas div > a, #download article .grid--4colunas4linhas div > a {
   max-width: 100%;
   height: 87px;
-  background-color: var(--principal);
+  background-color: var(--auxiliar1);
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1222,19 +1222,18 @@ nav.menu {
 }
 
 nav.menu a.active::after {
-  content: url(../img/menuseta.svg);
+  content: url(../img/seta_auxiliar_menu.svg);
   width: 22px;
   height: 13px;
   display: block;
   position: absolute;
-  left: -18px;
+  left: -15px;
   bottom: 0;
   top: 0;
 }
 
 nav.menu img.logo {
   margin: 50px auto;
-  width: 116.5px;
   display: block;
 }
 
@@ -1303,7 +1302,13 @@ nav.menu ul a.active {
 
 nav.menu ul li {
   margin-left: 14px;
-  line-height: normal;
+  margin-bottom: 10px;
+  line-height: 14px;
+  max-width: 115px;
+}
+
+nav.menu ul li:first-of-type {
+  margin-top: 10px;
 }
 
 nav.menu ul li a {
@@ -1311,7 +1316,8 @@ nav.menu ul li a {
 }
 
 nav.menu ul li a:hover {
-  opacity: 0.8;
+  opacity: 1;
+  color: var(--auxiliar2);
 }
 
 nav.menu ul li {
@@ -1389,6 +1395,15 @@ header h1 {
   background-repeat: no-repeat;
   background-position-x: left;
   background-size: cover;
+}
+
+#essencia .topobg {
+  background-image: url("../img/headers/desk/Header_DNA.png");
+  height: 100vh;
+  background-color: #fff;
+  background-position-x: right;
+  background-position-y: top;
+  background-size: contain;
 }
 
 #logotipo .topobg {
@@ -1729,20 +1744,34 @@ header h1 {
 }
 
 #essencia #sessao1 {
-  background-image: url("../img/Grupo 6094-2@2x.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-top: 110px;
-  padding-bottom: 125px;
+  margin-top: -40vh;
 }
 
-#essencia #sessao1 p {
-  font-family: 'donaalt_bold';
-  font-size: 1.9375rem;
-  line-height: 2.1875rem;
-  max-width: 365px;
-  margin-left: 50px;
+#essencia #sessao1 .modulo-home .mini-titulo p {
+  margin-bottom: 0;
+  color: var(--terciaria);
+  display: inline-block;
+}
+
+#essencia #sessao1 .modulo-home .mini-titulo img {
+  margin-left: 15px;
+  margin-right: 30px;
+  display: inline-block;
+  width: 50.5px;
+}
+
+#essencia #sessao1 .modulo-home .content {
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+#essencia #sessao1 .modulo-home .content p.txt--padrao40 {
+  max-width: 726px;
+  margin-bottom: 140px;
+}
+
+#essencia #sessao1 .modulo-home .content p.txt--padrao20 {
+  max-width: 374px;
 }
 
 #essencia #sessao2 {
@@ -1751,7 +1780,7 @@ header h1 {
 
 #essencia #sessao2 .modulo-home .mini-titulo p {
   margin-bottom: 0;
-  color: var(--secundaria);
+  color: var(--terciaria);
   display: inline-block;
 }
 
@@ -3568,17 +3597,13 @@ footer a {
   padding-right: 54px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-image: url("../img/footer.png");
-  background-size: cover;
-  background-position-y: center;
-  background-position-x: right;
+  background-color: var(--principal);
   padding-bottom: 25px;
   box-sizing: border-box;
 }
 
 footer a img {
-  margin-left: 20px;
-  margin-top: 10px;
+  margin-left: 30px;
 }
 
 footer p {

@@ -5,11 +5,11 @@
 				<p class="txt--padrao12">Próximo</p>
 				<p class="txt--bold"></p>
 			</div>
-			<img src="assets/img/footer-setas.png" alt="">
+			<img src="assets/img/seta_auxiliar_rodape.svg" alt="">
 		</a>
 
 		<div class="trademark">
-			<p>© 2020  Brandbook Mercê — Desenvolvido por <strong>Marcas Com SAL</strong></p>
+			<p>© 2021  Brandbook CantuStore — Desenvolvido por <strong>Marcas Com SAL</strong></p>
 		</div>
 	</footer>
     

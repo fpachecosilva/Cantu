@@ -1,5 +1,5 @@
 <?
-	$empresa = 'V1';
+	$empresa = 'Cantu';
 	
 	// Local
 	$url = 'http://localhost/cantu/';

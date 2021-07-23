@@ -22,7 +22,7 @@
                 <header class="topobg">
                     <div class="pelicula"></div>
                     <article>
-                        <h1>Logotipo</h1>
+                        <h1>Logotipos & Símbolo</h1>
                     </article>
                 </header>
 

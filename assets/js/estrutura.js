@@ -72,61 +72,6 @@ jQuery(document).ready(function () {
 	});
 
 
-
-
-	//TOPO
-	$('#topo .login').click(function (e) {
-		e.preventDefault();
-		$('.setinha').addClass('ativada')
-		$('.bgamarelo').css('opacity', '0')
-		$('.bgvermelho').addClass('ativado')
-		$('form').fadeIn()
-		$('.boneco').addClass('some')
-		$('#topo').css('background-color', '#B3003A')
-	})
-
-
-	// Trava Scroll se for home
-	$(document).ready(function () {
-		if ($('body').attr('id') == 'essencia' && $(window).scrollTop() == 0) {
-			$('html, body').css({
-				overflow: 'hidden',
-				height: '100%'
-			});
-		}
-	})
-
-
-	// Se for clicado no link da Home nao vai para o "login"
-	$(document).ready(function () {
-
-		let url = window.location.href;
-		if (url.includes('direct')) {
-			document.getElementById('topo').style.display = 'none';
-			$('main').css('margin-top', '0');
-
-			$('html, body').css('overflow', 'auto');
-		}
-	})
-
-
-	$('.login').click(function (e) {
-		e.preventDefault()
-		$(this).css('opacity', '0')
-		$(this).css('cursor', 'unset')
-		$('form').fadeOut();
-		$('.setinha').removeClass('desktopitem')
-		$('.setinha').css('display', 'none')
-		$('#topo').css('background-color', 'var(--secundaria)')
-		$('.vermais p').addClass('active')
-
-
-		// Libera o scroll
-		$('html, body').css('overflow', 'auto');
-	})
-
-
-
 	// Controle do ver mais
 	$(document).scroll(function () {
 		if ($(window).scrollTop() === 0) {
@@ -137,146 +82,6 @@ jQuery(document).ready(function () {
 			$('.toporodape span').fadeOut();
 		}
 	});
-
-
-
-	// QUIZ
-	$('.quiz').each(function () {
-
-		var sessao = $(this).parent().parent().attr('id');
-		sessao = '#' + sessao;
-
-		var divsDir = $(this).find('.dir div')
-		var divEsq = $(this).find('.esq')
-
-
-		$(divEsq).click(function () {
-			$(this).removeClass('certo errado')
-		})
-
-
-		$(divsDir).each(function () {
-			$(this).click(function () {
-				var spanActive = $(this).find('span.active');
-
-				if (spanActive.hasClass('errado')) {
-					$(this).removeClass('certo');
-					$(this).addClass('errado');
-					$(divEsq).removeClass('certo')
-					$(divEsq).addClass('errado')
-
-				} else if (spanActive.hasClass('certo')) {
-					$(this).removeClass('errado');
-					$(this).addClass('certo');
-					$(divEsq).removeClass('errado')
-					$(divEsq).addClass('certo')
-
-				} else {
-					$(this).removeClass('certo errado')
-					$(divEsq).removeClass('certo errado')
-				}
-
-				setTimeout(function () {
-					$(divEsq).find('.avancar').click()
-				}, 3500)
-			})
-		})
-
-		var total = $(sessao + ' .cima span').length;
-		$(sessao + ' #total').text(total);
-		var ativo = $(sessao + ' .dir span.active').index() + 1;
-		$(sessao + ' #atual').text(ativo);
-
-
-		$(sessao + ' .setas .avancar').click(function () {
-			$(divEsq).removeClass('certo errado')
-			$(divsDir).removeClass('certo errado')
-
-			var ativo = $(sessao + ' .dir span.active');
-			var index = ativo.index();
-			var proximo = index + 1;
-			var anterior = index - 2;
-
-			// Controle de opacidade das setas
-			if (proximo + 1 == total) {
-				$(this).addClass('op20');
-			}
-
-			if (proximo + 1 != total) {
-				$(sessao + ' .setas .voltar').removeClass('op20');
-			}
-
-			// Controle de limites das setas
-			if (proximo == total) {
-				return false;
-			} else {
-
-				$(sessao + ' .dir span.active').removeClass('active');
-				$(sessao + ' #atual').text(index + 2)
-
-				$(sessao + ' .dir span').each(function () {
-					if ($(this).index() == proximo) {
-						$(this).addClass('active');
-					}
-				})
-			}
-		})
-
-		var ativo = $(sessao + ' .dir span.active').index();
-
-		$(sessao + ' .setas .voltar').click(function () {
-
-			$(divEsq).removeClass('certo errado')
-			$(divsDir).removeClass('certo errado')
-
-			var ativo = $(sessao + ' .dir span.active');
-			var index = ativo.index();
-			var proximo = index + 1;
-			var anterior = index - 1;
-
-			// Controle de opacidade das setas
-			if (anterior == total - total) {
-				$(this).addClass('op20');
-			}
-
-			if (anterior != total - total) {
-				$(sessao + ' .setas .avancar').removeClass('op20');
-			}
-
-			// Controle de limites das setas
-			if (anterior == -1) {
-				return false;
-			} else {
-
-				$(sessao + ' .dir span.active').removeClass('active');
-				$(sessao + ' #atual').text(index)
-
-				$(sessao + ' .dir span').each(function () {
-					if ($(this).index() == anterior) {
-						$(this).addClass('active');
-					}
-				})
-			}
-		})
-
-		// Controle de cores
-		// $(sessao + ' .cima').click(function () {
-		// 	$(sessao + ' .quiz').removeClass('certo')
-		// 	$(sessao + ' .quiz').toggleClass('errado')
-
-		// })
-
-		// $(sessao + ' .baixo').click(function () {
-		// 	$(sessao + ' .quiz').removeClass('errado')
-		// 	$(sessao + ' .quiz').toggleClass('certo')
-		// })
-
-		// $(sessao + ' .principal').click(function () {
-		// 	$(sessao + ' .quiz').removeClass('errado certo')
-		// })
-
-	})
-
 
 
 	// Aplicacoes Slider
@@ -296,6 +101,23 @@ jQuery(document).ready(function () {
 		pauseOnFocus: false,
 		swipeToSlide: true,
 		touchMove: true,
+		adaptiveHeight: true
+	});
+
+	$('.sliderRoda').slick({
+		dots: true,
+		arrows: false,
+		prevArrow: '<div class="slick-prev"></div>',
+		nextArrow: '<div class="slick-next"></div>',
+		speed: 400,
+		infinite: true,
+		fade: true,
+		cssEase: 'linear',
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: false,
+		pauseOnHover: false,
+		pauseOnFocus: false,
 		adaptiveHeight: true
 	});
 
@@ -330,37 +152,13 @@ jQuery(document).ready(function () {
 
 
 
-
 	// Beer Slider		
 	window.onload = (function () {
 		var altura = $('#beer-slider').height() - 4 + 'px';
 
 		$('.beer-handle').append('<div class="risco"></div>');
 		$('.risco').css('height', altura);
-
-		// var inicial = $('.wrapper-slider').attr('inicial');
-		// $('.beer-reveal').css('width', inicial)
-		// $('.beer-handle').css('left', inicial)
-
 	})
-
-
-	// $(".wrapper-slider").click(function(){		
-	// 	var inicial = $(this).attr('inicial');
-	// 	var final = $(this).attr('final');
-
-	// 	if ( $(this).attr('estagio') == 'final' ) {					
-	// 			$(".beer-handle").animate({left:inicial}, 300)
-	// 			$(".beer-reveal").animate({width:inicial}, 300)
-	// 			$(this).attr('estagio','inicial');
-	// 		} else {
-	// 			$(".beer-handle").animate({left:final}, 300)
-	// 			$(".beer-reveal").animate({width:final}, 300)
-	// 			$(this).attr('estagio','final');
-	// 		}
-	// })
-
-
 
 
 	// Accordeon		

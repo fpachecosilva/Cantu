@@ -3,7 +3,7 @@
     --principal: #4E008E;
     --secundaria:#4E008E;
     --terciaria:#9059ED;
-    --bgcinza: #E6E6E6;
+    --bgcinza: #F7F7F7;
 
     --auxiliar1: #9153F0;
     --auxiliar2: #FFE959;
@@ -154,6 +154,25 @@ a, ul, li, .link-abre, nav, .menu, section, .ideia, .destaque-ideia, #abrirmenu,
         line-height: 1.75rem;
         font-weight: bold;
         margin-bottom: 10px;
+    }
+
+    &--padrao24 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    &--padrao32 {
+        font-size: 2rem;
+        line-height: 1.5rem;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 10px;
+
+        span {
+            color: var(--auxiliar1)
+        }
     }
 
     &--padrao40 {            

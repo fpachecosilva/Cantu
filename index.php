@@ -15,49 +15,7 @@
 
 <body id="essencia">
 
-    <div id="topo">
-        <article>
-            <img src="<? echo $images ?>Grupo 6094_home.png" alt="" class="bgamarelo desktopitem">
-            <img src="<? echo $images ?>Grupo 5840.png" alt="" class="bgvermelho desktopitem">
-            <img src="<? echo $images ?>Caminho 5111.png" alt="" class="setinha desktopitem">
 
-            <img src="<? echo $images ?>bgamarelohome_mobile.png" alt="" class="bgamarelo mobileitem">
-            <img src="<? echo $images ?>bgvermelhohome_mobile.png" alt="" class="bgvermelho mobileitem">
-            <img src="<? echo $images ?>setatopohome_mobile.png" alt="" class="setinha mobileitem">
-
-
-
-            <p class="bemvindo">Bem-vindo(a) ao Brandbook Online Mercê do Bairro.</p>
-            <img class="olaalo desktopitem" src="<? echo $images ?>olaalo.png" alt="">
-            <img class="olaalo mobileitem" src="<? echo $images ?>olaalohome_mobile.png" alt="">
-            <div class="botaoLogin">
-                <a class="login" href="">Acessar</a>
-                <p class="desenvolvido desktopitem">Desenvolvido por <strong>Marcas Com SAL</strong></p>
-            </div>
-            <img class="logo" src="<? echo $images ?>logo.svg" alt="">
-            <img class="boneco" src="<? echo $images ?>Grupo 6095.png" alt="">
-
-            <!-- <form action="">
-                    <div>
-                        <label class="user" for="user">Usuário</label>
-                        <img src="<? echo $images ?>Grupo 5842.png" alt="">
-                        <input type="text" name="user" placeholder="Inserir usuário" autocomplete="off">
-                    </div>
-
-                    <div>
-                        <label class="pass" for="pass">Senha</label>
-                        <img src="<? echo $images ?>Grupo 5844.png" alt="">
-                        <input type="password" name="pass" placeholder="Inserir senha" autocomplete="off">
-                    </div>
-
-                    <a class="acessar" href="">Acessar</a>
-                </form>                 -->
-        </article>
-        <div class="vermais">
-            <p class="txt--padrao20 desktopitem">Ver mais</p>
-            <p class="desenvolvido mobileitem">Desenvolvido por <strong>Marcas Com SAL</strong></p>
-        </div>
-    </div>
 
     <div class="container">
 
@@ -71,10 +29,11 @@
                     <div class="modulo-home">
                         <div class="mini-titulo">
                             <img src="<? echo $images ?>/seta_auxiliar.svg" alt="">
-                            <p class="txt--padrao20">Por que</p>
+                            <p class="txt--padrao24">Porque</p><br>
                         </div>
 
                         <div class="content">
+                            <p>É o nosso propósito. O que nos move, nossa razão de existir:</p>
                             <p class="txt--padrao40">
                                 Existimos para abrir caminhos
                                 para pessoas e negócios.
@@ -91,14 +50,15 @@
                     <div class="modulo-home">
                         <div class="mini-titulo">
                             <img src="<? echo $images ?>/seta_auxiliar.svg" alt="">
-                            <p class="txt--padrao20">Por que</p>
+                            <p class="txt--padrao24">O que</p>
                         </div>
 
                         <div class="content">
-                            <p class="txt--padrao40">
-                                Ao colocar a inteligência
-                                de varejo nas mãos das pessoas certas,
-                                mudamos realidades, um bairro por vez.
+                            <p>Em poucas palavras, é o que nos define:</p>
+                            <p class="txt--padrao24">
+                                Somos a plataforma de tecnologia e logística
+                                que viabiliza soluções completas em pneus,
+                                guiando quem compra e apoiando quem vende.
                             </p>
                         </div>
                     </div>
@@ -106,151 +66,78 @@
                     <div class="modulo-home">
                         <div class="mini-titulo">
                             <img src="<? echo $images ?>/seta_auxiliar.svg" alt="">
-                            <p class="txt--padrao20">Somos</p>
+                            <p class="txt--padrao24">Como fazemos isso?</p>
                         </div>
 
                         <div class="content">
-                            <p class="txt--padrao20">
-                                O braço direito do pequeno varejista
-                                que vem com uma caixa de ferramentas
-                                completa e com o pique que ele precisa
-                                para crescer de um jeito mais fácil.
+                            <p class="txt--padrao32">
+                                Nasce a nossa <span class="destaque">R.O.D.A.</span>
+                            </p>
+                            <p>
+                                Inspirada no significado de Cantu (circular, pedra que rola), é a cultura que nos orienta a seguir em frente. Aterrisa nosso propósito em nosso jeito de ser:
                             </p>
                         </div>
                     </div>
 
-                    <div class="cinza-colunas">
-                        <div class="grid--4colunas">
-                            <div class="coluna">
-                                <div class="cima">
-                                    <span class="risco mobileitem"></span>
-                                    <div class="topo-titulo">Na caixa vem</div>
-                                    <div class="subtitulo">Economia e praticidade nas compras</div>
-                                    <div class="conteudo">
-                                        <p>• Pedidos pelo celular;</p>
-                                        <p>• Entrega na porta;</p>
-                                        <p>• Melhores marcas;</p>
-                                        <p>• Fôlego pra pagar.</p>
-                                    </div>
-                                </div>
-                                <div class="baixo">
-                                    <div class="topo-titulo">Pra quem tem</div>
-                                    <div class="subtitulo">Faro para as melhores ofertas</div>
-                                </div>
+                    <div class="sliderRoda wrapper">
+                        <div class="roda roda1">
+                            <img src="<? echo $images ?>pranchas/roda/roda-fase01.png" alt="">
+                            <div class="textos">
+                                <p class="titulo-roda">Realizadores</p>
+                                <p>
+                                    <strong>Fazer acontecer</strong> é com a gente mesmo.
+                                    Adoramos um desafio, e seguimos sempre
+                                    em frente com <strong>autonomia</strong> para tomar decisões <strong>eficientes</strong> na direção dos melhores resultados.
+                                    <br><br>
+                                    <strong>ÁGEIS</strong>
+                                </p>
                             </div>
-                            <div class="coluna">
-                                <div class="cima">
-                                    <div class="topo-titulo"></div>
-                                    <span class="risco mobileitem"></span>
-                                    <div class="topo-titulo mobileitem">Na caixa vem</div>
-                                    <div class="subtitulo">Técnicas mais modernas para não perder vendas</div>
-                                    <div class="conteudo">
-                                        <p>• Sistema de gestão de estoque e reposição;</p>
-                                        <p>• Consultoria de sortimento;</p>
-                                        <p>• Planogramas de exposição;</p>
-                                        <p>• Meios de pagamento que não acabam com a sua margem;</p>
-                                        <p>• Apoio na decisão de preços.</p>
-                                    </div>
-                                </div>
-                                <div class="baixo">
-                                    <div class="topo-titulo"></div>
-                                    <div class="topo-titulo mobileitem">Pra quem tem</div>
-                                    <div class="subtitulo">Experiência no bairro</div>
-                                </div>
-                            </div>
-                            <div class="coluna">
-                                <div class="cima">
-                                    <div class="topo-titulo"></div>
-                                    <span class="risco mobileitem"></span>
-                                    <div class="topo-titulo mobileitem">Na caixa vem</div>
-                                    <div class="subtitulo">Práticas para encantar o cliente</div>
-                                    <div class="conteudo">
-                                        <p>• Divulgação bonita e automatizada;</p>
-                                        <p>• Reforma das lojas;</p>
-                                        <p>• Equipamentos das maiores marcas;</p>
-                                        <p>• Programa de fidelidade;</p>
-                                        <p>• Programa de treinamento de funcionários</p>
-                                    </div>
-                                </div>
-                                <div class="baixo">
-                                    <div class="topo-titulo"></div>
-                                    <div class="topo-titulo mobileitem">Pra quem tem</div>
-                                    <div class="subtitulo">Relacionamento com o cliente</div>
-                                </div>
-                            </div>
-                            <div class="coluna">
-                                <div class="cima">
-                                    <div class="topo-titulo"></div>
-                                    <span class="risco mobileitem"></span>
-                                    <div class="topo-titulo mobileitem">Na caixa vem</div>
-                                    <div class="subtitulo">Qualidade de vida</div>
-                                    <div class="conteudo">
-                                        <p>• Seguro para proteger seu mercado e mercadoria</p>
-                                        <p>• Aulas de liderança online;</p>
-                                        <p>• Períodos de casa na praia todo ano</p>
-                                    </div>
-                                </div>
-                                <div class="baixo">
-                                    <div class="topo-titulo"></div>
-                                    <div class="topo-titulo mobileitem">Pra quem tem</div>
-                                    <div class="subtitulo">Vontade de aproveitar a vida</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modulo-home com-grid">
-                        <div class="mini-titulo">
-                            <img src="<? echo $images ?>/seta_auxiliar.svg" alt="">
-                            <p class="txt--padrao20">Como</p>
                         </div>
 
-                        <div class="grid--5colunas-home">
-                            <div class="desc-basica">
-                                <p> Nosso jeito<br class="desktopitem"> de trabalhar</p>
-                            </div>
-                            <div class="coluna">
-                                <p class="txt--padrao20">De dono para dono</p>
+                        <div class="roda roda2">
+                            <img src="<? echo $images ?>pranchas/roda/roda-fase02.png" alt="">
+                            <div class="textos">
+                                <p class="titulo-roda">Obcecados pelo cliente</p>
                                 <p>
-                                    Cuidando como dono
-                                    e pensando no melhor futuro para os milhares de donos de pequenos varejos, aqui o jogo
-                                    é aberto e a carta é branca
-                                    para cada um fazer do seu jeito, discordar e decidir.
-                                </p>
-                            </div>
-                            <div class="coluna">
-                                <p class="txt--padrao20">Fazendo a diferença</p>
-                                <p>
-                                    Se não for pra mudar pra melhor, nem começamos!
-                                    Para nós, ideias boas são apoiadas em dados que geram
-                                    resultados reais e visíveis para
-                                    o cliente.
-                                </p>
-                            </div>
-                            <div class="coluna">
-                                <p class="txt--padrao20">Como bons vizinhos</p>
-                                <p>
-                                    Atendemos com proximidade
-                                    porque só dá pra ser útil se
-                                    conhecermos bem cada cliente.
-                                    Cultivamos relações verdadeiras
-                                    que podem mudar seu mundo,
-                                    muito além do mercado.
-                                </p>
-                            </div>
-                            <div class="coluna">
-                                <p class="txt--padrao20">Tecnologia invisível</p>
-                                <p>
-                                    Ela é fundamental, mas não
-                                    precisa ser protagonista na vida
-                                    do cliente. Entendemos seus
-                                    costumes para desenvolver
-                                    sistemas simples de usar
-                                    e nos canais mais familiares.
+                                    <strong>A gente não desiste até ver o cliente feliz.
+                                        Nos colocamos no lugar</strong> de cada um pra antecipar
+                                    o que precisam. E na hora de resolver problemas, vamos <strong>direto ao ponto</strong> com muita <strong>transparência.</strong>
+                                    <br><br>
+                                    <strong>SURPREENDENTES</strong>
                                 </p>
                             </div>
                         </div>
+
+                        <div class="roda roda3">
+                            <img src="<? echo $images ?>pranchas/roda/roda-fase03.png" alt="">
+                            <div class="textos">
+                                <p class="titulo-roda">Desafiados pelo futuro</p>
+                                <p>
+                                    Olhamos lá na frente para <strong>transformar</strong> o impossível em realidade. <strong>Pessoas</strong> são o coração, <strong>inquietude</strong>
+                                    o combustível, e a <strong>tecnologia</strong> nosso motor pra avançar na <strong>vanguarda</strong> do setor.
+                                    <br>
+                                    VISIONÁRIOS
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="roda roda4">
+                            <img src="<? echo $images ?>pranchas/roda/roda-fase04.png" alt="">
+                            <div class="textos">
+                                <p class="titulo-roda">Atentos ao outro</p>
+                                <p>
+                                    <strong>Cada um é parte do todo.</strong> Celebramos juntos
+                                    cada conquista e nos apoiamos a cada incerteza.
+                                    Com <strong>respeito, colaboração e troca,</strong>
+                                    vamos com tudo!
+                                    <br>
+                                    UNIDOS
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
+
 
                     <div class="modulo-home">
                         <div class="mini-titulo">
@@ -260,9 +147,7 @@
 
                         <div class="content">
                             <p class="txt--padrao20">
-                                Todos que acordam cedo pra trabalhar
-                                e enfrentam com otimismo os obstáculos
-                                da vida.
+                                Os inquietos. Aqueles que transformam barreiras em soluções.
                             </p>
                         </div>
                     </div>
@@ -271,91 +156,184 @@
 
             <section id="sessao3">
                 <article>
-                    <div class="grid--2colunas-auto">
-                        <div class="esq">
-                            <p>Histórias que nos conectam</p>
-                        </div>
-                        <div class="dir grid--2colunas-auto">
-                            <p class="txt--padrao12">
-                                Seu Antonio tem tanto orgulho que
-                                assina a fachada do mercado com seu
-                                próprio sobrenome. Seu ídolo? Todos
-                                que acordam cedo pra trabalhar.<br><br>
+                    <p class="txt--padrao40 proximo">E nossas marcas de oferta?</p>
+                    <p class="pos-titulo">
+                        Qual é a nossa promessa para o atacado (B2B) e o varejo (B2C).
+                    </p>
 
-                                O Filipe adora o bairro, mas pensa
-                                em mudar porque o trabalho fica longe
-                                e ele queria chegar em casa mais cedo
-                                pra curtir os amigos.<br><br>
+                    <div class="modulo-abas">
+                        <div class="nav_tabs">
+                            <ul class="nav desktopitem">
+                                <li nav="0" class="active">PneuStore (B2C)</li>
+                                <li nav="1">CantuPneus (B2B)</li>
+                                <div class="slider">
+                                    <div class="slider-bar"></div>
+                                </div>
+                            </ul>
 
-                                Amigo é com o Leomar, que todo dia
-                                dá um bom-dia diferente.Ele bate no
-                                peito pra falar das 4 pessoas que
-                                emprega, mas também reclama do
-                                trabalho que dá.<br><br>
+                            <p class="subtitulo mobileitem">Logotipo preferencial</p>
+                            <div class="content">
 
-                                A Keu acha o bairro perigoso, mas é o
-                                que dá. Se conforta em saber que com
-                                a vizinha sempre pode contar. É com ela
-                                que pega emprestado o que tá faltando
-                                pra não pagar caro no mercadinho ao
-                                lado, que nem pendura e nem aceita
-                                cartão.<br><br>
+                                <div class="tab preferencial active">
+                                    <div class="composicao-wrapper grid--4linhas-auto">
+                                        <div class="wrapper-box grid--2colunas">
+                                            <div class="esq">
+                                                <p>Promessa</p>
+                                            </div>
+                                            <div class="dir">
+                                                Ao direcionar o decisão do nosso cliente e apoiar a compra do seu pneu,
+                                                seremos a marca que entrega <strong>orientação.</strong></p>
+                                            </div>
+                                        </div>
 
-                                A Jéssica sabe o nome de cada
-                                um dos seus fregueses e queria um
-                                espaço maior e mais bonito pra eles.
-                                Sonha com noites sem preocupação
-                                com o mercado.
-                            </p>
+                                        <div class="wrapper-box grid--2colunas">
+                                            <div class="esq">
+                                                <p>Somos</p>
+                                            </div>
+                                            <div class="dir">
+                                                <strong>O seu guia.</strong> Facilitamos a experiência de compra de pneus,
+                                                do primeiro clique até a próxima troca.
+                                            </div>
+                                        </div>
 
-                            <p class="txt--padrao12">
-                                A Ida sabe que toda quarta tem oferta
-                                boa no mercadinho do bairro. Não confia
-                                em supermercado pra comprar mistura,
-                                frutas e verduras.<br><br>
+                                        <div class="wrapper-box grid--2colunas">
+                                            <div class="esq">
+                                                <p>BENEFÍCIOS<br> & DIFERENCIAIS</p>
+                                            </div>
+                                            <div class="dir">
+                                                <div class="wrapper-pontos">
+                                                    <div>
+                                                        <p><strong>Compra fácil e<br> entrega rápida</strong></p>
+                                                        <p class="pontos">
+                                                            • Plataforma intuitiva<br>
+                                                            • Rastreamento do pedido<br>
+                                                            • Suporte na montagem
+                                                        </p>
+                                                    </div>
 
-                                A Jô conhece bem esse sentimento e
-                                sente-se livre por ter seu próprio negócio.
-                                Sabe que o sucesso ou o fracasso estão
-                                em suas mãos. O que faria se tivesse
-                                mais tempo livre? Dançar!<br><br>
+                                                    <div>
+                                                        <p><strong>O pneu certo<br> pra você</strong></p>
+                                                        <p class="pontos">
+                                                            • Mix completo<br>
+                                                            • Marcas de qualidade<br>
+                                                            • Nacionais e importados
+                                                        </p>
+                                                    </div>
 
-                                O Leonardo diz que não tem um mercado,
-                                tem uma família. Que precisa sua de
-                                atenção constante. Se ressente de não
-                                ter liberdade pra passar dias na praia
-                                com sua “outra família”. Quer chegar aos
-                                50 bem de saúde e ser feliz! (afinal,
-                                dinheiro não é tudo).<br><br>
+                                                    <div>
+                                                        <p><strong>Vantagem<br> que vale</strong></p>
+                                                        <p class="pontos">
+                                                            • Facilidade de pagamento<br>
+                                                            • Descontos<br>
+                                                            • Cabe no bolso
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                Os depoimentos das batalhas diárias
-                                vêm sempre cheios de orgulho,
-                                dedicação e amor. De um otimismo que é
-                                combustível pra levantar de manhã e
-                                correr atrás mais uma vez.<br><br>
+                                        <div class="wrapper-box grid--2colunas">
+                                            <div class="esq">
+                                                <p>Statement</p>
+                                            </div>
+                                            <div class="dir">
+                                                <strong>Seu guia em direção ao pneu certo.</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                No fundo, no fundo, eles pensam que já
-                                tá na hora da vida ser mais fácil e, com a
-                                Mercê do Bairro, será!
-                            </p>
+
+                                <p class="subtitulo mobileitem">Logotipo horizontal</p>
+
+                                <div class="tab ">
+                                    <div class="composicao-wrapper grid--4linhas-auto">
+                                        <div class="wrapper-box grid--2colunas">
+                                            <div class="esq">
+                                                <p>Promessa</p>
+                                            </div>
+                                            <div class="dir">
+                                                Ao aliviar o dia a dia do nosso cliente e apoiar a gestão do seu negócio,
+                                                seremos a marca que entrega <strong> suporte.</strong>
+                                            </div>
+                                        </div>
+
+                                        <div class="wrapper-box grid--2colunas">
+                                            <div class="esq">
+                                                <p>Somos</p>
+                                            </div>
+                                            <div class="dir">
+                                                <strong>O seu melhor aliado.</strong> Viabilizamos a distribuição e gestão de soluções
+                                                inteligentes em pneus por todo Brasil.
+                                            </div>
+                                        </div>
+
+                                        <div class="wrapper-box grid--2colunas">
+                                            <div class="esq">
+                                                <p>BENEFÍCIOS<br> & DIFERENCIAIS</p>
+                                            </div>
+                                            <div class="dir">
+                                                <div class="wrapper-pontos">
+                                                    <div>
+                                                        <p><strong>Agilidade<br> e facilidade</strong></p>
+                                                        <p class="pontos">
+                                                            • Plataforma digital<br>
+                                                            • Rastreamento do pedido<br>
+                                                            • Prazos em dia
+                                                        </p>
+                                                    </div>
+
+                                                    <div>
+                                                        <p><strong>A solução completa para o seu negócio</strong></p>
+                                                        <p class="pontos">
+                                                            • Mix completo<br>
+                                                            • Marcas de qualidade<br>
+                                                            • Nacionais e importados
+                                                        </p>
+                                                    </div>
+
+                                                    <div>
+                                                        <p><strong>Atendimento parceiro e consultivo</strong></p>
+                                                        <p class="pontos">
+                                                            • Visibilidade de estoque<br>
+                                                            • Apoia o planejamento<br>
+                                                            • Conhecimento técnico
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="wrapper-box grid--2colunas">
+                                            <div class="esq">
+                                                <p>Statement</p>
+                                            </div>
+                                            <div class="dir">
+                                                <strong>O aliado certo pro seu negócio rodar.</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </article>
-            </section>
+            </section>            
 
             <section id="sessao4">
                 <article>
-                    <p class="txt--padrao40">Assim, nasceu nossa identidade</p>
+                    <p class="txt--padrao40">Manifesto</p>
 
-                    <div class="wrapper slick">
-                        <img src="<? echo $images ?>/pranchas/PranchaWendel.png" alt="">
-                        <img src="<? echo $images ?>/pranchas/Enrolado.png" alt="">
-                        <img src="<? echo $images ?>/pranchas/Saquinho.png" alt="">
-                        <img src="<? echo $images ?>/pranchas/Marmitas.png" alt="">
-                        <img src="<? echo $images ?>/pranchas/Van.png" alt="">
-                        <img src="<? echo $images ?>/pranchas/Posters01.png" alt="">
-                        <img src="<? echo $images ?>/pranchas/Loja.png" alt="">
-                    </div>
+
+                </article>
+            </section>
+
+            <section id="sessao5">
+                <article>
+                    <p class="txt--padrao40">Somos CantuStore.</p>
+                    <p class="txt--padrao32">Evoluímos. E a nossa identidade visual também.</p>
+                    <img src="<? echo $images ?>essencia/desk/Grupo 6934.png" alt="">
                 </article>
             </section>
 

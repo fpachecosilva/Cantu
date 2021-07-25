@@ -10,7 +10,7 @@
             <div class="links">
             
                 <ul>
-                    <a class="link-abre active" href="index.php?direct">DNA</a>
+                    <a class="link-abre active" href="index.php">DNA</a>
                 </ul>
                 
                 <ul>
@@ -119,7 +119,7 @@
                 </ul>
 
 
-                <ul>
+                <!-- <ul>
                     <a class="identidade link-abre" href="identidade.php">Identidade Verbal</a>
 
                     <li>
@@ -128,7 +128,7 @@
                     <li>
                         <a href="#sessao2">Tom de voz</a>
                     </li>                    
-                </ul>
+                </ul> -->
         
                                 
                 <!-- <a class="identidade" href="identidade.php">Identidade Verbal</a> -->
@@ -137,7 +137,7 @@
                 <div class="navfooter">
                     <a href="downloads.php">Central de downloads</a>
 
-                    <a href="index.php?direct">Sair</a>
+                    <a href="index.php">Sair</a>
                 </div>
             </div>
 

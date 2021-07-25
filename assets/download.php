@@ -117,13 +117,13 @@ if ( $paginaAtual == 'Tipografia' ) {
 
 if ( $paginaAtual == 'Essencia' ) {
     
-    $logotipoTitulo_01 = "Essência Mercê";
-    $logotipoLink_01 = $download. "essencia/AF_Merce_Essencia.zip";
-    $logotipoTexto_01 = "AF_Merce_Essencia.zip";
+    $logotipoTitulo_01 = "";
+    $logotipoLink_01 = $download. "essencia/AF__Essencia.zip";
+    $logotipoTexto_01 = "AF_Essencia.zip";
     
-    $logotipoTitulo_02 = "Manifesto";
-    $logotipoLink_02 = $download. "essencia/AF_Merce_Manifesto.zip";
-    $logotipoTexto_02 = "AF_Merce_Manifesto.zip";   
+    $logotipoTitulo_02 = "";
+    $logotipoLink_02 = $download. "essencia/AF_Manifesto.zip";
+    $logotipoTexto_02 = "AF_Manifesto.zip";   
 
     echo'
         <section id="download">

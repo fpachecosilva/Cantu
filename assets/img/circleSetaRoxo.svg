@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="5.876" height="9.333" viewBox="0 0 5.876 9.333">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #9153f0;
+        stroke: #9153f0;
+        stroke-linejoin: round;
+        stroke-width: 0.5px;
+      }
+    </style>
+  </defs>
+  <path id="download" class="cls-1" d="M.841,8.833,5.376,4.417.841,0,.006.812l3.11,3.03.59.574L0,8.02Z" transform="translate(5.626 9.083) rotate(180)"/>
+</svg>

@@ -7,6 +7,9 @@
 
     --auxiliar1: #9153F0;
     --auxiliar2: #FFE959;
+    --auxiliar3: #68DCFA;
+    --auxiliar4: #D4ED18;
+    --auxiliar5: #FF6633;
 
     --margin: 30px;
     --tempo: 500ms;
@@ -18,21 +21,18 @@
 
 /* Seleção: */
 ::selection {
-    background: var(--secundaria);
-    color: var(--terciaria);
-    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background: var(--terciaria);
+    color: #fff;
 }
 
 ::-webkit-selection {
-    background: var(--secundaria);
-    color: var(--terciaria);
-    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background: var(--terciaria);
+    color: #fff;
 }
 
 ::-moz-selection {
-    background: var(--secundaria);
-    color: var(--terciaria);
-    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background: var(--terciaria);
+    color: #fff;
 }
 /* Seleção: */
 
@@ -40,7 +40,7 @@
 
 
 /* Efeitos de transição: */
-a, ul, li, .link-abre, nav, .menu, section, .ideia, .destaque-ideia, #abrirmenu, .links, .LinksAberto, nav.links, #topo, .blocotopo {
+a, ul, li, .link-abre, nav, .menu, section, .ideia, .destaque-ideia, #abrirmenu, .links, .LinksAberto, nav.links, #topo, .blocotopo, .switch, .circulo {
     -webkit-transition: all var(--tempo);
     -moz-transition: all var(--tempo);
     -ms-transition: all var(--tempo);
@@ -57,6 +57,11 @@ a, ul, li, .link-abre, nav, .menu, section, .ideia, .destaque-ideia, #abrirmenu,
     &--2colunas {
         @extend .grid;
         grid-template-columns: 50% 50%;
+    }
+
+    &--2colunasversoes {
+        @extend .grid;
+        grid-template-columns: 68.5% 31.5%;
     }
 
     &--2colunas-auto {
@@ -147,6 +152,13 @@ a, ul, li, .link-abre, nav, .menu, section, .ideia, .destaque-ideia, #abrirmenu,
         &.pos-titulo {
             max-width: 250px;
         }
+
+        &.cima-20 {
+            color: var(--terciaria);
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
     } 
 
     &--padrao20 {            
@@ -154,6 +166,10 @@ a, ul, li, .link-abre, nav, .menu, section, .ideia, .destaque-ideia, #abrirmenu,
         line-height: 1.75rem;
         font-weight: bold;
         margin-bottom: 10px;
+
+        &.medium {
+            font-weight: 500;
+        }
     }
 
     &--padrao24 {

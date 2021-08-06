@@ -1,104 +1,256 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-        <?php include 'assets/config.php'; ?>
-        <?php include 'assets/head.php'; ?>
-        
-        <? 
-        $paginaAtual = 'Paleta';
-        $tituloPagina = $paginaAtual ." - ". $empresa;
-        ?>
 
-        <title><? echo $tituloPagina ?></title>
-    </head>    
+<head>
+    <?php include 'assets/config.php'; ?>
+    <?php include 'assets/head.php'; ?>
 
-    <body id="paleta">
+    <?
+    $paginaAtual = 'Paleta';
+    $tituloPagina = $paginaAtual . " - " . $empresa;
+    ?>
 
-        <div class="container">
+    <title><? echo $tituloPagina ?></title>
+</head>
 
-            <?php include 'assets/menu.php'; ?>
+<body id="paleta">
 
-            <main>
-                <header class="topobg">
-                    <div class="pelicula"></div>
-                    <article>
-                        <h1>Paleta</h1>
-                    </article>
-                </header>
+    <div class="container">
 
-                <section id="sessao1" class="p70-65">
+        <?php include 'assets/menu.php'; ?>
+
+        <main>
+            <header class="topobg">
+                <div class="pelicula"></div>
                 <article>
-                    <p class="txt--padrao40 txt--bold">Paleta institucional</p>                    
+                    <h1>Paleta cromática</h1>
+                </article>
+            </header>
+
+            <section id="sessao1" class="p70-65">
+                <article>
+                    <p class="txt--padrao40 txt--bold">Configuração</p>
 
                     <div class="grid--2colunas">
 
                         <div class="esq">
                             <div class="txtbl txt-bloco-cima">
                                 <p class="txt--padrao12">
-                                    Marcamos nossa comunicação com muita proximidade e calor.<br><br>
-        
-                                    Vermelho é a principal cor de nossa bandeira, apoiado pela vibração do amarelo
-                                    e a força do azul.
+                                    O roxo é a cor de nossa bandeira.<br>
+                                    Combinado do violeta, azul e verde, trazemos energia,
+                                    força e personalidade própria para cada marca.<br><br>
+
+                                    As paletas ao lado são de uso exclusivo de
+                                    cada marca. Por isso, respeite as combinações
+                                    apresentadas.
                                 </p>
                             </div>
-        
+
                             <div class="txtbl txt-bloco-baixo desktopitem">
-                                <p class="txt--padrao12">                            
-                                    PANTONE®: cores de referência e para impressão especial. Sempre que possível, priorize seu uso em impressões offset e serigrafia.<br><br>
-        
-                                    CMYK: cores para impressão. Use quando não for possível optar pelas cores Pantone®.<br><br>
-        
-                                    RGB: cores para tela. Uso em meios digitais, como site e apresentações.<br><br>
-        
-                                    HEXADECIMAL: também para uso em meios digitais – identifica a cor de modo mais simples que o RGB.
-                                </p>   
-                            </div>
-                        </div>
-    
-                        <div class="dir">
-                            <div class="accordeon">                        
-                                <div class="wrapper-acc">
-                                    <div class="box box1 ativo">
-                                        <p class="nome">Vermelho</p>
-                                        <p class="sub">Cor principal</p>
-                                        <p class="desc">
-                                            RGB - 219 0 71<br>
-                                            CMYK - 0 100 60 0<br>
-                                            HEX - #DB0047<br>
-                                            Pantone® — 1925 C
-                                        </p>
-                                    </div>
-        
-                                    <div class="box box2 corPr">
-                                        <p class="nome">Amarelo</p>
-                                        <p class="sub">Cor secundária</p>
-                                        <p class="desc">
-                                            RGB - 255  247  87<br>
-                                            CMYK - 0  0  80  0<br>
-                                            HEX - #FFF757<br>
-                                            Pantone® — 106 C
-                                        </p>
-                                    </div>
-        
-                                    <div class="box box3">
-                                        <p class="nome">Azul</p>
-                                        <p class="sub">Cor secundária</p>
-                                        <p class="desc">
-                                            RGB -  49  22  89<br>
-                                            CMYK - 100  95   10  30<br>
-                                            HEX - #311659<br>
-                                            Pantone® — 2735 C
-                                        </p>
-                                    </div>
-                                </div>
-        
-                                <p class="txt--padrao12 baixo-blocos desktopitem">
-                                    Clique nas cores para visualizar suas informações.
+                                <p class="txt--padrao12">
+                                    <strong>PANTONE®:</strong> cores de referência e para impressão
+                                    especial. Sempre que possível, priorize seu uso em
+                                    impressões offset e serigrafia.<br><br>
+
+                                    <strong>CMYK:</strong> cores para impressão. Use quando não for
+                                    possível optar pelas cores Pantone®.<br><br>
+
+                                    <strong>RGB:</strong> cores para tela. Uso em meios digitais, como
+                                    site e apresentações.<br><br>
+
+                                    <strong>HEXADECIMAL:</strong> também para uso em meios digitais
+                                    – identifica a cor de modo mais simples que o RGB.
                                 </p>
                             </div>
                         </div>
 
-                        <div class="txtbl txt-bloco-baixo mobileitem">
+                        <div class="dir">
+
+
+                            <div class="modulo-abas">
+
+                                <div class="nav_tabs">
+                                    <ul class="nav desktopitem">
+                                        <li nav="0" class="active">CantuStore</li>
+                                        <li nav="1">PneuStore</li>
+                                        <li nav="2">CantuPneus</li>
+                                        <div class="slider">
+                                            <div class="slider-bar"></div>
+                                        </div>
+                                    </ul>
+
+                                    <p class="subtitulo mobileitem">CantuStore</p>
+                                    <div class="content">
+
+                                        <div class="tab cantustore active">
+                                            <div class="accordeon">
+                                                <div class="wrapper-acc">
+                                                    <div class="box box1 ativo">
+                                                        <p class="nome">Roxo</p>
+                                                        <p class="sub">Cor principal</p>
+                                                        <p class="desc">
+                                                            RGB: 78/0/142<br>
+                                                            HEX: #4E008E<br>
+                                                            CMYK: 80/100/0/5<br>
+                                                            Pantone® Violet C
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="box box2 white">
+                                                        <p class="nome white">Violeta</p>
+                                                        <!-- <p class="sub">Cor secundária</p> -->
+                                                        <p class="desc white">
+                                                            RGB: 145/83/240<br>
+                                                            HEX: #9153F0<br>
+                                                            CMYK: 64/73/0/0<br>
+                                                            Pantone® 2665C
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="box box3 corSec">
+                                                        <p class="nome">Amarelo</p>
+                                                        <!-- <p class="sub">Cor secundária</p> -->
+                                                        <p class="desc">
+                                                            RGB: 255/233/89<br>
+                                                            HEX: #FFE959<br>
+                                                            CMYK: 0/0/70/0<br>
+                                                            Pantone® 3935C
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="box box4 corSec">
+                                                        <p class="nome">Off-white</p>
+                                                        <!-- <p class="sub">Cor secundária</p> -->
+                                                        <p class="desc">
+                                                            RGB: 247/247/247<br>
+                                                            HEX: #F7F7F7<br>
+                                                            CMYK: 5/5/3/0<br>
+                                                            Pantone® 663C
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <p class="txt--padrao12 baixo-blocos desktopitem">
+                                                    Clique nas cores para visualizar suas informações.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab pneustore">
+                                            <div class="accordeon">
+                                                <div class="wrapper-acc">
+                                                    <div class="box box1 ativo">
+                                                        <p class="nome">Roxo</p>
+                                                        <p class="sub">Cor principal</p>
+                                                        <p class="desc">
+                                                            RGB: 78/0/142<br>
+                                                            HEX: #4E008E<br>
+                                                            CMYK: 80/100/0/5<br>
+                                                            Pantone® Violet C
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="box box2 corSec">
+                                                        <p class="nome">Azul</p>
+                                                        <!-- <p class="sub">Cor secundária</p> -->
+                                                        <p class="desc">
+                                                            RGB: 104/220/250<br>
+                                                            HEX: #68DCFA<br>
+                                                            CMYK: 51/0/5/0<br>
+                                                            Pantone® 297C
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="box box3 corSec">
+                                                        <p class="nome">Amarelo</p>
+                                                        <!-- <p class="sub">Cor secundária</p> -->
+                                                        <p class="desc">
+                                                            RGB: 255/233/89<br>
+                                                            HEX: #FFE959<br>
+                                                            CMYK: 0/0/70/0<br>
+                                                            Pantone® 3935C
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="box box4 corSec">
+                                                        <p class="nome">Off-white</p>
+                                                        <!-- <p class="sub">Cor secundária</p> -->
+                                                        <p class="desc">
+                                                            RGB: 247/247/247<br>
+                                                            HEX: #F7F7F7<br>
+                                                            CMYK: 5/5/3/0<br>
+                                                            Pantone® 663C
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <p class="txt--padrao12 baixo-blocos desktopitem">
+                                                    Clique nas cores para visualizar suas informações.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab cantupneus">
+                                            <div class="accordeon">
+                                                <div class="wrapper-acc">
+                                                    <div class="box box1 ativo">
+                                                        <p class="nome">Roxo</p>
+                                                        <p class="sub">Cor principal</p>
+                                                        <p class="desc">
+                                                            RGB: 78/0/142<br>
+                                                            HEX: #4E008E<br>
+                                                            CMYK: 80/100/0/5<br>
+                                                            Pantone® Violet C
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="box box2 corSec">
+                                                        <p class="nome">Verde</p>
+                                                        <!-- <p class="sub">Cor secundária</p> -->
+                                                        <p class="desc">
+                                                            RGB: 212/237/24<br>
+                                                            HEX: #D4ED18<br>
+                                                            CMYK: 33/0/100/0<br>
+                                                            Pantone® 2297C
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="box box3 white">
+                                                        <p class="nome">Laranja</p>
+                                                        <!-- <p class="sub">Cor secundária</p> -->
+                                                        <p class="desc">
+                                                            RGB: 255/102/51<br>
+                                                            HEX: #FF6633<br>
+                                                            CMYK: 0/70/90/0<br>
+                                                            Pantone® 1655C
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="box box4 corSec">
+                                                        <p class="nome">Off-white</p>
+                                                        <!-- <p class="sub">Cor secundária</p> -->
+                                                        <p class="desc">
+                                                            RGB: 247/247/247<br>
+                                                            HEX: #F7F7F7<br>
+                                                            CMYK: 5/5/3/0<br>
+                                                            Pantone® 663C
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <p class="txt--padrao12 baixo-blocos desktopitem">
+                                                    Clique nas cores para visualizar suas informações.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- <div class="txtbl txt-bloco-baixo mobileitem">
                             <p class="txt--padrao12">                            
                                 PANTONE®: cores de referência e para impressão especial. Sempre que possível, priorize seu uso em impressões offset e serigrafia.<br><br>
     
@@ -108,7 +260,7 @@
     
                                 HEXADECIMAL: também para uso em meios digitais – identifica a cor de modo mais simples que o RGB.
                             </p>   
-                        </div>
+                        </div> -->
 
                     </div>
                 </article>
@@ -116,213 +268,150 @@
 
             <div class="ideia">
                 <div class="destaque-ideia">
-                    <p class="txt--padrao12">Dica: o azul tem menor uso como cor de fundo, tá?</p>
+                    <p class="txt--padrao12">
+                        <strong>Atenção:</strong> quando impresso, a cor Violeta tem maior fidelidade e pureza no Pantone.<br>
+                        Para impressões CMYK, dê prioridade para as demais cores.
+                    </p>
                 </div>
             </div>
 
-           <section id="sessao2">
+            <section id="sessao2">
                 <article>
-                    <p class="txt--padrao40 txt--bold">Subtons de apoio</p>                    
-
-                    <div class="grid--2colunas-auto">
-
-                        <div class="esq">
-                            <div class="txtbl txt-bloco-cima">
-                                <p class="txt--padrao12">
-                                    Devem ser usados pontualmente na identidade.<br class="mobileitem"><br class="mobileitem">
-                                    Veja abaixo onde usar:
-                                </p>
-                            </div>
-        
-                            <div class="txtbl txt-bloco-baixo">
-                                <div class="grid--2linhas">
-                                                                            
-                                    <div class="grid--2colunas icones">
-                                        <img src="<? echo $images ?>/paleta/desk/Subtom/Grupo 6109.png" alt="">
-                                        <p class="txt--padrao12">
-                                            Usado apenas como fundo para aplicação
-                                            de iconografia em meios digitais ou grafismos.
-                                        </p>
-                                    </div>
-                                                                        
-                                    <div class="grid--2colunas icones">
-                                        <img src="<? echo $images ?>/paleta/desk/Subtom/Grupo 6111.png" alt="">
-                                        <p class="txt--padrao12">
-                                            Usado pontualmente em grafismos.
-                                        </p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="dir">
-                            <div class="accordeon">
-                                
-                                <div class="wrapper-acc">
-                                    <div class="box box1 ativo">
-                                        <p class="nome">Subtom<br> vermelho</p>                                
-        
-                                        <p class="desc">
-                                            RGB -  179  0  58<br>
-                                            CMYK - 0   95   55   25<br>
-                                            HEX - #B3003A<br>
-                                            Pantone® — 7425 C
-                                        </p>
-                                    </div>
-        
-                                    <div class="box box2 corPr">
-                                        <p class="nome">Subtom<br> amarelo</p>
-                                        <p class="desc">
-                                            RGB -  255  227  76<br>
-                                            CMYK - 0   8   80  0<br>
-                                            HEX - #FFE34C
-                                        </p>
-                                    </div>
-                                </div>
-        
-                                <p class="txt--padrao12 baixo-blocos desktopitem">
-                                    Clique nas cores para visualizar suas informações.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </section>
-
-            <section id="sessao3" class="p80-130">
-                <article>
-                    <p class="txt--padrao40">Proporção de uso</p>
-                    <p class="txt--padrao12 pos-titulo">
-                        Vai acontecer de ter peças com diferentes
-                        quantidades de textos, produtos e preços tudo junto.<br><br>
-
-                        Use as combinações e proporções de cores abaixo
-                        como suas aliadas para ajudar na leitura e organização
-                        de informações.
+                    <p class="txt--padrao40 txt--bold">Proporções de uso</p>
+                    <p class="txt--padrao12">
+                        Utilize a proporção de cores abaixo em todos os layouts e aplicações<br>
+                        buscando manter a consistência e fortalecer o reconhecimento de cada marca.
                     </p>
 
-                    <p class="txt--padrao20 volume">Por volume de informação</p>
+                    <div class="composicao-wrapper grid--4linhas-auto">
 
-                    <div class="grid--3colunas">
-                        
-                        <div class="modulo-imagens-com-texto com-divisor">
-                            <div>
-                                <p class="txt--padrao12 txt--bold">Baixo</p>
-                                <img src="<? echo $images ?>/paleta/desk/Proporcao/Elipse 96.png" alt="">
-                                <p class="txt--padrao12">1 cor</p>    
-                                <span class="divisor"></span>
-
-                                <div class="col-img mobileitem">
-                                    <p class="txt--padrao12"><strong>Exemplo:</strong> Stories de Instagram</p>
-                                    <img class="img-col" src="<? echo $images ?>/paleta/desk/Proporcao/proporcao-col-1.png" alt="">
-                                </div>
-                            </div>    
-                        </div>
-                        
-                        <div class="modulo-imagens-com-texto com-divisor">
-                            <div>
-                                <p class="txt--padrao12 txt--bold">Médio</p>
-                                
-                                <div class="central-com-texto">
-                                    <img src="<? echo $images ?>/paleta/desk/Proporcao/Grupo 6093.png" alt="">
-                                    <p class="txt--padrao12">ou</p>
-                                    <img src="<? echo $images ?>/paleta/desk/Proporcao/Grupo 6094.png" alt="">
-                                </div>
-                                
-                                <p class="txt--padrao12">Set 2 cores</p>
-                                <span class="divisor"></span>
-
-                                <div class="col-img mobileitem">
-                                    <p class="txt--padrao12"><strong>Exemplo:</strong> Tela de aplicativo</p>
-                                    <img class="img-col" src="<? echo $images ?>/paleta/desk/Proporcao/proporcao-col-2.png" alt="">
+                        <div class="wrapper-box grid--2colunas">
+                            <div class="esq">
+                            </div>
+                            <div class="dir">
+                                <div class="wrapper-blocos imagens-topo">
+                                    <div>
+                                        <img src="<? echo $images ?>paleta/desk/Proporcao/logo cantustore horizontal@2x.png" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="<? echo $images ?>paleta/desk/Proporcao/logo pneustore horizontal@2x.png" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="<? echo $images ?>paleta/desk/Proporcao/logo cantupneus horizontal@2x.png" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="modulo-imagens-com-texto com-divisor">
-                            <div>
-                                <p class="txt--padrao12 txt--bold">Alto</p>
-                                <img src="<? echo $images ?>/paleta/desk/Proporcao/Grupo 5175.png" alt="">                                
-                                <p class="txt--padrao12">Set 3 cores</p>
 
-                                <div class="col-img mobileitem">
-                                    <p class="txt--padrao12"><strong>Exemplo:</strong> Folheto de promoções</p>
-                                    <img class="img-col" src="<? echo $images ?>/paleta/desk/Proporcao/proporcao-col-3.png" alt="">
+                        <div class="wrapper-box grid--2colunas">
+                            <div class="esq">
+                                <p>PRINCIPAL</p>
+                                <p>
+                                    São as cores proprietárias de cada marca
+                                    e tem carta branca de uso: de massa de cor
+                                    à textos e grafismos.
+                                </p>
+                            </div>
+                            <div class="dir">
+                                <div class="wrapper-blocos">
+                                    <span class="bloco"></span>
+                                    <span class="bloco"></span>
+                                    <span class="bloco"></span>
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
 
+                        <div class="wrapper-box grid--2colunas">
+                            <div class="esq">
+                                <p>SECUNDÁRIA</p>
+                                <p>
+                                    Funcionam como ingrediente complementar
+                                    e partilhado entre as demais marcas.
+                                    Seu uso também é livre: de massa de cor
+                                    à textos e grafismos.
+                                </p>
+                            </div>
+                            <div class="dir">
+                                <div class="wrapper-blocos meio">
+                                    <span class="bloco ter"></span>
+                                    <span class="bloco blue"></span>
+                                    <span class="bloco green"></span>
+                                </div>
+                                <div class="wrapper-blocos meio">
+                                    <span class="bloco white"></span>
+                                    <span class="bloco white"></span>
+                                    <span class="bloco white"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wrapper-box grid--2colunas">
+                            <div class="esq">
+                                <p>APOIO</p>
+                                <p>
+                                    Tem uso pontual e com menor presença
+                                    nas composições, geralmente focados
+                                    para textos de destaque ou ícones.
+                                </p>
+                            </div>
+                            <div class="dir">
+                                <div class="grid--3colunas menores">
+                                    <div class="wrapper-blocos baixo">
+                                        <span class="bloco white"></span>
+                                        <span class="bloco yellow"></span>
+                                    </div>
+                                    <div class="wrapper-blocos baixo menor">
+                                        <span class="bloco white"></span>
+                                        <span class="bloco ter"></span>
+                                        <span class="bloco yellow"></span>
+                                    </div>
+                                    <div class="wrapper-blocos baixo">
+                                        <span class="bloco white"></span>
+                                        <span class="bloco orange"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-
-                    <div class="grid--3colunas col-wrapper">
-                        <div class="col-img">
-                            <p class="txt--padrao12"><strong>Exemplo:</strong> Stories de Instagram</p>
-                            <img class="img-col" src="<? echo $images ?>/paleta/desk/Proporcao/proporcao-col-1.png" alt="">
-                        </div>
-    
-                        <div class="col-img">
-                            <p class="txt--padrao12"><strong>Exemplo:</strong> Tela de aplicativo</p>
-                            <img class="img-col" src="<? echo $images ?>/paleta/desk/Proporcao/proporcao-col-2.png" alt="">
-                        </div>
-    
-                        <div class="col-img">
-                            <p class="txt--padrao12"><strong>Exemplo:</strong> Folheto de promoções</p>
-                            <img class="img-col" src="<? echo $images ?>/paleta/desk/Proporcao/proporcao-col-3.png" alt="">
+                    <div class="ideia">
+                        <div class="destaque-ideia">
+                            <p class="txt--padrao12">
+                                Em composições com maior volume de conteúdo, use a cor branca e off-white<br>
+                                para separar blocos de informação mantendo a leveza.
+                            </p>
                         </div>
                     </div>
-
                 </article>
             </section>
 
-            <section id="sessao4" class="p80-65">
-                <article>
-                    <p class="txt--padrao40">Cor + Texto</p>
-                    
-                    <div class="blocos grid--3colunas">
-                        <div class="col">
-                            <div class="bloco">Aa</div>
-                            <div class="bloco">Aa</div>
-                        </div>
-
-                        <div class="col">
-                            <div class="bloco">Aa</div>
-                            <div class="bloco">Aa</div>
-                        </div>
-
-                        <div class="col">
-                            <div class="bloco">Aa</div>
-                            <div class="bloco">Aa</div>
-                        </div>
-                    </div>
-                </article>
-            </section>
-
-            <section id="sessao5">
+            <section id="sessao3">
                 <article>
                     <p class="txt--padrao40">Para se inspirar</p>
 
                     <div class="wrapper slick">
-                        <img src="<? echo $images ?>/pranchas/CavaleteOferta.png" alt="">
-                        <img src="<? echo $images ?>/pranchas/Bag.png" alt="">
-                        <img src="<? echo $images ?>/pranchas/SetStories.png" alt="">
+                        <img src="<? echo $images ?>pranchas/Faixa.png" alt="">
+                        <img src="<? echo $images ?>pranchas/Carro.png" alt="">
+                        <img src="<? echo $images ?>pranchas/Camisa.png" alt="">
+                        <img src="<? echo $images ?>pranchas/Roda.png" alt="">
+                        <img src="<? echo $images ?>pranchas/Pessoas e negocios.png" alt="">
                     </div>
                 </article>
             </section>
 
 
-                <? include ('assets/download.php') ?>
-                <? include ('assets/footer.php') ?>
-            </main>
+            <? include('assets/download.php') ?>
+            <? include('assets/footer.php') ?>
+        </main>
 
-        </div>
+    </div>
 
-    
-        <script type="text/javascript">
-            $('.link-abre').removeClass('active')
-            $('.menu li').hide();
-			$('.link-abre:eq(2)').addClass('active');
-		</script>
-    </body>
+
+    <script type="text/javascript">
+        $('.link-abre').removeClass('active')
+        $('.menu li').hide();
+        $('.link-abre:eq(2)').addClass('active');
+    </script>
+</body>
+
 </html>

@@ -1,9 +1,4 @@
-/* 
-	Hello, guys!! :)
-	JS desenvolvido pela bs.agency em 2020. 
 
-	Façam bom uso :)
-*/
 
 jQuery(document).ready(function () {
 
@@ -122,33 +117,33 @@ jQuery(document).ready(function () {
 	});
 
 
-	$(document).ready(function () {
-		$('.slick-prev').css('background-image', 'url("assets/img/voltar-white.png")');
-	})
+	// $(document).ready(function () {
+	// 	// $('.slick-prev').css('background-image', 'url("assets/img/voltar-white.png")');
+	// })
 
 
-	$('.slick-prev').click(function () {
-		$('.slick').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-			if (nextSlide == '0') {
-				$('.slick-prev').css('background-image', 'url("assets/img/voltar-white.png")');
-			} else {
-				$('.slick-prev').css('background-image', 'url("assets/img/voltar.png")');
-			}
-		});
-	})
+	// $('.slick-prev').click(function () {
+	// 	$('.slick').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+	// 		if (nextSlide == '0') {
+	// 			$('.slick-prev').css('display', 'none');
+	// 		} else {
+	// 			$('.slick-prev').css('background-image', 'url("assets/img/voltar.png")');
+	// 		}
+	// 	});
+	// })
 
-	$('.slick-next').click(function () {
-		$('.slick-prev').css('background-image', 'url("assets/img/voltar.png")');
+	// $('.slick-next').click(function () {
+	// 	// $('.slick-prev').css('background-image', 'url("assets/img/voltar.png")');
 
-		$('.slick').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+	// 	$('.slick').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
 
-			if (nextSlide != 0 && nextSlide != 1) {
-				$('.slick-next').css('background-image', 'url("assets/img/avancar-white.png")');
-			} else {
-				$('.slick-next').css('background-image', 'url("assets/img/avancar.png")');
-			}
-		});
-	})
+	// 		if (nextSlide != 0 && nextSlide != 1) {
+	// 			$('.slick-next').css('background-image', 'url("assets/img/avancar-white.png")');
+	// 		} else {
+	// 			$('.slick-next').css('background-image', 'url("assets/img/avancar.png")');
+	// 		}
+	// 	});
+	// })
 
 
 
@@ -213,8 +208,38 @@ jQuery(document).ready(function () {
 			$(linkFooter).attr('href', primeiroLinkUrl)
 			$(nomeFooter)[0].innerHTML = primeiroLinkTexto;
 		}
+	}
+
+	// Botao Switch	
+	if( document.querySelector('.switchWrapper') != null ) {
+		const switchWrapper = document.querySelectorAll('.switchWrapper');		
+						
+		function toggle(el,classname){
+			el.classList.toggle(classname)
+		}
+
+		for(var i = 0; i < switchWrapper.length; i++) {
+			const btn = switchWrapper[i].querySelector('.switch');
+			const circle = switchWrapper[i].querySelector('.circulo');
+			const boxImg = switchWrapper[i].querySelectorAll('.boxImg');
+
+			btn.addEventListener('click',(e)=>{
+				toggle(e.target,'ativado');
+				circle.classList.toggle('ativado');
+				var box1 = boxImg[0];
+				var box2 = boxImg[1];
+				box1.classList.toggle('ativado');
+				box2.classList.toggle('ativado');
+			})
+
+			circle.addEventListener('click',(e)=>{
+				toggle(e.target,'ativado');
+				btn.classList.toggle('ativado');
+			})
+		}
 
 	}
+		
 
 	// Funções executadas apenas na versão Desktop:
 	function DesktopVersion() {

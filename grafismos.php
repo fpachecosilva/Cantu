@@ -188,7 +188,7 @@
         <script type="text/javascript">
             $('.link-abre').removeClass('active')
             $('.menu li').hide();
-			$('.link-abre:eq(4)').addClass('active');
+			$('.link-abre:eq(5)').addClass('active');
 		</script>
     </body>
 </html>

@@ -179,6 +179,12 @@ a, ul, li, .link-abre, nav, .menu, section, .ideia, .destaque-ideia, #abrirmenu,
         margin-bottom: 10px;
     }
 
+    &--padrao30 {
+        font-size: 30px;
+        line-height: 1.5rem;
+        font-weight: bold;        
+    }
+
     &--padrao32 {
         font-size: 2rem;
         line-height: 1.5rem;

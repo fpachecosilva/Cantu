@@ -79,10 +79,10 @@
                                 </div>
                             </ul>
 
-                            <p class="subtitulo mobileitem">CantuStore</p>
                             <div class="content">
 
                                 <div class="tab cantustore active">
+                                    <p class="subtitulo mobileitem">CantuStore</p>
                                     <div class="wrapper grid--2colunasversoes">
                                         <div class="esq grid--2linhas">
                                             <div class="cima">
@@ -119,6 +119,7 @@
                                 </div>
 
                                 <div class="tab pneustore">
+                                    <p class="subtitulo mobileitem">PneuStore</p>
                                     <div class="wrapper grid--2colunasversoes">
                                         <div class="esq grid--2linhas">
                                             <div class="cima">
@@ -155,6 +156,7 @@
                                 </div>
 
                                 <div class="tab cantupneus">
+                                    <p class="subtitulo mobileitem">CantuPneus</p>
                                     <div class="wrapper grid--2colunasversoes">
                                         <div class="esq grid--2linhas">
                                             <div class="cima">
@@ -198,7 +200,7 @@
                 </article>
             </section>
 
-            <div class="ideia">
+            <div class="ideia solto">
                 <div class="destaque-ideia">
                     <p class="txt--padrao12">
                         Os logotipos na versão positiva podem ser aplicados sobre fundo branco ou nas cores<br>
@@ -307,10 +309,10 @@
                                 </div>
                             </ul>
 
-                            <p class="subtitulo mobileitem">CantuStore</p>
                             <div class="content">
 
                                 <div class="tab cantustore active">
+                                    <p class="subtitulo mobileitem">CantuStore</p>
                                     <div class="wrapper">
                                         <img class="esq" src="<? echo $images ?>logo/desk/Area Prot/logo-referencia-medida@2x.png" alt="">
                                         <img class="dir" src="<? echo $images ?>logo/desk/Area Prot/01@2x.png" alt="">
@@ -318,6 +320,7 @@
                                 </div>
 
                                 <div class="tab pneustore">
+                                    <p class="subtitulo mobileitem">PneuStore</p>
                                     <div class="wrapper">
                                         <img class="esq" src="<? echo $images ?>logo/desk/Area Prot/05@2x.png" alt="">
                                         <img class="dir" src="<? echo $images ?>logo/desk/Area Prot/02@2x.png" alt="">
@@ -325,6 +328,7 @@
                                 </div>
 
                                 <div class="tab cantupneus">
+                                    <p class="subtitulo mobileitem">CantuPneus</p>
                                     <div class="wrapper">
                                         <img class="esq" src="<? echo $images ?>logo/desk/Area Prot/06@2x.png" alt="">
                                         <img class="dir" src="<? echo $images ?>logo/desk/Area Prot/03@2x.png" alt="">
@@ -640,7 +644,7 @@
 
                     <div class="wrapper slick">
                         <img src="<? echo $images ?>pranchas/Faixa.png" alt="">
-                        <img src="<? echo $images ?>pranchas/Conteiner.png" alt="">                        
+                        <img src="<? echo $images ?>pranchas/Conteiner.png" alt="">
                     </div>
                 </article>
             </section>

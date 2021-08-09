@@ -158,53 +158,11 @@ if ($paginaAtual == 'Iconografia') {
 }
 
 
-if ( $paginaAtual == 'Essencia' ) {
-    
-    $logotipoTitulo_01 = "";
-    $logotipoLink_01 = $download. "essencia/AF__Essencia.zip";
-    $logotipoTexto_01 = "AF_Essencia.zip";
-    
-    $logotipoTitulo_02 = "";
-    $logotipoLink_02 = $download. "essencia/AF_Manifesto.zip";
-    $logotipoTexto_02 = "AF_Manifesto.zip";   
-
-    echo'
-        <section id="download">
-            <article>
-                <div class="compartilhar desktopitem">
-                    <a href=" '.$compartilhar.' " class="share">
-                        <p>Compartilhar sessão</p>
-                    </a>
-                </div>
-
-                <p class="txt--padrao40 txt--bold">Download</p>
-                
-                <div class="grid--2colunas">
-                    <div class="esq">
-                        <div>
-                            <p class="txt--padrao20">'.$logotipoTitulo_01.'</p>
-                            <a href="'.$logotipoLink_01.'">'.$logotipoTexto_01.'</a>
-                        </div>
-                    </div>
-                
-                    <div class="dir">
-                        <div>
-                            <p class="txt--padrao20">'.$logotipoTitulo_02.'</p>
-                            <a href="'.$logotipoLink_02.'">'.$logotipoTexto_02.'</a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
-    ';
-}
-
-
 if ( $paginaAtual == 'Grafismos' ) {
     
     $logotipoTitulo_01 = "";
-    $logotipoLink_01 = $download. "grafismos/AF_Merce_Grafismos.zip";
-    $logotipoTexto_01 = "AF_Merce_Grafismos.zip";
+    $logotipoLink_01 = $download. "AF_RGB_Grafismos.zip";
+    $logotipoTexto_01 = "AF_RGB_Grafismos.zip";
 
     echo'
         <section id="download">
@@ -230,42 +188,12 @@ if ( $paginaAtual == 'Grafismos' ) {
     ';
 }
 
-
-if ( $paginaAtual == 'Pictografia' ) {
-    
-    $logotipoTitulo_01 = "";
-    $logotipoLink_01 = $download. "pictografia/AF_Merce_Pictos.zip";
-    $logotipoTexto_01 = "AF_Merce_Pictos.zip";
-
-    echo'
-        <section id="download">
-            <article>
-                <div class="compartilhar desktopitem">
-                    <a href=" '.$compartilhar.' " class="share">
-                        <p>Compartilhar sessão</p>
-                    </a>
-                </div>
-
-                <p class="txt--padrao40 txt--bold">Download</p>
-                
-                <div class="grid--2colunas">
-                    <div class="esq">
-                        <div>
-                            <p class="txt--padrao20">'.$logotipoTitulo_01.'</p>
-                            <a href="'.$logotipoLink_01.'">'.$logotipoTexto_01.'</a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
-    ';
-}
 
 if ( $paginaAtual == 'Estilo fotográfico' ) {
     
-    $logotipoTitulo_01 = "Clique aqui pra acessar nossas fotos";
-    $logotipoLink_01 = "https://drive.google.com/drive/folders/14eQjuEHHPK272gMqY0g7nrQm0HgpFdti";
-    $logotipoTexto_01 = "Clique aqui pra acessar nossas fotos";
+    $logotipoTitulo_01 = "";
+    $logotipoLink_01 = "";
+    $logotipoTexto_01 = "";
 
     echo'
         <section id="download">
@@ -274,55 +202,13 @@ if ( $paginaAtual == 'Estilo fotográfico' ) {
                     <a href=" '.$compartilhar.' " class="share">
                         <p>Compartilhar sessão</p>
                     </a>
-                </div>              
-
-                <p class="txt--padrao40 txt--bold">Download</p>
-                
-                <div class="grid--2colunas">
-                    <div class="esq">
-                        <div>
-                            
-                            <a href="'.$logotipoLink_01.'">'.$logotipoTexto_01.'</a>
-                        </div>
-                    </div>
-                </div>
+                </div>                
             </article>
         </section>
     ';
 }
 
 if ( $paginaAtual == 'Aplicações' ) {
-    
-    $logotipoTitulo_01 = "";
-    $logotipoLink_01 = $download. "aplicacoes/AF_Merce_Enxoval.zip";
-    $logotipoTexto_01 = "AF_Merce_Enxoval.zip";
-
-    echo'
-        <section id="download">
-            <article>
-                <div class="compartilhar desktopitem">
-                    <a href=" '.$compartilhar.' " class="share">
-                        <p>Compartilhar sessão</p>
-                    </a>
-                </div>
-
-                <p class="txt--padrao40 txt--bold">Download</p>
-                
-                <div class="grid--2colunas">
-                    <div class="esq">
-                        <div>
-                            <p class="txt--padrao20">'.$logotipoTitulo_01.'</p>
-                            <a href="'.$logotipoLink_01.'">'.$logotipoTexto_01.'</a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
-    ';
-}
-
-
-if ( $paginaAtual == 'Identidade' ) {
     
     $logotipoTitulo_01 = "";
     $logotipoLink_01 = $download. "";
@@ -335,11 +221,12 @@ if ( $paginaAtual == 'Identidade' ) {
                     <a href=" '.$compartilhar.' " class="share">
                         <p>Compartilhar sessão</p>
                     </a>
-                </div>
+                </div>                
             </article>
         </section>
     ';
 }
+
 
 
 ?>

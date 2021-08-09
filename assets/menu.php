@@ -1,6 +1,6 @@
 <nav class="menu">
-    <img class="logo desktopitem" src="assets/img/logo.svg" alt="" />
-    <img class="logo mobileitem" src="assets/img/logo_mobile.svg" alt="" />
+    <img class="logo" src="assets/img/logo.svg" alt="" />
+    
     <a href="javascript:void(0)" class="MobileItem" id="abrirmenu">
         <span id="Cima"></span>
         <span id="Meio"></span>
@@ -103,15 +103,33 @@
             <a class="link-abre" href="grafismos.php">Grafismos</a>
 
             <li>
-                <a href="#sessao1">Inspiração</a>
+                <a href="#sessao2">Composição</a>
             </li>
             <li>
-                <a href="#sessao2">Versões</a>
+                <a href="#sessao3">Proporção</a>
             </li>
             <li>
-                <a href="#sessao3">Flexibilidade</a>
+                <a href="#sessao4">Orientação</a>
             </li>
-        </ul>        
+            <li>
+                <a href="#sessao5">Nº de divisões</a>
+            </li>
+            <li>
+                <a href="#sessao6">Combinação de cores</a>
+            </li>
+            <li>
+                <a href="#sessao7">Interação com produto</a>
+            </li>
+            <li>
+                <a href="#sessao8">Sólidos</a>
+            </li>
+            <li>
+                <a href="#sessao9">Usos incorretos</a>
+            </li>
+            <li>
+                <a href="#sessao10">Para inspirar</a>
+            </li>
+        </ul>
 
         <ul>
             <a class="link-abre" href="estilo-fotografico.php">Estilo fotográfico</a>

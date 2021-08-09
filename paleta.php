@@ -79,10 +79,10 @@
                                         </div>
                                     </ul>
 
-                                    <p class="subtitulo mobileitem">CantuStore</p>
                                     <div class="content">
 
                                         <div class="tab cantustore active">
+                                            <p class="subtitulo mobileitem">CantuStore</p>
                                             <div class="accordeon">
                                                 <div class="wrapper-acc">
                                                     <div class="box box1 ativo">
@@ -137,6 +137,7 @@
                                         </div>
 
                                         <div class="tab pneustore">
+                                            <p class="subtitulo mobileitem">PneuStore</p>
                                             <div class="accordeon">
                                                 <div class="wrapper-acc">
                                                     <div class="box box1 ativo">
@@ -191,6 +192,7 @@
                                         </div>
 
                                         <div class="tab cantupneus">
+                                            <p class="subtitulo mobileitem">CantuPneus</p>
                                             <div class="accordeon">
                                                 <div class="wrapper-acc">
                                                     <div class="box box1 ativo">
@@ -266,7 +268,7 @@
                 </article>
             </section>
 
-            <div class="ideia">
+            <div class="ideia solto">
                 <div class="destaque-ideia">
                     <p class="txt--padrao12">
                         <strong>Atenção:</strong> quando impresso, a cor Violeta tem maior fidelidade e pureza no Pantone.<br>
@@ -285,7 +287,7 @@
 
                     <div class="composicao-wrapper grid--4linhas-auto">
 
-                        <div class="wrapper-box grid--2colunas">
+                        <div class="desktopitem wrapper-box grid--2colunas">
                             <div class="esq">
                             </div>
                             <div class="dir">
@@ -312,6 +314,25 @@
                                     à textos e grafismos.
                                 </p>
                             </div>
+
+                            <div class="mobileitem wrapper-box grid--2colunas">
+                                <div class="esq">
+                                </div>
+                                <div class="dir">
+                                    <div class="wrapper-blocos imagens-topo">
+                                        <div>
+                                            <img src="<? echo $images ?>paleta/desk/Proporcao/logo cantustore horizontal@2x.png" alt="">
+                                        </div>
+                                        <div>
+                                            <img src="<? echo $images ?>paleta/desk/Proporcao/logo pneustore horizontal@2x.png" alt="">
+                                        </div>
+                                        <div>
+                                            <img src="<? echo $images ?>paleta/desk/Proporcao/logo cantupneus horizontal@2x.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="dir">
                                 <div class="wrapper-blocos">
                                     <span class="bloco"></span>

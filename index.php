@@ -171,8 +171,9 @@
                                 </div>
                             </ul>
 
-                            <p class="subtitulo mobileitem">Logotipo preferencial</p>
                             <div class="content">
+
+                                <p class="subtitulo mobileitem">PneuStore (B2C)</p>
 
                                 <div class="tab preferencial active">
                                     <div class="composicao-wrapper grid--4linhas-auto">
@@ -244,7 +245,7 @@
                                 </div>
 
 
-                                <p class="subtitulo mobileitem">Logotipo horizontal</p>
+                                <p class="subtitulo mobileitem">CantuPneus (B2B)</p>
 
                                 <div class="tab ">
                                     <div class="composicao-wrapper grid--4linhas-auto">
@@ -319,7 +320,7 @@
                         </div>
                     </div>
                 </article>
-            </section>            
+            </section>
 
             <section id="sessao4">
                 <article>

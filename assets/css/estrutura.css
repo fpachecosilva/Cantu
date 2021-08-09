@@ -243,6 +243,12 @@ a, ul, li, .link-abre, nav, .menu, section, .ideia, .destaque-ideia, #abrirmenu,
   margin-bottom: 10px;
 }
 
+.txt--padrao30 {
+  font-size: 30px;
+  line-height: 1.5rem;
+  font-weight: bold;
+}
+
 .txt--padrao32 {
   font-size: 2rem;
   line-height: 1.5rem;
@@ -344,6 +350,8 @@ img {
   display: block;
   outline: none;
   max-width: 100%;
+  -webkit-animation: fade 0.6s linear;
+          animation: fade 0.6s linear;
 }
 
 section {
@@ -895,6 +903,11 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.switchWrapper img {
+  -webkit-animation: fade 0.8s linear;
+          animation: fade 0.8s linear;
 }
 
 .switch {
@@ -1485,7 +1498,7 @@ header h1 {
 }
 
 #estilo-fotografico .topobg {
-  background-image: url("../img/headers/desk/Header_Fotografia.png");
+  background-image: url("../img/headers/desk/Header_Estilo_Fotografico.png");
 }
 
 #aplicacoes .topobg {
@@ -1494,307 +1507,12 @@ header h1 {
 }
 
 #aplicacoes .pelicula {
-  background: -webkit-gradient(linear, left bottom, left top, from(#0000008f), color-stop(35%, rgba(255, 255, 255, 0)));
-  background: linear-gradient(0deg, #0000008f 0%, rgba(255, 255, 255, 0) 35%);
-}
-
-#identidade .topobg {
-  background-image: url("../img/headers/desk/Header_Verbal.png");
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(14%, #000000b5), color-stop(50%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(0deg, #000000b5 14%, rgba(255, 255, 255, 0) 50%);
 }
 
 /* :Header Desktop */
 /* Topo Desktop: */
-#topo {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  z-index: 10;
-  overflow: hidden;
-  background-color: var(--secundaria);
-  color: var(--terciaria);
-}
-
-#topo article {
-  position: relative;
-  max-width: 100%;
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-top: 65px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -ms-grid;
-  display: grid;
-  height: calc(100vh - 100px);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#topo form {
-  width: 230px;
-  position: absolute;
-  right: 80px;
-  top: 48.5%;
-  display: none;
-}
-
-#topo form label {
-  font-size: 0.9375rem;
-  font-weight: bold;
-  display: inline-block;
-  float: left;
-}
-
-#topo form div {
-  margin-bottom: 30px;
-}
-
-#topo form div:first-of-type img {
-  height: 13.24px;
-  padding-top: 6px;
-  padding-left: 6px;
-}
-
-#topo form div:last-of-type img {
-  height: 13px;
-  padding-top: 5px;
-  padding-left: 8px;
-}
-
-#topo form input {
-  width: 100%;
-  border: 0;
-  border-bottom: 2px solid var(--terciaria);
-  background-color: transparent;
-  padding-bottom: 5px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  color: #fff;
-}
-
-#topo form input::-webkit-input-placeholder {
-  color: #fff;
-  opacity: .5;
-  font-size: 1rem;
-  font-style: italic;
-  font-weight: 100;
-}
-
-#topo form input:-ms-input-placeholder {
-  color: #fff;
-  opacity: .5;
-  font-size: 1rem;
-  font-style: italic;
-  font-weight: 100;
-}
-
-#topo form input::-ms-input-placeholder {
-  color: #fff;
-  opacity: .5;
-  font-size: 1rem;
-  font-style: italic;
-  font-weight: 100;
-}
-
-#topo form input::placeholder {
-  color: #fff;
-  opacity: .5;
-  font-size: 1rem;
-  font-style: italic;
-  font-weight: 100;
-}
-
-#topo form input:focus {
-  outline: none;
-  background: transparent;
-}
-
-#topo form input:-webkit-autofill {
-  -webkit-text-fill-color: #ffffff82;
-  -webkit-box-shadow: 0 0 0 30px #b3003a inset;
-}
-
-#topo form .acessar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100px;
-  height: 43px;
-  font-weight: bold;
-  cursor: pointer;
-  background-color: var(--terciaria);
-  color: var(--secundaria);
-  border-radius: var(--radius);
-  margin-top: 75px;
-}
-
-#topo .botaoLogin {
-  margin-bottom: 65px;
-}
-
-#topo .bgamarelo {
-  position: absolute;
-  left: -965px;
-  height: calc(100vh - 100px);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-#topo .bgvermelho {
-  position: absolute;
-  left: -100%;
-  height: 100%;
-  z-index: -1;
-  -webkit-transition: all 1.9s;
-  transition: all 1.9s;
-}
-
-#topo .bgvermelho.ativado {
-  left: -35%;
-}
-
-#topo .setinha {
-  display: none !important;
-  height: 26.5px;
-  position: absolute;
-  top: 48.5%;
-  right: 96%;
-  -webkit-transition: all 1.7s;
-  transition: all 1.7s;
-}
-
-#topo .setinha.ativada {
-  right: 330px;
-}
-
-#topo p {
-  color: var(--terciaria);
-  font-size: 0.875rem;
-}
-
-#topo p.bemvindo {
-  font-weight: bold;
-}
-
-#topo .olaalo {
-  width: 332.5px;
-  margin-top: 95px;
-}
-
-#topo .login {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 130px;
-  height: 43px;
-  border: 1px solid var(--terciaria);
-  color: var(--terciaria);
-  font-weight: bold;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: var(--radius);
-  position: relative;
-  margin-left: 10px;
-  margin-bottom: 20px;
-}
-
-#topo .login:after {
-  content: "";
-  position: absolute;
-  border-radius: var(--radius);
-  bottom: 0;
-  left: 10%;
-  width: 80%;
-  height: 100%;
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
-  -webkit-transform-origin: bottom center;
-          transform-origin: bottom center;
-  background-color: var(--terciaria) !important;
-  z-index: -1;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-#topo .login:hover {
-  color: var(--secundaria);
-  border: 1px solid transparent;
-}
-
-#topo .login:hover:after {
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
-  width: 100%;
-  left: 0;
-}
-
-#topo .desenvolvido {
-  font-size: 0.625rem;
-}
-
-#topo .logo {
-  position: absolute;
-  top: 65px;
-  right: 80px;
-  width: 183px;
-}
-
-#topo .boneco {
-  width: 510.5px;
-  position: absolute;
-  bottom: 0;
-  right: 160px;
-  -webkit-transition: all 2.5s;
-  transition: all 2.5s;
-}
-
-#topo .boneco.some {
-  bottom: -100%;
-  opacity: 0;
-}
-
-#topo .vermais {
-  width: 100%;
-  height: 100px;
-  background-color: #fff;
-  position: absolute;
-  bottom: 0;
-}
-
-#topo .vermais p {
-  color: var(--principal);
-  margin: auto;
-  font-size: 1.25rem;
-  display: block;
-  text-align: center;
-  margin-top: 35px;
-  line-height: initial;
-  opacity: 0;
-  -webkit-transition: all 2s;
-  transition: all 2s;
-}
-
-#topo .vermais p.active {
-  opacity: 1;
-}
-
-#topo .vermais p:after {
-  content: url("../img/vermaishome.svg");
-  display: block;
-}
-
 /* :Topo Desktop */
 /* Pagina Essencia Desktop: */
 #essencia #sessao1 {
@@ -3511,120 +3229,6 @@ header h1 {
 }
 
 /* :Pagina Tipografia Desktop */
-/* Pagina Grafismos Desktop: */
-#grafismos #sessao1 img {
-  margin-top: -35px;
-  position: relative;
-  z-index: -1;
-  width: 1146.5px;
-}
-
-#grafismos #sessao2 {
-  background-color: var(--bgcinza);
-}
-
-#grafismos #sessao2 .pos-titulo {
-  max-width: 181px;
-}
-
-#grafismos #sessao2 .wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
-  margin-top: -140px;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-#grafismos #sessao2 .wrapper .cima {
-  margin-bottom: 60px;
-}
-
-#grafismos #sessao2 .wrapper .box {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  margin-right: 75px;
-}
-
-#grafismos #sessao2 .wrapper .box img {
-  margin-bottom: 34px;
-  width: 300px;
-}
-
-#grafismos #sessao2 .ideia {
-  margin-left: 45px;
-  margin-bottom: 0;
-  margin-top: 130px;
-}
-
-#grafismos #sessao3 .linha {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 65px;
-}
-
-#grafismos #sessao3 .linha:last-of-type {
-  margin-bottom: 0;
-}
-
-#grafismos #sessao3 .linha .box.texto {
-  max-width: 285px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  text-align: left;
-}
-
-#grafismos #sessao3 .linha .box.texto p:last-of-type {
-  max-width: 166px;
-  margin-left: 11px;
-}
-
-#grafismos #sessao3 .linha1 {
-  width: 697px;
-}
-
-#grafismos #sessao3 .linha2 {
-  width: 700px;
-}
-
-#grafismos #sessao3 .linha3 {
-  width: 700px;
-}
-
-#grafismos #sessao4 {
-  background-color: var(--bgcinza);
-}
-
-#grafismos #sessao4 img {
-  margin: auto;
-  margin-top: -80px;
-  width: 282px;
-}
-
-#grafismos #sessao5 {
-  background-color: var(--secundaria);
-}
-
-#grafismos #sessao5 p {
-  color: #FFF;
-}
-
-#grafismos #sessao5 p.pos-titulo {
-  max-width: 268px;
-}
-
-#grafismos #sessao5 img {
-  margin: auto;
-  margin-top: 64px;
-  width: 927.5px;
-}
-
-/* :Pagina Grafismos Desktop */
 /* Pagina Iconografia Desktop: */
 #iconografia #sessao1 {
   background-color: var(--auxiliar3);
@@ -3737,135 +3341,630 @@ header h1 {
 }
 
 /* :Pagina Iconografia Desktop: */
-/* Pagina Pictografia Desktop: */
-#pictografia #sessao1 {
-  background-color: var(--auxiliar2);
-  padding-top: 0;
-  padding-bottom: 0;
+/* Pagina Grafismos Desktop: */
+#grafismos .txt--padrao40 {
+  margin-bottom: 20px;
 }
 
-#pictografia #sessao1 p {
-  color: var(--secundaria);
+#grafismos #sessao1 .pos-titulo {
+  max-width: 315px;
+}
+
+#grafismos #sessao1 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+
+#grafismos #sessao1 .wrapper .box:nth-child(1) {
+  margin-right: 50px;
+}
+
+#grafismos #sessao1 .wrapper .box:nth-child(1) img {
+  width: 119px;
+}
+
+#grafismos #sessao1 .wrapper .box:nth-child(2) {
+  margin-right: 75px;
+}
+
+#grafismos #sessao1 .wrapper .box:nth-child(2) img {
+  width: 29.5px;
+}
+
+#grafismos #sessao1 .wrapper .box:nth-child(3) {
+  margin-right: 75px;
+}
+
+#grafismos #sessao1 .wrapper .box:nth-child(3) img {
+  width: 118px;
+}
+
+#grafismos #sessao1 .wrapper .box:nth-child(4) {
+  margin-right: 85px;
+}
+
+#grafismos #sessao1 .wrapper .box:nth-child(4) img {
+  width: 29.5px;
+}
+
+#grafismos #sessao1 .wrapper .box:nth-child(5) img {
+  width: 366.5px;
+}
+
+#grafismos #sessao2 .pos-titulo {
   max-width: 290px;
-  font-size: 3.5rem;
-  line-height: 3.5625rem;
-  height: 100%;
+}
+
+#grafismos #sessao2 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#grafismos #sessao2 .wrapper .bloco {
+  width: 440px;
+  max-width: 100%;
+}
+
+#grafismos #sessao2 .wrapper .bloco .wrapper-topo {
+  display: block;
+  margin: auto;
+  border-bottom: 1px solid var(--terciaria);
+  min-height: 80px;
+  margin-bottom: 20px;
+  margin-left: 28px;
+}
+
+#grafismos #sessao2 .wrapper .bloco .wrapper-topo p {
+  margin: auto;
+  max-width: 260px;
+  margin-bottom: 15px;
+}
+
+#grafismos #sessao2 .wrapper .bloco .wrapper-topo img {
+  width: 22.5px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+#grafismos #sessao2 .wrapper .bloco .wrapper-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#grafismos #sessao2 .wrapper .bloco .wrapper-boxes .box {
+  width: 204px;
+  max-width: 100%;
+  margin-left: 28px;
+}
+
+#grafismos #sessao2 .wrapper .bloco .wrapper-boxes .box .txt {
+  margin-top: 27px;
+  border-top: 1px solid var(--terciaria);
+}
+
+#grafismos #sessao2 .wrapper .bloco .wrapper-boxes .box .txt p {
+  margin-top: 10px;
+  color: var(--terciaria);
+}
+
+#grafismos #sessao2 .wrapper .esq .wrapper-topo {
+  border: 0;
+}
+
+#grafismos #sessao3 {
+  background-color: var(--bgcinza);
+}
+
+#grafismos #sessao3 .pos-titulo {
+  max-width: 375px;
+}
+
+#grafismos #sessao3 .wrapper {
+  width: 904px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 53px;
+}
+
+#grafismos #sessao3 .wrapper .wrapper-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#grafismos #sessao3 .wrapper .wrapper-boxes .box {
+  width: 206px;
+}
+
+#grafismos #sessao3 .wrapper .wrapper-bolas .bolas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 10px;
+}
+
+#grafismos #sessao3 .wrapper .wrapper-bolas .bolas .box {
+  width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 70px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
 }
 
-#pictografia #sessao1 img {
-  margin-top: 95px;
+#grafismos #sessao3 .wrapper .wrapper-bolas .bolas .box img {
+  width: 26.5px;
+  z-index: 1;
 }
 
-#pictografia #sessao2 {
-  padding: 95px 0;
+#grafismos #sessao3 .wrapper .wrapper-bolas .bolas .box:nth-of-type(1)::before {
+  content: '';
+  width: 50%;
+  right: 0;
+  height: 2px;
+  background-color: var(--auxiliar5);
+  display: block;
+  position: absolute;
 }
 
-#pictografia #sessao2 .wrapper {
-  text-align: left;
+#grafismos #sessao3 .wrapper .wrapper-bolas .bolas .box:nth-of-type(2)::before {
+  content: '';
+  width: 50%;
+  left: 0;
+  height: 2px;
+  background-color: var(--auxiliar5);
+  display: block;
+  position: absolute;
 }
 
-#pictografia #sessao2 p:nth-child(2) {
-  color: var(--secundaria);
-  margin-bottom: 20px;
-  font-weight: bold;
+#grafismos #sessao3 .wrapper .wrapper-bolas .bolas .box:nth-of-type(2)::after {
+  content: '';
+  width: 50%;
+  right: 0;
+  height: 2px;
+  background-color: var(--auxiliar4);
+  display: block;
+  position: absolute;
 }
 
-#pictografia #sessao2 img {
-  width: 466px;
+#grafismos #sessao3 .wrapper .wrapper-bolas .bolas .box:nth-of-type(3)::before {
+  content: '';
+  width: 50%;
+  left: 0;
+  height: 2px;
+  background-color: var(--auxiliar4);
+  display: block;
+  position: absolute;
 }
 
-#pictografia #sessao3 .wrapper {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  max-width: 1028px;
+#grafismos #sessao3 .wrapper .wrapper-bolas .bolas .box:nth-of-type(3)::after {
+  content: '';
+  width: 50%;
+  right: 0;
+  height: 2px;
+  background-color: var(--auxiliar5);
+  display: block;
+  position: absolute;
 }
 
-#pictografia #sessao3 .baixo {
-  margin-top: 32px;
+#grafismos #sessao3 .wrapper .wrapper-bolas .bolas .box:nth-of-type(4)::before {
+  content: '';
+  width: 50%;
+  left: 0;
+  height: 2px;
+  background-color: var(--auxiliar5);
+  display: block;
+  position: absolute;
 }
 
-#pictografia #sessao3 .baixo p {
-  color: var(--secundaria);
-  margin-top: 17px;
+#grafismos #sessao3 .wrapper .wrapper-bolas .txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-#pictografia #sessao3 .baixo {
-  border-top: 2px solid var(--principal);
+#grafismos #sessao3 .wrapper .wrapper-bolas .txt p {
+  max-width: 165px;
+  margin-top: 10px;
 }
 
-#pictografia #sessao3 .esq {
-  margin-right: 18px;
+#grafismos #sessao3 .wrapper .wrapper-bolas .txt p:nth-of-type(1) {
+  margin-left: calc(50% - 82.5px);
 }
 
-#pictografia #sessao3 img.desktopitem {
-  height: 535.5px;
+#grafismos #sessao3 .wrapper .wrapper-bolas .txt p:nth-of-type(2) {
+  margin-left: calc(29% - 82.5px);
 }
 
-#pictografia #sessao4 {
-  background-color: var(--auxiliar2);
+#grafismos #sessao4 .pos-titulo {
+  max-width: 248px;
 }
 
-#pictografia #sessao4 .esq {
-  max-width: 262px;
-  text-align: left;
+#grafismos #sessao4 .wrapper-switchs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: auto;
+  margin-top: 60px;
+  width: 910px;
+  max-width: 100%;
 }
 
-#pictografia #sessao4 .dir img {
-  margin-top: 70px;
-  width: 601px;
+#grafismos #sessao4 .wrapper-switchs .switchWrapper {
+  width: 270px;
 }
 
-#pictografia #sessao4 .ideia {
-  margin-left: 44px;
-  margin-bottom: 0;
-}
-
-#pictografia #sessao5 .wrapper {
-  max-width: initial;
-}
-
-#pictografia #sessao5 .wrapper .esq {
-  text-align: left;
-  max-width: 263px;
-}
-
-#pictografia #sessao5 .wrapper .dir {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-left: 116px;
-}
-
-#pictografia #sessao5 .wrapper .dir .box {
+#grafismos #sessao4 .wrapper-switchs .switchWrapper p {
+  color: var(--terciaria);
+  margin-bottom: 15px;
   text-align: center;
 }
 
-#pictografia #sessao5 .wrapper .dir .box img {
+#grafismos #sessao4 .wrapper-switchs .switchWrapper img {
+  background-color: var(--bgcinza);
+  border-radius: 15px;
+}
+
+#grafismos #sessao4 .wrapper-switchs .switchWrapper .switch {
   margin: auto;
+  margin-top: 23px;
+}
+
+#grafismos #sessao5 {
+  background-color: var(--bgcinza);
+}
+
+#grafismos #sessao5 .pos-titulo {
+  max-width: 310px;
+}
+
+#grafismos #sessao5 .wrapper-switchs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 60px;
+  width: 957px;
+  max-width: 100%;
+}
+
+#grafismos #sessao5 .wrapper-switchs .switchWrapper {
+  width: 207px;
+  margin-right: 25px;
+}
+
+#grafismos #sessao5 .wrapper-switchs .switchWrapper p {
+  color: var(--terciaria);
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#grafismos #sessao5 .wrapper-switchs .switchWrapper img {
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+#grafismos #sessao5 .wrapper-switchs .switchWrapper .switch {
+  margin: auto;
+  margin-top: 23px;
+}
+
+#grafismos #sessao5 .ideia {
+  margin-top: 25px;
+  margin-left: 45px;
+  margin-bottom: 0;
+}
+
+#grafismos #sessao6 .pos-titulo {
+  max-width: 293px;
+}
+
+#grafismos #sessao6 .composicao-wrapper {
+  margin-top: 60px;
+}
+
+#grafismos #sessao6 .composicao-wrapper .wrapper-box {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -ms-grid-columns: 131px auto;
+      grid-template-columns: 131px auto;
+  max-width: 100%;
+}
+
+#grafismos #sessao6 .composicao-wrapper .wrapper-box:not(:first-of-type) {
+  margin-top: 12px;
+}
+
+#grafismos #sessao6 .composicao-wrapper .wrapper-box .esq {
+  padding-right: 20px;
+  border-right: 1px solid var(--terciaria);
+  height: 90%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#grafismos #sessao6 .composicao-wrapper .wrapper-box .esq p {
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+}
+
+#grafismos #sessao6 .composicao-wrapper .wrapper-box .esq p:first-of-type {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--terciaria);
+  margin-bottom: 6px;
+}
+
+#grafismos #sessao6 .composicao-wrapper .wrapper-box .dir {
+  padding: 0 0 0 20px;
+  line-height: initial;
+}
+
+#grafismos #sessao6 .composicao-wrapper .wrapper-box .dir img {
+  width: 123px;
+  margin-right: 15px;
+}
+
+#grafismos #sessao6 .composicao-wrapper .wrapper-box .dir .wrapper-blocos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#grafismos #sessao7 {
+  background-color: var(--bgcinza);
+}
+
+#grafismos #sessao7 .pos-titulo {
+  max-width: 260px;
+}
+
+#grafismos #sessao7 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 903px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 60px;
+  min-height: 400px;
+}
+
+#grafismos #sessao7 .wrapper .bloco {
+  max-width: 100%;
+}
+
+#grafismos #sessao7 .wrapper .bloco .wrapper-topo {
+  display: block;
+  margin: auto;
+  border-bottom: 1px solid var(--terciaria);
+  min-height: 80px;
+  margin-bottom: 20px;
+  margin-left: 28px;
+}
+
+#grafismos #sessao7 .wrapper .bloco .wrapper-topo p {
+  margin: auto;
+  max-width: 260px;
+  margin-bottom: 15px;
+}
+
+#grafismos #sessao7 .wrapper .bloco .wrapper-topo img {
+  width: 22.5px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+#grafismos #sessao7 .wrapper .bloco .wrapper-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+#grafismos #sessao7 .wrapper .bloco .wrapper-boxes .txt {
+  margin-top: 27px;
+  border-top: 1px solid var(--terciaria);
+  position: absolute;
+  width: 100%;
+  bottom: -50px;
+  min-height: 40px;
+}
+
+#grafismos #sessao7 .wrapper .bloco .wrapper-boxes .txt p {
+  margin-top: 10px;
+  color: var(--secundaria);
+}
+
+#grafismos #sessao7 .wrapper .bloco .wrapper-boxes .box {
+  max-width: 100%;
+  margin-right: 29px;
+}
+
+#grafismos #sessao7 .wrapper .bloco .wrapper-boxes .box img {
+  width: 222px;
+}
+
+#grafismos #sessao7 .wrapper .bloco.esq .wrapper-boxes .box:nth-child(3) {
+  margin-right: 0;
+}
+
+#grafismos #sessao7 .wrapper .bloco.dir {
+  margin-left: 29px;
+}
+
+#grafismos #sessao7 .wrapper .bloco.dir .wrapper-boxes .box {
+  margin-right: 0;
+}
+
+#grafismos #sessao8 {
+  padding-bottom: 120px;
+}
+
+#grafismos #sessao8 .pos-titulo {
+  max-width: 240px;
+}
+
+#grafismos #sessao8 .wrapper {
+  width: 903px;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: auto;
+  margin-top: 40px;
+}
+
+#grafismos #sessao8 .wrapper .box {
+  width: 219px;
+  max-width: 100%;
+  margin-right: 25px;
+  position: relative;
+}
+
+#grafismos #sessao8 .wrapper .box:last-child {
+  margin-right: 0;
+}
+
+#grafismos #sessao8 .wrapper .box:first-child:hover .estado1-hover {
+  opacity: 1;
+  display: block;
+}
+
+#grafismos #sessao8 .wrapper .box .estado {
+  cursor: pointer;
+  -webkit-transition: all var(--tempo);
+  transition: all var(--tempo);
+}
+
+#grafismos #sessao8 .wrapper .box .estado.estado1-hover {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+#grafismos #sessao8 .wrapper .box .estado.estado2 {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+}
+
+#grafismos #sessao8 .wrapper .box .estado.estado2.mostrando {
+  opacity: 1;
+  z-index: 2;
+}
+
+#grafismos #sessao9 {
+  background-color: var(--bgcinza);
+}
+
+#grafismos #sessao9 .txt--padrao40 {
   margin-bottom: 35px;
 }
 
-#pictografia #sessao5 .wrapper:last-of-type {
-  margin-top: 65px;
+#grafismos #sessao9 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-/* :Pagina Pictografia Desktop */
+#grafismos #sessao9 .wrapper .box {
+  width: 314px;
+  max-width: 100%;
+  margin-right: 8px;
+}
+
+#grafismos #sessao9 .wrapper .box:first-child img {
+  background-color: var(--terciaria);
+  border-radius: 4px;
+}
+
+#grafismos #sessao9 .wrapper .box:last-child {
+  margin-right: 0;
+}
+
+#grafismos #sessao9 .wrapper .box p {
+  margin-top: 11px;
+  margin-left: 8px;
+  text-align: left;
+}
+
+/* :Pagina Grafismos Desktop */
 /* Pagina Estilo fotografico Desktop: */
-#estilo-fotografico #sessao1 {
-  padding-bottom: 125px;
-}
-
 #estilo-fotografico .destaque {
   color: var(--secundaria);
   font-weight: bold;
@@ -3873,15 +3972,15 @@ header h1 {
 }
 
 #estilo-fotografico .tab {
-  padding-top: 30px;
+  padding-top: 35px;
 }
 
 #estilo-fotografico .tab:nth-child(1) p {
-  max-width: 465px;
+  max-width: 644px;
 }
 
 #estilo-fotografico .tab:nth-child(2) p {
-  max-width: 545px;
+  max-width: 505px;
 }
 
 #estilo-fotografico .tab:nth-child(3) p {
@@ -3889,7 +3988,36 @@ header h1 {
 }
 
 #estilo-fotografico .tab img {
-  margin-top: 80px;
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+#estilo-fotografico .tab .txt--padrao30.abaixo {
+  margin-top: 90px;
+}
+
+#estilo-fotografico .tab .txt--padrao20 {
+  color: var(--terciaria);
+}
+
+#estilo-fotografico .tab .terceira {
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+}
+
+#estilo-fotografico .tab .terceira:before {
+  content: '';
+  width: calc(100% + 100px);
+  height: 1px;
+  background-color: var(--terciaria);
+  display: block;
+  margin-left: -50px;
+  margin-bottom: 10px;
+}
+
+#estilo-fotografico .modulo-abas .nav_tabs {
+  margin-left: 45px;
 }
 
 #estilo-fotografico .modulo-abas .nav_tabs .content {
@@ -3900,246 +4028,137 @@ header h1 {
   padding-right: 130px;
 }
 
-/* :Pagina Estilo fotografico Desktop */
-/* Pagina Identidade Desktop: */
-#identidade .risco {
-  max-width: 100%;
-  border-bottom: 2px solid var(--principal);
-  margin-bottom: 65px;
+#estilo-fotografico .modulo-abas .nav_tabs .content .wrapper-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-#identidade p.destaque {
-  font-weight: bold;
+#estilo-fotografico .modulo-abas .nav_tabs .content .wrapper-txt .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 275px;
+  padding-left: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-left: 1px solid var(--terciaria);
+  margin-top: 40px;
+  padding-right: 70px;
+}
+
+#estilo-fotografico .modulo-abas .nav_tabs .content .wrapper-txt .box:nth-of-type(2) {
+  padding-right: 84px;
+}
+
+#estilo-fotografico .modulo-abas .nav_tabs .content .wrapper-txt .box:nth-of-type(3) {
+  padding-right: 90px;
+  width: 194px;
+}
+
+#estilo-fotografico .modulo-abas .nav_tabs .content .wrapper-txt .box:last-of-type {
+  padding-right: 0;
+  width: 164px;
+}
+
+#estilo-fotografico .modulo-abas .nav_tabs .content .wrapper-txt .box p.txt--bold {
+  color: var(--terciaria);
   margin-bottom: 10px;
 }
 
-#identidade #sessao2 {
-  background-color: var(--bgcinza);
-}
-
-#identidade #sessao2 p.txt--padrao40 {
-  color: var(--secundaria);
-  max-width: 210px;
-}
-
-#identidade #sessao2 p.txt--padrao40:before {
-  content: url("../img/Grupo 5783.svg");
-  display: block;
-  margin: auto;
-  width: 42px;
-  height: 25 px;
-  margin-bottom: 35px;
-}
-
-#identidade #sessao2 .wrapper {
-  text-align: left;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr auto 1fr;
-      grid-template-columns: 1fr auto 1fr;
-}
-
-#identidade #sessao2 .wrapper .coluna {
-  -ms-grid-rows: auto auto auto;
-      grid-template-rows: auto auto auto;
-  max-width: 285px;
-}
-
-#identidade #sessao2 .wrapper .coluna .destaque {
-  font-weight: bold;
-  font-size: 0.9375rem;
-}
-
-#identidade #sessao2 .wrapper .coluna .baixo {
-  margin-top: 45px;
-}
-
-#identidade #sessao2 .wrapper .coluna .baixo .destaque {
-  font-weight: bold;
-  font-size: 0.9375rem;
-  color: var(--secundaria);
-}
-
-#identidade #sessao2 .wrapper .coluna .baixo .destaque:before {
-  content: url("../img/Grupo 5786.svg");
-  display: block;
-  margin-bottom: 30px;
-}
-
-#identidade #sessao2 .wrapper .esq {
-  position: relative;
-}
-
-#identidade #sessao2 .wrapper .esq .txt--padrao12 {
-  max-width: 234px;
-}
-
-#identidade #sessao2 .wrapper .separador {
-  display: block;
-  width: 1px;
-  height: 415px;
-  background-color: var(--principal);
-}
-
-#identidade #sessao2 .wrapper .dir {
-  position: relative;
-}
-
-#identidade #sessao2 .wrapper .dir .txt--padrao12 {
-  max-width: 254px;
-}
-
-#identidade #sessao3 .txt--padrao40 {
-  color: var(--secundaria);
-  margin-bottom: 60px;
-}
-
-#identidade #sessao3 article:first-child {
-  margin-bottom: 70px;
-}
-
-#identidade .descritivo {
-  margin-bottom: 130px;
-  -ms-grid-columns: 40% 60%;
-      grid-template-columns: 40% 60%;
-}
-
-#identidade .descritivo .esq {
-  min-width: 395px;
-  max-width: 395px;
-}
-
-#identidade .descritivo .esq .txt--padrao12 {
-  max-width: 245px;
-}
-
-#identidade .descritivo .esq .txt--padrao20 {
-  color: var(--secundaria);
-  margin-bottom: 30px;
-}
-
-#identidade .descritivo .dir {
-  width: 607px;
-  max-width: 100%;
-}
-
-#identidade .descritivo .modulo-abas {
-  padding-top: 0;
-}
-
-#identidade .descritivo .modulo-abas .nav_tabs .content {
-  height: auto;
-}
-
-#identidade .descritivo .modulo-abas .nav_tabs .tab {
-  padding-top: 30px;
-}
-
-#identidade .descritivo .modulo-abas .nav_tabs .tab .txt--padrao12 {
-  line-height: 1.3125rem;
-}
-
-#identidade .como-fazemos {
-  -ms-grid-columns: 40% 60%;
-      grid-template-columns: 40% 60%;
-}
-
-#identidade .como-fazemos a {
-  color: var(--principal);
-  text-decoration: underline;
-}
-
-#identidade .como-fazemos .esq {
-  min-width: 395px;
-  max-width: 395px;
-}
-
-#identidade .como-fazemos .esq .txt--padrao20:before {
-  content: url("../img/Caminho 5116.svg");
-  margin-right: 20px;
-}
-
-#identidade .como-fazemos .dir {
-  width: 607px;
-  max-width: 100%;
-}
-
-#identidade .como-fazemos .dir .txt--padrao12 {
-  max-width: 255px;
-}
-
-#identidade .como-fazemos .dir .coluna:first-of-type {
-  margin-right: 46px;
-}
-
-#identidade .como-fazemos .dir .primeiro {
-  font-size: 0.8125rem;
-  margin-bottom: 30px;
-}
-
-#identidade .como-fazemos .dir .destaque {
-  font-size: 0.875rem;
-  line-height: 0.875rem;
-  margin-bottom: 15px;
-}
-
-#identidade #sessao9 {
-  padding: 0;
-}
-
-#identidade #sessao9 article {
-  min-height: 420px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#identidade #sessao9 article:after {
-  display: none;
-}
-
-#identidade #sessao9 article .esq p {
-  color: var(--secundaria);
-  max-width: 258px;
-  margin-right: 110px;
-}
-
-#identidade #sessao9 article .dir .expressoes {
-  -ms-grid-columns: auto auto auto auto;
-      grid-template-columns: auto auto auto auto;
-}
-
-#identidade #sessao9 article .dir .coluna {
-  margin-right: 72px;
-}
-
-#identidade #sessao9 article .dir .coluna:last-of-type {
-  margin-right: 0;
-}
-
-#identidade #sessao9 article .dir .coluna p {
-  font-weight: bold;
-  font-size: 0.875rem;
-}
-
-#identidade #sessao10 .txt--padrao20 {
-  margin-bottom: 35px;
-  color: var(--secundaria);
-}
-
-#identidade #download {
-  padding: 110px 0 50px 0;
-}
-
-#identidade #download .share {
+#estilo-fotografico .ideia {
+  margin-left: 0;
   margin-bottom: 0;
 }
 
-/* :Pagina Identidade Desktop */
+#estilo-fotografico .ideia.terceiraideia {
+  margin-top: 40px;
+  margin-bottom: 75px;
+}
+
+#estilo-fotografico #sessao2 {
+  background-color: var(--bgcinza);
+}
+
+#estilo-fotografico #sessao2 article {
+  margin-left: 50px;
+}
+
+#estilo-fotografico #sessao2 .pos-titulo {
+  margin-bottom: 85px;
+}
+
+#estilo-fotografico #sessao2 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 122px;
+}
+
+#estilo-fotografico #sessao2 .wrapper .textos {
+  text-align: left;
+  width: 206px;
+  margin-right: 70px;
+}
+
+#estilo-fotografico #sessao2 .wrapper .textos .txt--padrao20 {
+  font-weight: 400;
+}
+
+#estilo-fotografico #sessao2 .wrapper:nth-of-type(2) {
+  margin-bottom: 40px;
+}
+
+#estilo-fotografico #sessao2 .wrapper:nth-of-type(3) {
+  margin-bottom: 40px;
+}
+
+#estilo-fotografico #sessao2 .wrapper .imagem {
+  width: 300px;
+  margin-right: 30px;
+}
+
+#estilo-fotografico #sessao2 .wrapper .imagem .txt--bold {
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+
+#estilo-fotografico #sessao2 .wrapper .imagem p {
+  padding: 0 20px;
+}
+
+#estilo-fotografico #download {
+  background-color: var(--bgcinza);
+  padding-bottom: 20px;
+}
+
+/* :Pagina Estilo fotografico Desktop */
+/* Pagina Aplicacoes Desktop */
+#aplicacoes #sessao1 {
+  padding-top: 72px;
+}
+
+#aplicacoes .wrapper {
+  margin-bottom: 130px;
+  text-align: left;
+}
+
+#aplicacoes .wrapper:last-of-type {
+  margin-bottom: 0;
+}
+
+#aplicacoes #download {
+  padding-top: 65px;
+  padding-bottom: 35px;
+}
+
+/* :Pagina Aplicacoes Desktop */
 /* Pagina Downloads Desktop: */
 #downloads footer a {
   display: none;
@@ -4294,20 +4313,29 @@ footer .trademark p {
   .ideia {
     width: auto;
     height: auto;
+    margin: 35px 0;
   }
   .ideia:before {
-    content: url("../img/ideia-mobile.svg");
+    content: url("../img/ideia.svg");
     height: 100%;
     border-radius: var(--radius) 0 0 var(--radius);
-    padding-left: 23px;
-    padding-top: 40px;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
   }
   .ideia p {
     opacity: 1;
-    margin: 40px 23px;
+    margin: 20px;
+    color: #fff;
+    line-height: 22px;
+    font-size: 14px;
   }
   .ideia .destaque-ideia {
     width: 100%;
@@ -4315,6 +4343,7 @@ footer .trademark p {
     opacity: 1;
     background-color: var(--principal);
     word-break: break-word;
+    border-radius: 0 10px 10px 0;
   }
   /* Variaveis: */
   .txt--padrao12 {
@@ -4323,6 +4352,10 @@ footer .trademark p {
   }
   .txt--padrao20 {
     line-height: 1.625rem;
+  }
+  .txt--padrao32 {
+    font-size: 1.35rem;
+    line-height: 1.75rem;
   }
   .txt--padrao40 {
     font-size: 1.75rem;
@@ -4341,11 +4374,6 @@ footer .trademark p {
   .wrapper .slick-dots li button {
     margin: 5px;
   }
-  .ideia {
-    margin-left: 35px;
-    overflow-wrap: anywhere;
-    margin-right: 35px;
-  }
   #download {
     padding-bottom: 0;
   }
@@ -4359,6 +4387,9 @@ footer .trademark p {
   }
   #download article .grid--2colunas .dir a:before {
     right: 20px;
+  }
+  #download article .grid--3colunas div {
+    margin-right: 0;
   }
   .modulo-abas .nav_tabs .nav {
     display: none !important;
@@ -4437,8 +4468,9 @@ footer .trademark p {
   }
   .wrapper.slick {
     width: calc(100% + 70px);
-    margin-left: -35px;
-    margin-right: -35px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   .wrapper.slick img {
     border-radius: 0;
@@ -4451,84 +4483,23 @@ footer .trademark p {
   }
   .wrapper .slick-dots {
     margin-top: 15px;
-    border: 1px solid var(--principal);
+    background-color: #e2e2e2c9;
   }
   .wrapper .slick-dots li button {
-    background-color: var(--principal);
-  }
-  .quiz {
-    min-height: 500px;
-    width: calc(100% + 70px);
-    margin-left: -35px;
-    min-height: initial;
-  }
-  .quiz .esq .principal {
-    height: 560px;
-    display: block;
-    position: relative;
-  }
-  .quiz .esq .principal .topo {
-    padding: 40px 35px 0 35px;
-    margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .quiz .esq .principal .topo div:first-child {
-    font-size: 1rem;
-  }
-  .quiz .esq .principal .topo .paginacao {
-    font-size: 1rem;
-  }
-  .quiz .esq .principal .texto-principal {
-    margin: 40px 35px 30px 35px;
-    font-size: 1.5625rem;
-    line-height: 1.625rem;
-  }
-  .quiz .esq .principal .setas {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 20px 52px 19px 52px;
-  }
-  .quiz .dir {
-    position: absolute;
-    left: 16px;
-    right: 16px;
-    top: 150px;
-    height: 240px;
-    font-size: 10px;
-  }
-  .quiz .dir div:first-child:before {
-    display: none;
-  }
-  .quiz .dir .cima {
     background-color: #fff;
-    margin: 0 21px;
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-    height: 165px;
-    padding: 28px 17px;
-    margin-bottom: 5px;
   }
-  .quiz .dir .baixo {
-    background-color: #fff;
-    margin: 0 21px;
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-    height: 165px;
-    padding: 28px 17px;
+  .switchWrapper .switch {
+    margin-top: 30px;
   }
   /* :Módulos reutilizáveis Mobile */
   /* Header Mobile: */
   header {
     margin-top: 66px;
-    height: 258px;
+    height: 85px;
   }
   header h1 {
     margin-left: 0;
-    font-size: 2.25rem;
+    font-size: 1.8rem;
     line-height: 2.25rem;
     bottom: 16px;
   }
@@ -4543,135 +4514,8 @@ footer .trademark p {
   }
   /* :Header Mobile */
   /* Topo Mobile: */
-  #topo article {
-    height: calc(100vh - 51px);
-    padding: 0 65px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  #topo .bgamarelo {
-    left: initial;
-    top: -51%;
-    width: 100%;
-    height: initial;
-  }
-  #topo .bgvermelho {
-    height: initial;
-    left: initial;
-    top: -100%;
-  }
-  #topo .bgvermelho.ativado {
-    left: initial;
-    top: -5%;
-  }
-  #topo .logo {
-    width: 94.87px;
-    top: 75px;
-    right: initial;
-    left: 50%;
-    margin-left: -47.43px;
-    -webkit-transition: all 1s;
-    transition: all 1s;
-  }
-  #topo .logo.acessar {
-    top: 30px;
-  }
-  #topo .bemvindo {
-    margin: auto;
-    margin-top: 130px;
-    font-size: 0.8125rem;
-    line-height: 1.06525rem;
-    text-align: center;
-    max-width: 177px;
-    -webkit-transition: all 1s;
-    transition: all 1s;
-  }
-  #topo .bemvindo.acessar {
-    margin-top: 80px;
-  }
-  #topo .bemvindo.final {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 0;
-    height: calc(100vh - 50px);
-  }
-  #topo .olaalo {
-    margin: auto;
-    margin-top: -40px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 194.5px;
-    -webkit-transition: all 1s;
-    transition: all 1s;
-  }
-  #topo .olaalo.acessar {
-    margin-top: -65px;
-  }
-  #topo .olaalo.final {
-    position: absolute;
-    top: 56%;
-    left: 50%;
-    margin-left: -97.5px;
-    margin-top: 0;
-  }
-  #topo .login {
-    margin: auto;
-    margin-top: -20px;
-    -webkit-transition: all 1s;
-    transition: all 1s;
-  }
-  #topo .vermais {
-    height: 51px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  #topo .vermais p {
-    opacity: 1;
-    margin-top: 21px;
-    font-size: 0.625rem;
-  }
-  #topo .vermais p:after {
-    display: none;
-  }
-  #topo .boneco {
-    width: 179.5px;
-    left: 50%;
-    margin-left: -89.75px;
-  }
-  #topo .setinha {
-    height: initial;
-    right: initial;
-    top: -100%;
-    left: 50%;
-    margin-left: -13.5px;
-  }
-  #topo .setinha.acessar {
-    top: 49%;
-  }
-  #topo form {
-    width: 210px;
-    max-width: 100%;
-    top: 53%;
-    left: 50%;
-    margin-left: -105px;
-  }
-  #topo form .acessar {
-    margin: auto;
-    margin-top: 0;
-    width: 130px;
+  nav.menu .logo {
+    max-width: 50px;
   }
   /* :Topo Mobile */
   /* Menu Mobile: */
@@ -4803,7 +4647,7 @@ footer .trademark p {
     margin: 0;
     padding-top: 20px;
     padding-left: 26px;
-    width: 141.5px;
+    width: 43px;
   }
   nav.menu a {
     font-size: 16px;
@@ -4821,18 +4665,33 @@ footer .trademark p {
   }
   /* :Menu Mobile */
   /* Pagina Essencia Mobile: */
+  #essencia .topobg {
+    height: 50vh;
+  }
   #essencia #sessao1 {
-    background-image: url("../img/bg-home-mobile.jpg");
-    padding-top: 70px;
-    margin-top: 66px;
+    background-image: url("");
+    margin-top: -120px;
+    padding: 0;
   }
   #essencia #sessao1 p {
     font-size: 1.5625rem;
     line-height: 1.75rem;
     margin: 0;
   }
-  #essencia #sessao2 {
-    padding-top: 65px;
+  #essencia #sessao1 .modulo-home .mini-titulo {
+    margin-bottom: 30px;
+  }
+  #essencia #sessao1 .modulo-home .mini-titulo img {
+    margin-left: 0;
+  }
+  #essencia #sessao1 .modulo-home .content {
+    margin-left: 0;
+  }
+  #essencia #sessao1 .modulo-home .content p.txt--padrao40 {
+    margin-bottom: 75px;
+  }
+  #essencia #sessao2 .modulo-home {
+    margin-bottom: 75px;
   }
   #essencia #sessao2 .modulo-home .mini-titulo img {
     display: block;
@@ -4840,89 +4699,129 @@ footer .trademark p {
     margin-bottom: 10px;
   }
   #essencia #sessao2 .modulo-home .content {
-    margin-top: 65px;
+    margin-top: 10px;
     margin-left: 0;
   }
   #essencia #sessao2 .modulo-home .content .txt--padrao40 {
     font-size: 1.5625rem;
     line-height: 2.0625rem;
   }
-  #essencia #sessao2 .cinza-colunas {
-    margin: 0;
+  #essencia #sessao2 .modulo-home .content .txt--padrao32 {
+    line-height: 2.0625rem;
+  }
+  #essencia #sessao2 .sliderRoda {
+    margin-bottom: 75px;
+  }
+  #essencia #sessao2 .sliderRoda .slick-list {
+    height: initial;
+  }
+  #essencia #sessao2 .sliderRoda .slick-dots button {
+    background-color: #fff;
+  }
+  #essencia #sessao2 .sliderRoda .roda {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #essencia #sessao2 .sliderRoda .roda.roda2 {
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #essencia #sessao2 .sliderRoda .roda.roda3 {
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #essencia #sessao2 .sliderRoda .roda.roda3 .textos {
+    margin: 0 auto;
+    text-align: center;
+  }
+  #essencia #sessao2 .sliderRoda .roda.roda4 {
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #essencia #sessao2 .sliderRoda .roda.roda4 .textos {
+    margin: 0 auto;
+    text-align: center;
+  }
+  #essencia #sessao2 .sliderRoda .roda .textos {
+    text-align: center;
+    margin: 0 auto;
+  }
+  #essencia #sessao2 .sliderRoda .roda img {
+    margin-bottom: 50px;
+  }
+  #essencia #sessao3 .pos-titulo {
+    margin-bottom: 20px;
+  }
+  #essencia #sessao3 article {
     padding: 0 35px;
-    margin-top: 130px;
-    margin-left: -35px;
-    margin-right: -35px;
-    border-radius: 0;
+    margin-left: 0;
   }
-  #essencia #sessao2 .cinza-colunas .grid--4colunas {
-    padding-top: 95px;
+  #essencia #sessao3 .modulo-abas .nav_tabs > .content {
+    border: 0;
   }
-  #essencia #sessao2 .cinza-colunas .grid--4colunas .subtitulo {
-    font-size: 1rem;
-    margin-bottom: 40px;
-  }
-  #essencia #sessao2 .cinza-colunas .coluna {
-    margin: 0;
-    max-width: 100%;
-  }
-  #essencia #sessao2 .cinza-colunas .coluna .baixo {
-    margin-bottom: 100px;
-  }
-  #essencia #sessao2 .cinza-colunas .coluna span.risco {
-    display: block;
-    width: 100%;
-    height: 2px !important;
-    background-color: var(--principal);
-    margin-bottom: 45px;
-  }
-  #essencia #sessao2 .cinza-colunas .coluna .conteudo p {
-    font-size: 1rem;
-    line-height: 1.625rem;
-    margin-bottom: 40px;
-  }
-  #essencia #sessao2 .cinza-colunas .coluna .topo-titulo {
-    margin-bottom: 10px;
-  }
-  #essencia #sessao2 .modulo-home.com-grid {
-    margin-top: 130px;
-  }
-  #essencia #sessao2 .modulo-home.com-grid .desc-basica {
-    margin-top: 15px;
-    max-width: 100%;
-  }
-  #essencia #sessao2 .modulo-home.com-grid .desc-basica p {
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  #essencia #sessao2 .modulo-home .grid--5colunas-home .coluna {
-    max-width: 100%;
-    margin-right: 0;
-    margin-top: 130px;
-  }
-  #essencia #sessao2 .modulo-home .grid--5colunas-home .coluna:first-of-type {
+  #essencia #sessao3 .subtitulo {
+    text-align: center;
+    font-size: 25px;
     margin-top: 65px;
   }
-  #essencia #sessao2 .modulo-home .grid--5colunas-home .coluna p:nth-child(2) {
-    font-size: 1rem;
-    line-height: 1.625rem;
+  #essencia #sessao3 .subtitulo:first-child {
+    margin-top: 0;
   }
-  #essencia #sessao3 {
-    padding: 130px 0;
+  #essencia #sessao3 .composicao-wrapper .wrapper-box {
+    margin-top: 20px;
+    -ms-grid-columns: initial;
+        grid-template-columns: initial;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
   }
-  #essencia #sessao3 .esq {
-    max-width: 100%;
-    min-width: initial;
-    display: block;
-    background-size: 102px;
-    background-position-y: top;
+  #essencia #sessao3 .composicao-wrapper .wrapper-box .esq {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 20px 0 5px 10px;
+    margin-top: 20px;
+    border-left: 1px solid var(--terciaria);
   }
-  #essencia #sessao3 .esq p {
-    padding-top: 110px;
-    padding-bottom: 65px;
+  #essencia #sessao3 .composicao-wrapper .wrapper-box .esq p {
+    text-align: left;
   }
-  #essencia #sessao3 .dir p:first-child {
-    margin-right: 0;
+  #essencia #sessao3 .composicao-wrapper .wrapper-box .dir {
+    padding: 10px 0 10px 10px;
+  }
+  #essencia #sessao3 .composicao-wrapper .wrapper-box:nth-of-type(3) .dir .wrapper-pontos {
+    -ms-grid-columns: initial !important;
+        grid-template-columns: initial !important;
+    -ms-grid-rows: auto auto auto !important;
+        grid-template-rows: auto auto auto !important;
+  }
+  #essencia #sessao3 .composicao-wrapper .wrapper-box:nth-of-type(3) .dir .wrapper-pontos div {
+    margin-bottom: 35px;
+  }
+  #essencia #sessao3 .composicao-wrapper .wrapper-box:not(:first-of-type) {
+    margin-top: initial;
+  }
+  #essencia #sessao4 article {
+    padding-left: 35px;
+  }
+  #essencia #sessao5 article {
+    padding-left: 35px;
   }
   #essencia #download {
     margin-bottom: 0;
@@ -4931,149 +4830,160 @@ footer .trademark p {
   /* :Pagina Essencia Mobile */
   /* Pagina Logotipo Mobile: */
   #logotipo .topobg {
-    background-image: url("../img/headers/mob/Header_Logo_mobile.png");
+    background-image: url("");
   }
-  #logotipo #sessao1 {
-    padding-top: 65px;
-    padding-bottom: 110px;
+  #logotipo #sessao1 article {
+    padding-left: 35px;
   }
   #logotipo #sessao1 img {
-    max-width: 227px;
-    margin-top: 80px;
+    max-width: 255px;
+    margin-top: 50px;
+  }
+  #logotipo .arquitetura .linha50 {
+    padding: 0 15px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 140px !important;
+  }
+  #logotipo .arquitetura .linha100 {
+    padding: 0 35px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   #logotipo #sessao2 {
     padding-top: 0;
   }
-  #logotipo #sessao2 .mobileitem.hor1 {
-    width: 220.5px;
-    padding: 49px 0;
-  }
-  #logotipo #sessao2 .mobileitem.hor2 {
-    width: 220.5px;
-    padding: 49px 0;
-  }
-  #logotipo #sessao2 .mobileitem.hor3 {
-    width: 220.5px;
-    padding: 49px 0;
-  }
-  #logotipo #sessao2 .mobileitem.hor4 {
-    width: 220.5px;
-    padding: 49px 0;
-  }
   #logotipo #sessao3 {
     padding-top: 0;
   }
-  #logotipo #sessao3 .txt--padrao40 {
-    margin-bottom: 30px;
+  #logotipo #sessao3 .modulo-abas {
+    padding-left: 0;
   }
-  #logotipo #sessao3 .modulo-imagens-com-texto .esq:not(:last-of-type) {
-    margin-bottom: 65px;
+  #logotipo #sessao3 .modulo-abas .content {
+    border: 0;
   }
-  #logotipo #sessao3 .modulo-imagens-com-texto .textos-inline {
-    display: block;
-    margin: 0;
+  #logotipo #sessao3 .modulo-abas .tab {
+    margin-top: 50px;
+  }
+  #logotipo #sessao3 .modulo-abas .tab .subtitulo {
+    font-size: 35px;
     text-align: center;
+    padding: 10px 0;
+    width: calc(100% + 70px);
+    margin-left: -35px;
+    border-bottom: 1px solid var(--secundaria);
   }
-  #logotipo #sessao3 .modulo-imagens-com-texto .textos-inline p:first-of-type {
-    margin: 0;
+  #logotipo #sessao3 .modulo-abas .tab .wrapper div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  #logotipo #sessao3 .modulo-imagens-com-texto img {
-    margin: 32px 0;
+  #logotipo #sessao3 .modulo-abas .tab .wrapper div.esq {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0;
   }
-  #logotipo #sessao3 .red1 {
-    width: 236.5px;
+  #logotipo #sessao3 .modulo-abas .tab .wrapper div.dir {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0;
   }
-  #logotipo #sessao3 .red2 {
-    width: 248px;
+  #logotipo #sessao3 .modulo-abas .tab .wrapper div .cima {
+    width: 100%;
+    margin-left: 0;
+    height: 200px;
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #logotipo #sessao3 .modulo-abas .tab .wrapper div .baixo {
+    width: 100%;
+    margin-left: 0;
+    height: 200px;
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #logotipo #sessao3 .modulo-abas .tab .wrapper div p {
+    margin-left: 0;
+    text-align: center;
+    bottom: 10px;
+    margin-bottom: 0;
+  }
+  #logotipo #sessao3 .modulo-abas .tab .wrapper div p.negativo {
+    color: #fff !important;
+  }
+  #logotipo .ideia.solto {
+    margin: 35px;
   }
   #logotipo #sessao4 {
-    padding-bottom: 65px;
+    padding-bottom: 10px;
   }
-  #logotipo #sessao4 .proximo {
-    margin-bottom: 30px;
+  #logotipo #sessao4 .modulo-imagens-com-texto > div {
+    margin: 8px 0;
+    width: 100%;
   }
-  #logotipo #sessao4 .pos-titulo {
-    margin-bottom: 35px;
+  #logotipo #sessao4 .modulo-imagens-com-texto {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  #logotipo #sessao4 .modulo-imagens-com-texto .dir {
-    margin-top: 65px;
+  #logotipo #sessao4 .ideia {
+    margin-left: 0;
   }
-  #logotipo #sessao4 img.central {
-    width: 248.5px;
+  #logotipo #sessao5 .nav_tabs .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    border: 0;
   }
-  #logotipo #sessao5 .grid--4colunas p {
-    margin-top: 30px;
+  #logotipo #sessao5 .nav_tabs .content .tab .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  #logotipo #sessao5 div {
-    margin-top: 75px;
+  #logotipo #sessao5 .nav_tabs .content .tab .wrapper .esq {
+    margin-top: 50px;
   }
-  #logotipo #sessao5 img {
-    width: 248.5px;
+  #logotipo #sessao5 .nav_tabs .content .tab .wrapper .dir {
+    margin-top: 50px;
   }
-  #logotipo #sessao6 {
-    padding-bottom: 0;
+  #logotipo #sessao5 .nav_tabs .content .tab.pneustore, #logotipo #sessao5 .nav_tabs .content .tab.cantupneus {
+    margin-top: 70px;
   }
   #logotipo #sessao6 .proximo {
-    margin-bottom: 35px;
+    margin-bottom: 0;
+    text-align: center;
   }
-  #logotipo #sessao6 .modulo-imagens-com-texto img {
-    margin-top: 35px;
+  #logotipo #sessao6 .wrapper {
+    margin-top: 0;
   }
-  #logotipo #sessao6 .modulo-imagens-com-texto > div:first-of-type {
-    margin-bottom: 65px;
+  #logotipo #sessao6 .wrapper > div.esq {
+    margin-right: 0;
+    margin-top: 40px;
   }
-  #logotipo #sessao6 .legenda {
-    margin-top: 65px;
-    width: 100%;
-    height: 296px;
-    padding: 39px 31px 0 31px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    background-image: url("../img/Grupo 4823.png");
-    background-repeat: no-repeat;
+  #logotipo #sessao6 .wrapper > div.dir {
+    margin-right: 0;
+    margin-top: 40px;
   }
-  #logotipo #sessao6 .legenda .col1, #logotipo #sessao6 .legenda .col2 {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
-  #logotipo #sessao6 .legenda .col1 {
-    margin-bottom: 15px;
-  }
-  #logotipo #sessao6 .legenda span {
-    display: block;
-    width: 23px;
-    height: 23px;
-    border-radius: 50%;
-    background-color: #CCFFFB;
-    margin-right: 15px;
-  }
-  #logotipo #sessao6 .legenda span.segundo {
-    background-color: #FFF989;
-  }
-  #logotipo #sessao6 .legenda p {
-    color: #fff;
-  }
-  #logotipo #sessao6 .legenda > p {
-    color: #fff;
-    line-height: 0.875rem;
-  }
-  #logotipo #sessao6 .legenda > p:not(:first-of-type) {
-    margin-top: 14px;
-  }
-  #logotipo #sessao6 .legenda > p:nth-of-type(1) {
-    border-bottom: 1px solid #fff;
-    padding-bottom: 5px;
-    margin-bottom: 35px;
-  }
-  #logotipo #sessao6 .legenda > p:nth-of-type(4) {
-    margin-top: 34px;
-  }
-  #logotipo #sessao6 .centralizado1 {
-    width: 247.5px;
-  }
-  #logotipo #sessao6 .centralizado2 {
-    width: 491.5px;
+  #logotipo #sessao6 .ideia {
+    margin-left: 0;
   }
   #logotipo #sessao7 .txt--padrao40 {
     margin-bottom: 30px;
@@ -5094,6 +5004,135 @@ footer .trademark p {
             box-sizing: border-box;
     margin-bottom: 0;
     width: 120.5px;
+  }
+  #logotipo #sessao8 .grid--3colunas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #logotipo #sessao8 .ideia {
+    margin: 35px;
+  }
+  #logotipo #sessao9 .txt--padrao40 {
+    margin-bottom: 20px;
+    margin-right: 80px;
+  }
+  #logotipo #sessao10 .wrapper.imagemExemplo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #logotipo #sessao10 .wrapper .esq {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 100%;
+  }
+  #logotipo #sessao10 .wrapper .esq .desc {
+    margin-left: 0;
+  }
+  #logotipo #sessao10 .wrapper .dir {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  #logotipo #sessao10 .wrapper .dir .ex {
+    margin: 0;
+  }
+  #logotipo #sessao11 .wrapper.imagemExemplo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #logotipo #sessao11 .wrapper.imagemExemplo .desc {
+    margin-top: 20px;
+  }
+  #logotipo #sessao11 .wrapper.imagemExemplo .dica {
+    position: initial;
+    margin: 40px 0;
+  }
+  #logotipo #sessao11 .wrapper .esq {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 100%;
+  }
+  #logotipo #sessao11 .wrapper .esq .desc {
+    margin-left: 0;
+  }
+  #logotipo #sessao11 .wrapper .dir {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 0px;
+  }
+  #logotipo #sessao11 .wrapper .dir .ex {
+    margin: 0;
+  }
+  #logotipo #sessao13 .boxes .linha {
+    width: 100%;
+    margin-top: 50px;
+  }
+  #logotipo #sessao13 .boxes .linha:first-of-type {
+    margin-top: 0;
+  }
+  #logotipo #sessao13 .boxes .linha .box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #logotipo #sessao14 .modulo-imagens-com-texto > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #logotipo #sessao14 .modulo-imagens-com-texto .central-com-texto {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #logotipo #sessao14 .modulo-imagens-com-texto img {
+    margin: 20px 0;
+  }
+  #logotipo #sessao15 {
+    margin-bottom: 0;
   }
   #logotipo footer p:nth-child(2) {
     font-size: 25px;
@@ -5147,77 +5186,73 @@ footer .trademark p {
     font-size: 1rem;
     line-height: 26px;
   }
-  #paleta #sessao1 article .grid--2colunas .esq {
-    height: auto;
-    margin-bottom: 30px;
+  #paleta .ideia.solto {
+    margin: 35px;
   }
-  #paleta #sessao2 .grid--2colunas {
+  #paleta #sessao1 article .grid--2colunas .dir {
+    margin-top: 35px;
+  }
+  #paleta #sessao1 .modulo-abas {
+    max-width: 100%;
+  }
+  #paleta #sessao1 .modulo-abas .nav_tabs > .content {
+    border: 0;
+  }
+  #paleta #sessao1 .modulo-abas .tab {
+    margin-top: 50px;
+  }
+  #paleta #sessao2 .composicao-wrapper .wrapper-box {
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
     -ms-grid-columns: initial;
         grid-template-columns: initial;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    display: -ms-grid;
-    display: grid;
   }
-  #paleta #sessao2 .grid--2linhas {
-    display: -ms-grid;
-    display: grid;
-  }
-  #paleta #sessao2 .icones {
-    -ms-grid-rows: initial;
-        grid-template-rows: initial;
-  }
-  #paleta #sessao2 .icones p {
-    font-size: 0.875rem;
-    line-height: 1rem;
-  }
-  #paleta #sessao2 .icones img {
-    margin-left: 0 !important;
-  }
-  #paleta #sessao2 .dir {
+  #paleta #sessao2 .composicao-wrapper .wrapper-box:not(:first-of-type) {
     margin-top: 35px;
+  }
+  #paleta #sessao2 .composicao-wrapper .wrapper-box .esq p {
+    margin-bottom: 20px;
+  }
+  #paleta #sessao2 .composicao-wrapper .wrapper-box .dir {
+    padding: 0;
+    border: 0;
+  }
+  #paleta #sessao2 .composicao-wrapper .wrapper-box .dir .bloco {
+    width: 100%;
+    height: 70px;
+    margin-right: 10px;
+    max-width: 100%;
+  }
+  #paleta #sessao2 .composicao-wrapper .wrapper-box .dir .wrapper-blocos {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  #paleta #sessao2 .composicao-wrapper .wrapper-box .dir .wrapper-blocos.imagens-topo img {
+    max-width: 100%;
+  }
+  #paleta #sessao2 .composicao-wrapper .wrapper-box .dir .wrapper-blocos.imagens-topo > div {
+    width: 100%;
+    margin-right: 10px;
+  }
+  #paleta #sessao2 .composicao-wrapper .wrapper-box .dir .wrapper-blocos.meio .bloco {
+    width: 100%;
+    max-width: 100%;
+    height: 70px;
+  }
+  #paleta #sessao2 .composicao-wrapper .wrapper-box .dir .wrapper-blocos.baixo .bloco {
+    width: 100%;
+    max-width: 100%;
   }
   #paleta .ideia {
     margin-top: 30px;
     margin-bottom: 0;
   }
-  #paleta #sessao3 {
-    padding-bottom: 0;
-  }
-  #paleta #sessao3 .grid--3colunas {
-    -ms-grid-columns: initial;
-        grid-template-columns: initial;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    height: auto;
-  }
-  #paleta #sessao3 .grid--3colunas span.divisor {
-    display: none;
-  }
-  #paleta #sessao3 .grid--3colunas .txt--bold {
-    font-weight: normal;
-    text-align: left;
-    border-bottom: 1px solid var(--principal);
+  #paleta #sessao3 .wrapper.slick {
     width: 100%;
-    margin-bottom: 30px;
-  }
-  #paleta #sessao3 .volume {
-    margin-bottom: 35px;
-    text-align: left;
-  }
-  #paleta #sessao3 .col-wrapper {
-    display: none;
-  }
-  #paleta #sessao3 .col-img {
-    margin-top: 35px;
-    text-align: center;
-    margin-bottom: 60px;
-  }
-  #paleta #sessao3 .col-img img {
-    margin-top: 30px;
-  }
-  #paleta #sessao3 .modulo-imagens-com-texto img {
-    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
   }
   #paleta #sessao4 .blocos .col {
     margin-bottom: 65px;
@@ -5235,396 +5270,323 @@ footer .trademark p {
   /* :Pagina Paleta Mobile */
   /* Pagina Tipografia Mobile: */
   #tipografia .topobg {
-    background-image: url("../img/headers/mob/Header_Type_mobile.png");
+    background-image: url("");
   }
-  #tipografia .ideia {
-    margin-right: 0;
+  #tipografia #sessao1 article {
+    padding-left: 35px;
   }
-  #tipografia article > article {
-    padding: 0;
-  }
-  #tipografia article .modulo-abas .grid, #tipografia article .modulo-abas .grid--2colunas, #tipografia article .modulo-abas .grid--2colunasversoes, #tipografia article .modulo-abas .grid--2colunas-auto, #tipografia article .modulo-abas .grid--2colunas-centralizadas, #tipografia article .modulo-abas .grid--3colunas, #tipografia article .modulo-abas .grid--4colunas, #tipografia article .modulo-abas .grid--5colunas-home, #tipografia article .modulo-abas .grid--2linhas, #tipografia article .modulo-abas .grid--3linhas, #tipografia article .modulo-abas .grid--4linhas, #tipografia article .modulo-abas .grid--4linhas-auto, #tipografia article .modulo-abas .grid--2colunas2linhas, #tipografia article .modulo-abas .grid--2colunas4linhas, #tipografia article .modulo-abas .grid--4colunas4linhas {
-    display: -ms-grid;
-    display: grid;
-  }
-  #tipografia article .modulo-abas .tab > .grid--2colunas {
-    display: block;
-  }
-  #tipografia article .modulo-abas .nav_tabs .content {
-    border-top: 0;
-  }
-  #tipografia article .modulo-abas .nav_tabs .content .subtitulo {
-    border-bottom: 2px solid var(--secundaria);
-    margin-bottom: 30px;
-  }
-  #tipografia article .modulo-abas .nav_tabs .content .icones {
-    margin-bottom: 35px;
-    padding-bottom: 35px;
-    border-bottom: 1px solid var(--principal);
-    width: 100%;
-  }
-  #tipografia article .modulo-abas .nav_tabs .content .dir .cima .grid--2colunas-auto {
-    -ms-grid-columns: 72px auto;
-        grid-template-columns: 72px auto;
-  }
-  #tipografia article .modulo-abas .nav_tabs .content .dir .cima .grid--2colunas-auto .fonte-exemplo div {
-    font-size: 1rem !important;
-    margin: 0 8.5px;
-  }
-  #tipografia article .modulo-abas .nav_tabs .content .dir .cima .grid--2colunas-auto .fonte-exemplo div:first-of-type {
-    margin-left: 0;
-  }
-  #tipografia article .modulo-abas .nav_tabs .content .dir .baixo .alfabeto.dona div {
-    letter-spacing: 20px;
-  }
-  #tipografia article .modulo-abas .nav_tabs .content .dir .baixo .alfabeto.dona div:nth-of-type(3) {
-    text-transform: initial;
-    letter-spacing: 24px;
-  }
-  #tipografia article .modulo-abas .nav_tabs .content .dir .baixo .alfabeto.dona div:nth-of-type(4) {
-    letter-spacing: 18px;
-  }
-  #tipografia article .modulo-abas .nav_tabs .content .dir .baixo .alfabeto.dona div:nth-of-type(5) {
-    text-transform: uppercase;
-    letter-spacing: 17px;
-  }
-  #tipografia article .modulo-abas .nav_tabs .content .dir .baixo .alfabeto.dona div:nth-of-type(6) {
-    text-transform: uppercase;
-    letter-spacing: 21px;
-  }
-  #tipografia article .modulo-abas .nav_tabs .content .dir .baixo .alfabeto.dona div:nth-of-type(7) {
-    text-transform: uppercase;
-    letter-spacing: 5.8px;
-  }
-  #tipografia article .modulo-abas .nav_tabs .content .dir .baixo .alfabeto.open {
-    margin-bottom: 95px;
-  }
-  #tipografia article .modulo-abas .nav_tabs .content .dir .baixo .alfabeto.open div {
-    letter-spacing: 20px;
-  }
-  #tipografia article .modulo-abas .nav_tabs .content .dir .baixo .alfabeto.open div:nth-of-type(2) {
-    text-transform: initial;
-    letter-spacing: 19.6px;
-  }
-  #tipografia article .modulo-abas .nav_tabs .content .dir .baixo .alfabeto.open div:nth-of-type(3) {
-    text-transform: initial;
-    letter-spacing: 24px;
-  }
-  #tipografia article .modulo-abas .nav_tabs .content .dir .baixo .alfabeto.open div:nth-of-type(4) {
-    letter-spacing: 18px;
-  }
-  #tipografia article .modulo-abas .nav_tabs .content .dir .baixo .alfabeto.open div:nth-of-type(5) {
-    text-transform: uppercase;
-    letter-spacing: 17.5px;
-  }
-  #tipografia article .modulo-abas .nav_tabs .content .dir .baixo .alfabeto.open div:nth-of-type(6) {
-    text-transform: uppercase;
-    letter-spacing: 21.8px;
-  }
-  #tipografia article .modulo-abas .nav_tabs .content .dir .baixo .alfabeto.open div:nth-of-type(7) {
-    text-transform: uppercase;
-    letter-spacing: 6.6px;
-  }
-  #tipografia article .modulo-abas .nav_tabs .content .dir .baixo .alfabeto.arial div {
-    letter-spacing: 20px;
-  }
-  #tipografia article .modulo-abas .nav_tabs .content .dir .baixo .alfabeto.arial div:nth-of-type(3) {
-    text-transform: initial;
-    letter-spacing: 24px;
-  }
-  #tipografia article .modulo-abas .nav_tabs .content .dir .baixo .alfabeto.arial div:nth-of-type(4) {
-    letter-spacing: 16.7px;
-  }
-  #tipografia article .modulo-abas .nav_tabs .content .dir .baixo .alfabeto.arial div:nth-of-type(5) {
-    text-transform: uppercase;
-    letter-spacing: 16.3px;
-  }
-  #tipografia article .modulo-abas .nav_tabs .content .dir .baixo .alfabeto.arial div:nth-of-type(6) {
-    text-transform: uppercase;
-    letter-spacing: 20.1px;
-  }
-  #tipografia article .modulo-abas .nav_tabs .content .dir .baixo .alfabeto.arial div:nth-of-type(7) {
-    text-transform: uppercase;
-    letter-spacing: 6.5px;
-  }
-  #tipografia #sessao2 .proximo {
-    margin-bottom: 35px;
-  }
-  #tipografia #sessao2 .txt--padrao20 {
-    margin-left: 0;
-  }
-  #tipografia #sessao2 .composicao-wrapper .wrapper-box {
-    display: block;
-  }
-  #tipografia #sessao2 .composicao-wrapper .wrapper-box .esq {
-    display: inline-block;
-    margin-bottom: 20px;
-  }
-  #tipografia #sessao2 .composicao-wrapper .wrapper-box .esq p {
-    text-align: left;
-    display: block;
-    float: left;
-  }
-  #tipografia #sessao2 .composicao-wrapper .wrapper-box .esq p:first-child {
-    margin-right: 5px;
-    padding-right: 5px;
-    position: relative;
-  }
-  #tipografia #sessao2 .composicao-wrapper .wrapper-box .esq p:first-child:before {
-    content: '';
-    width: 1px;
-    height: 100%;
-    background-color: #fff;
-    display: block;
-    position: absolute;
-    right: 0;
-  }
-  #tipografia #sessao2 .composicao-wrapper .wrapper-box:nth-of-type(1) .dir p {
-    font-size: 2.34375rem;
-    line-height: 2.3125rem;
-    margin-bottom: 25px;
-  }
-  #tipografia #sessao2 .composicao-wrapper .wrapper-box:nth-of-type(2) .dir p {
-    font-size: 1.0625rem;
-  }
-  #tipografia #sessao2 .composicao-wrapper .wrapper-box:nth-of-type(3) .dir p {
-    font-size: 0.9375rem;
-  }
-  #tipografia #sessao2 .composicao-wrapper .wrapper-box .dir {
-    padding-left: 0;
-    border-left: 0;
-  }
-  #tipografia #sessao2 .composicao-wrapper .wrapper-box .dir .destaque.medium {
-    margin-top: -17px;
-  }
-  #tipografia #sessao3 {
-    padding-bottom: 65px;
-  }
-  #tipografia #sessao3 .wrapper-acessibilidade {
-    margin-top: 50px;
-  }
-  #tipografia #sessao3 .wrapper-acessibilidade .legenda {
-    margin: auto;
-  }
-  #tipografia #sessao3 .wrapper-acessibilidade .dir {
-    margin-top: 50px;
-  }
-  #tipografia #sessao3 .wrapper-acessibilidade .dir .wrapper-acessibilidade-blocos .esq p {
-    padding-right: 10px;
-    text-align: right;
-  }
-  #tipografia #sessao3 .wrapper-acessibilidade .dir .wrapper-acessibilidade-blocos .esq p:first-of-type {
-    font-size: 0.75rem;
-  }
-  #tipografia #sessao3 .wrapper-acessibilidade .dir .wrapper-acessibilidade-blocos .esq p:last-of-type {
-    font-size: 0.625rem;
-  }
-  #tipografia #sessao3 .wrapper-acessibilidade .dir .wrapper-acessibilidade-blocos .dir {
-    margin-top: 0;
-  }
-  #tipografia #sessao3 .wrapper-acessibilidade .dir .wrapper-acessibilidade-blocos .dir .bloco {
-    width: 100%;
-    height: 56px;
-    padding: 12px 13px 11px 16px;
-  }
-  #tipografia #sessao3 .wrapper-acessibilidade .dir .wrapper-acessibilidade-blocos .dir .bloco p:first-of-type {
-    font-size: 0.9375rem;
-  }
-  #tipografia #sessao3 .wrapper-acessibilidade .dir .wrapper-acessibilidade-blocos .dir .bloco p:last-of-type {
-    font-size: 0.75rem;
-    letter-spacing: -0.5px;
-  }
-  #tipografia #sessao3 .wrapper-acessibilidade .dir .wrapper-acessibilidade-blocos .cima {
-    -ms-grid-columns: 37px auto;
-        grid-template-columns: 37px auto;
-  }
-  #tipografia #sessao3 .wrapper-acessibilidade .dir .wrapper-acessibilidade-blocos .baixo {
-    -ms-grid-columns: 37px auto;
-        grid-template-columns: 37px auto;
-  }
-  #tipografia #sessao3 .wrapper-acessibilidade .dir .wrapper-acessibilidade-blocos:not(:first-of-type) {
-    margin-top: 40px;
-  }
-  #tipografia #sessao4 {
-    padding-bottom: 0;
-  }
-  /* :Pagina Tipografia Mobile */
-  /* Pagina Grafismos Mobile: */
-  #grafismos .topobg {
-    background-image: url("../img/headers/mob/Header_Grafismo_mobile.png");
-    background-size: cover;
-  }
-  #grafismos #sessao1 img {
-    margin: auto;
-    margin-top: -165px;
-    margin-bottom: -50px;
-    width: 320px;
-  }
-  #grafismos #sessao2 .wrapper {
-    margin-top: 0;
-  }
-  #grafismos #sessao2 .wrapper .cima {
-    margin-bottom: 0;
-  }
-  #grafismos #sessao2 .wrapper .box {
-    margin-right: 0;
-    margin-bottom: 65px;
-  }
-  #grafismos #sessao2 .wrapper .box:first-of-type {
-    margin-top: 0;
-  }
-  #grafismos #sessao2 .wrapper .box img {
-    margin-bottom: 15px;
-  }
-  #grafismos #sessao2 .pos-titulo {
-    max-width: 220px;
-  }
-  #grafismos #sessao2 .ideia {
-    margin: auto;
-    margin-top: 0;
-  }
-  #grafismos #sessao3 .txt--padrao40 {
-    margin-bottom: 60px;
-  }
-  #grafismos #sessao3 .linha .box.texto {
-    float: left;
-    margin-bottom: 32px;
-  }
-  #grafismos #sessao3 .linha .box.texto p:last-of-type {
+  #tipografia #sessao1 .wrapper {
     max-width: 100%;
   }
-  #grafismos #sessao4 {
-    padding-top: 100px;
+  #tipografia #sessao1 .wrapper .box p {
+    font-size: 13px;
   }
-  #grafismos #sessao4 img {
-    margin: initial;
-    margin-top: 70px;
-    width: 245.5px;
+  #tipografia #sessao1 .esq {
+    position: absolute;
+    left: 35px;
+    top: -20px;
   }
-  #grafismos #sessao5 {
-    padding-top: 100px;
+  #tipografia #sessao2 article {
+    padding: 0 15px;
   }
-  #grafismos #sessao5 p.pos-titulo {
-    max-width: 205px;
+  #tipografia #sessao2 .composicao-wrapper {
+    margin-top: 50px;
   }
-  #grafismos #sessao5 img {
-    margin-top: 130px;
-    width: 247.5px;
+  #tipografia #sessao2 .composicao-wrapper .wrapper-box {
+    -ms-grid-columns: 60px auto;
+        grid-template-columns: 60px auto;
+  }
+  #tipografia #sessao2 .composicao-wrapper .wrapper-box .esq {
+    padding-right: 10px;
+  }
+  #tipografia #sessao2 .composicao-wrapper .wrapper-box .dir {
+    padding-left: 10px;
+  }
+  #tipografia #sessao2 .composicao-wrapper .wrapper-box:nth-of-type(1) .dir p {
+    font-size: 12px;
+  }
+  #tipografia #sessao2 .composicao-wrapper .wrapper-box:nth-of-type(2) .dir p {
+    font-size: 30px;
+    line-height: 25px;
+  }
+  #tipografia #sessao2 .composicao-wrapper .wrapper-box:nth-of-type(3) .dir p {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  #tipografia #sessao2 .composicao-wrapper .wrapper-box:nth-of-type(4) .dir p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  #tipografia #sessao2 .composicao-wrapper .wrapper-box:nth-of-type(5) .dir p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  #tipografia #sessao2 .ideia {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  #tipografia #sessao2 .ideia p {
+    color: #fff;
+  }
+  #tipografia #sessao3 .wrapper-legenda .legenda {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  #tipografia #sessao3 .bloco-acessibilidade {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #tipografia #sessao3 .bloco-acessibilidade .esq {
+    margin-left: 0;
+  }
+  #tipografia #sessao3 .bloco-acessibilidade .dir {
+    margin-left: 0;
+  }
+  #tipografia #sessao3 .bloco-acessibilidade .bloco .box {
+    width: 100%;
+    height: 120px;
+  }
+  #tipografia #sessao3 .bloco-acessibilidade .bloco .box .txt-maior {
+    line-height: initial;
+    padding-right: 10px;
+  }
+  #tipografia #sessao3 .bloco-acessibilidade .bloco .box .txt-menor {
+    line-height: initial;
+    margin-top: 10px;
+    padding-right: 10px;
+  }
+  #tipografia #sessao4 article {
+    -ms-grid-columns: initial;
+        grid-template-columns: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #tipografia #sessao4 article .esq {
+    width: 100%;
+    margin-right: 0;
+  }
+  #tipografia #sessao4 article .esq p {
+    max-width: 100%;
+  }
+  #tipografia #sessao4 article .dir {
+    padding-left: 35px;
+    padding-right: 35px;
+    width: calc(100% + 70px);
+    margin-left: -35px;
+  }
+  /* :Pagina Tipografia Mobile */
+  /* Pagina Iconografia Mobile */
+  #iconografia .topobg {
+    background-image: url("");
+  }
+  #iconografia #sessao2 .wrapper .box {
+    margin-right: 0;
+    width: 100%;
+    margin-top: 40px;
+  }
+  #iconografia #sessao3 .wrapper .esq {
+    margin-right: 0;
+  }
+  #iconografia #sessao3 .ideia {
+    margin-left: 0;
+  }
+  #iconografia #sessao4 .txt--padrao40 {
+    margin-bottom: 0;
+  }
+  #iconografia #sessao4 .wrapper {
+    margin-top: 0;
+  }
+  #iconografia #sessao4 .wrapper .box {
+    width: 100%;
+    margin-top: 50px;
+    margin-right: 0;
+  }
+  /* :Pagina Iconografia Mobile */
+  /* Pagina Grafismos Mobile: */
+  #grafismos .topobg {
+    background-image: url("");
+  }
+  #grafismos #sessao1 {
+    padding-bottom: 0;
+  }
+  #grafismos #sessao1 .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #grafismos #sessao1 .wrapper img {
+    margin-bottom: 30px;
+  }
+  #grafismos #sessao2 .wrapper .bloco.esq {
+    margin-top: 50px;
+  }
+  #grafismos #sessao2 .wrapper .bloco.dir {
+    margin-top: 50px;
+  }
+  #grafismos #sessao2 .wrapper .bloco .wrapper-boxes .box {
+    margin-left: 0;
+  }
+  #grafismos #sessao2 .wrapper .bloco .wrapper-boxes .box:first-child {
+    margin-right: 10px;
+  }
+  #grafismos #sessao2 .wrapper .bloco .wrapper-topo {
+    margin-left: 0;
+  }
+  #grafismos #sessao3 .wrapper .wrapper-bolas .txt {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #grafismos #sessao3 .wrapper .wrapper-bolas .txt p {
+    font-size: 13px;
+    line-height: 17px;
+    text-align: left;
+  }
+  #grafismos #sessao3 .wrapper .wrapper-bolas .txt p:nth-of-type(1) {
+    margin-left: 0;
+  }
+  #grafismos #sessao3 .wrapper .wrapper-bolas .txt p:nth-of-type(2) {
+    margin-left: 10px;
+  }
+  #grafismos #sessao4 .wrapper-switchs .switchWrapper {
+    margin-bottom: 80px;
+  }
+  #grafismos #sessao4 .wrapper-switchs .switchWrapper p {
+    margin-bottom: 5px;
+  }
+  #grafismos #sessao4 .wrapper-switchs .switchWrapper .switch {
+    margin-top: 15px;
+  }
+  #grafismos #sessao5 .wrapper-switchs {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #grafismos #sessao5 .wrapper-switchs .switchWrapper {
+    margin-bottom: 80px;
+    margin-right: 0;
+  }
+  #grafismos #sessao5 .wrapper-switchs .switchWrapper p {
+    margin-bottom: 5px;
+  }
+  #grafismos #sessao5 .wrapper-switchs .switchWrapper .switch {
+    margin-top: 15px;
+  }
+  #grafismos #sessao5 .ideia {
+    margin-left: 0;
+  }
+  #grafismos #sessao6 .composicao-wrapper .wrapper-box {
+    -ms-grid-columns: initial;
+        grid-template-columns: initial;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    margin-bottom: 80px;
+  }
+  #grafismos #sessao6 .composicao-wrapper .wrapper-box .esq {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding-right: 0;
+    border: 0;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  #grafismos #sessao6 .composicao-wrapper .wrapper-box .dir {
+    padding-left: 0;
+  }
+  #grafismos #sessao7 .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #grafismos #sessao7 .wrapper .bloco .wrapper-boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #grafismos #sessao7 .wrapper .bloco .wrapper-boxes .box {
+    margin-right: 0;
+    max-width: 180px;
+    margin-bottom: 15px;
+  }
+  #grafismos #sessao7 .wrapper .bloco .wrapper-boxes .txt {
+    position: initial;
+  }
+  #grafismos #sessao7 .wrapper .bloco .wrapper-boxes .txt p {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  #grafismos #sessao7 .wrapper .bloco.dir {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  #grafismos #sessao8 .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #grafismos #sessao8 .wrapper .box {
+    margin-right: 0;
+    width: 180px;
+    margin-top: 50px;
+  }
+  #grafismos #sessao8 .wrapper .box:first-child {
+    margin-top: 0;
+  }
+  #grafismos #sessao9 .wrapper .box {
+    margin-top: 50px;
+  }
+  #grafismos #sessao9 .wrapper .box:first-child {
+    margin-top: 0;
   }
   #grafismos #download article {
     padding-bottom: 0;
   }
   /* :Pagina Grafismos Mobile */
-  /* Pagina Pictografia Mobile: */
-  #pictografia .topobg {
-    background-image: url("../img/headers/mob/Header_Picto_mobile.png");
-  }
-  #pictografia #sessao1 p {
-    display: none;
-  }
-  #pictografia #sessao1 img {
-    margin: 0;
-  }
-  #pictografia #sessao2 {
-    padding: 130px 0 65px 0;
-  }
-  #pictografia #sessao2 img {
-    margin-top: 65px;
-    width: 248px;
-  }
-  #pictografia #sessao3 .wrapper {
-    display: block;
-    max-width: 100%;
-  }
-  #pictografia #sessao3 .wrapper .esq {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: auto auto;
-        grid-template-rows: auto auto;
-    margin-right: 0;
-    margin-bottom: 60px;
-  }
-  #pictografia #sessao3 .wrapper .txt--padrao12 {
-    text-align: left;
-    display: block;
-    border-bottom: 1px solid var(--principal);
-    margin-bottom: 15px;
-  }
-  #pictografia #sessao4 .ideia {
-    margin: auto;
-    margin-top: 65px;
-  }
-  #pictografia #sessao4 .dir img {
-    width: 248px;
-  }
-  #pictografia #sessao5 .wrapper {
-    margin-left: 0;
-  }
-  #pictografia #sessao5 .wrapper .esq .txt--padrao20 {
-    max-width: 146px;
-  }
-  #pictografia #sessao5 .wrapper:first-of-type .dir {
-    margin-left: 0;
-    display: block;
-  }
-  #pictografia #sessao5 .wrapper:first-of-type .dir .box {
-    margin-top: 65px;
-  }
-  #pictografia #sessao5 .wrapper:first-of-type .dir .box img {
-    margin-bottom: 18px;
-    margin-left: -35px;
-    margin-right: -35px;
-    width: calc(100% + 70px);
-    max-width: initial;
-  }
-  #pictografia #sessao5 .wrapper:last-of-type .dir {
-    margin-left: 0;
-    display: block;
-  }
-  #pictografia #sessao5 .wrapper:last-of-type .dir .box {
-    margin-top: 65px;
-  }
-  #pictografia #sessao5 .wrapper:last-of-type .dir .box img {
-    margin-bottom: 18px;
-  }
-  #pictografia #download article {
-    padding-bottom: 0;
-  }
-  #pictografia footer .txt--bold {
-    font-size: 1.5625rem;
-  }
-  /* :Pagina Pictografia Mobile */
   /* Pagina Estilo Fotografico Mobile: */
   #estilo-fotografico .topobg {
-    background-image: url("../img/headers/mob/Header_Fotografia_mobile.png");
+    background-image: url("");
   }
-  #estilo-fotografico header h1 {
-    max-width: 177px;
+  #estilo-fotografico #sessao1 .modulo-abas .nav_tabs {
+    margin-left: 0;
   }
-  #estilo-fotografico #sessao1 {
-    padding-bottom: 85px;
+  #estilo-fotografico #sessao2 article {
+    margin-left: 0;
   }
-  #estilo-fotografico #sessao1 .txt--padrao40 {
-    margin-bottom: 10px;
+  #estilo-fotografico #sessao2 .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 60px;
   }
-  #estilo-fotografico #sessao1 .txt--padrao20 {
-    font-size: 1rem;
+  #estilo-fotografico #sessao2 .wrapper .imagem {
+    width: 100%;
+    margin-top: 50px;
+    margin-right: 0;
   }
-  #estilo-fotografico #sessao1 .modulo-abas .nav_tabs > .content {
-    border: 0;
+  #estilo-fotografico .ideia {
+    margin-bottom: 80px;
   }
-  #estilo-fotografico #sessao1 .modulo-abas .tab {
-    padding-top: 130px;
-  }
-  #estilo-fotografico #sessao1 .modulo-abas .tab:first-of-type {
-    padding-top: 0;
-  }
-  #estilo-fotografico #sessao1 .modulo-abas .tab img {
-    margin-top: 0;
-    margin-bottom: 65px;
-  }
-  #estilo-fotografico #sessao1 .modulo-abas .tab .destaque {
-    margin-bottom: 30px;
+  #estilo-fotografico #download {
+    display: none;
   }
   /* :Pagina Estilo Fotografico Mobile */
   /* Pagina Aplicacoes Mobile: */
@@ -5794,6 +5756,9 @@ footer .trademark p {
   }
   footer p:first-child {
     margin-bottom: 0;
+  }
+  footer .nomelink p:last-child {
+    font-size: 25px;
   }
   footer a {
     padding-right: 35px;

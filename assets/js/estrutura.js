@@ -239,6 +239,24 @@ jQuery(document).ready(function () {
 		}
 
 	}
+
+
+	// GRAFISMOS EFEITO NO PRIMEIRO BOX - SOLIDOS
+		if( document.querySelector('#grafismos') != null ) {
+			let estado2 = document.querySelector('#grafismos .estado2');
+			let estado1Hover = document.querySelector('#grafismos .estado1-hover');
+	
+			estado1Hover.addEventListener('click', function() {
+				estado2.classList ? estado2.classList.add('mostrando') : estado2.className += ' mostrando';
+			})
+	
+			estado2.addEventListener('click', function() {
+				estado2.classList.remove('mostrando');
+			})
+		}	
+	// :GRAFISMOS EFEITO NO PRIMEIRO BOX - SOLIDOS
+
+
 		
 
 	// Funções executadas apenas na versão Desktop:
@@ -335,24 +353,24 @@ jQuery(document).ready(function () {
 
 
 		// TOPO
-		$('#topo .login').click(function (e) {
-			e.preventDefault();
-			// $(this).css('display', 'none')
-			$('.logo , .bemvindo, .olaalo, .setinha').addClass('acessar')
-		})
+		// $('#topo .login').click(function (e) {
+		// 	e.preventDefault();
+		// 	// $(this).css('display', 'none')
+		// 	$('.logo , .bemvindo, .olaalo, .setinha').addClass('acessar')
+		// })
 
-		$('.login').click(function (e) {
-			e.preventDefault()
-			$('.logo').css('display', 'none')
-			$('.setinha').removeClass('mobileitem')
-			$('.bemvindo, .olaalo').addClass('final')
+		// $('.login').click(function (e) {
+		// 	e.preventDefault()
+		// 	$('.logo').css('display', 'none')
+		// 	$('.setinha').removeClass('mobileitem')
+		// 	$('.bemvindo, .olaalo').addClass('final')
 
-			$('.menu').css('display', 'block')
-			$('.menu').css('z-index', '10')
+		// 	$('.menu').css('display', 'block')
+		// 	$('.menu').css('z-index', '10')
 
-			$('body, html').css('overflow', 'auto')
-			$('body, html').css('height', 'auto')
-		})
+		// 	$('body, html').css('overflow', 'auto')
+		// 	$('body, html').css('height', 'auto')
+		// })
 
 
 

@@ -123,11 +123,11 @@
                             <p class="txt--padrao12">Excesso de elementos e/ou detalhes.</p>
                         </div>
                         <div class="box">
-                            <img src="<? echo $images ?>iconografia/Evitar/desk/Grupo 7098@2x" alt="">
+                            <img src="<? echo $images ?>iconografia/Evitar/desk/Grupo 7098@2x.png" alt="">
                             <p class="txt--padrao12">Espessura de linha muito fina.</p>
                         </div>
                         <div class="box">
-                            <img src="<? echo $images ?>iconografia/Evitar/desk/Grupo 7099@2x" alt="">
+                            <img src="<? echo $images ?>iconografia/Evitar/desk/Grupo 7099@2x.png" alt="">
                             <p class="txt--padrao12">Estilos cartunizados.</p>
                         </div>
                     </div>
@@ -139,7 +139,7 @@
                     <p class="txt--padrao40">Para se inspirar</p>
 
                     <div class="wrapper slick">
-                        <img src="<? echo $images ?>pranchas/Parceiros Cantu.png" alt="">
+                        <img src="<? echo $images ?>pranchas/Parceiros cantu.png" alt="">
                         <img src="<? echo $images ?>pranchas/Dna de lider.png" alt="">
                         <img src="<? echo $images ?>pranchas/Eixo.png" alt="">
                     </div>

@@ -429,7 +429,7 @@
                         <img src="<? echo $images ?>pranchas/Caminhos.png" alt="">
                         <img src="<? echo $images ?>pranchas/Aro18.png" alt="">
                         <img src="<? echo $images ?>pranchas/Inquieto.png" alt="">
-                        <img src="<? echo $images ?>pranchas/Material de Vendas.png" alt="">
+                        <img src="<? echo $images ?>pranchas/Material de vendas.png" alt="">
                         <img src="<? echo $images ?>pranchas/Roda.png" alt="">
                     </div>
                 </article>

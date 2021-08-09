@@ -160,8 +160,8 @@
                                     <div class="wrapper grid--2colunasversoes">
                                         <div class="esq grid--2linhas">
                                             <div class="cima">
-                                                <img class="desktopitem" src="<? echo $images ?>logo/desk/Versoes Logo/logo cantupneus horizontal@2x" alt="">
-                                                <img class="mobileitem" src="<? echo $images ?>logo/desk/Versoes Logo/logo cantupneus horizontal@2x" alt="">
+                                                <img class="desktopitem" src="<? echo $images ?>logo/desk/Versoes Logo/logo cantupneus horizontal@2x.png" alt="">
+                                                <img class="mobileitem" src="<? echo $images ?>logo/desk/Versoes Logo/logo cantupneus horizontal@2x.png" alt="">
                                                 <p class="txt--padrao12">Versão preferencial positiva</p>
                                             </div>
 
@@ -648,36 +648,6 @@
                     </div>
                 </article>
             </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- <section id="sessao9">
-                <article>
-                    <p class="txt--padrao40">Para se inspirar</p>
-
-                    <div class="wrapper slick">
-                        <img src="<? echo $images ?>/pranchas/Enrolado.png" alt="">
-                        <img src="<? echo $images ?>/pranchas/PranchaJoca.png" alt="">
-                        <img src="<? echo $images ?>/pranchas/Van.png" alt="">
-                    </div>
-                </article>
-            </section> -->
 
 
             <? include('assets/download.php') ?>

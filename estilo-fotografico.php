@@ -48,7 +48,7 @@
                                 <div class="tab active">
                                     <p class="txt--padrao30">Somos o guia.</p>
 
-                                    <img class="desktopitem" src="<? echo $images ?>estilo/desk/Grupo 6865@2x" alt="">
+                                    <img class="desktopitem" src="<? echo $images ?>estilo/desk/Grupo 6865@2x.png" alt="">
                                     <img class="mobileitem" src="<? echo $images ?>estilo/mob/Grupo 6853@2x.png" alt="">
                                     <img class="mobileitem" src="<? echo $images ?>estilo/mob/Grupo 6855@2x.png" alt="">
                                     <img class="mobileitem" src="<? echo $images ?>estilo/mob/Grupo 6857@2x.png" alt="">
@@ -88,7 +88,7 @@
                                     <!-- Segundo box  -->
                                     <p class="txt--padrao30 abaixo">Somos o aliado.</p>
 
-                                    <img class="desktopitem" src="<? echo $images ?>estilo/desk/Grupo 6880@2x" alt="">
+                                    <img class="desktopitem" src="<? echo $images ?>estilo/desk/Grupo 6880@2x.png" alt="">
                                     <img class="mobileitem" src="<? echo $images ?>estilo/mob/Grupo 6871@2x.png" alt="">
                                     <img class="mobileitem" src="<? echo $images ?>estilo/mob/Grupo 6873@2x.png" alt="">
                                     <img class="mobileitem" src="<? echo $images ?>estilo/mob/Grupo 6869@2x.png" alt="">
@@ -146,7 +146,7 @@
                                 <div class="tab">
                                     <p class="txt--padrao30">Somos os realizadores.</p>
 
-                                    <img class="desktopitem" src="<? echo $images ?>estilo/desk/Grupo 6881@2x" alt="">
+                                    <img class="desktopitem" src="<? echo $images ?>estilo/desk/Grupo 6881@2x.png" alt="">
                                     <img class="mobileitem" src="<? echo $images ?>estilo/mob/Grupo 6882@2x.png" alt="">
                                     <img class="mobileitem" src="<? echo $images ?>estilo/mob/Grupo 6888@2x.png" alt="">
                                     <img class="mobileitem" src="<? echo $images ?>estilo/mob/Grupo 6886@2x.png" alt="">
@@ -202,7 +202,7 @@
                                 <!-- Terceira aba -->
                                 <div class="tab">
                                     <p class="txt--padrao20 txt--bold">VISTAS</p>
-                                    <img class="terceira" src="<? echo $images ?>estilo/desk/Grupo 6893@2x" alt="">
+                                    <img class="terceira" src="<? echo $images ?>estilo/desk/Grupo 6893@2x.png" alt="">
 
                                     <p class="txt--padrao12 terceira">
                                         Dê preferência para imagens produzidas e recortadas. Junto da vibração das nossas cores e movimento dos grafismos, reforçamos o protagonismo do produto e criamos uma linguagem visual de personalidade.
@@ -218,7 +218,7 @@
                                     </div>
 
                                     <p class="txt--padrao20 txt--bold">TRATAMENTO</p>
-                                    <img class="terceira" src="<? echo $images ?>estilo/desk/Grupo 7114@2x" alt="">
+                                    <img class="terceira" src="<? echo $images ?>estilo/desk/Grupo 7114@2x.png" alt="">
 
                                     <p class="txt--padrao12 terceira">
                                         Usando a imagem duplicada e Blending Modes no Adobe Photoshop, podemos realçar a luz
@@ -250,12 +250,12 @@
                         </div>
 
                         <div class="imagem">
-                            <img src="<? echo $images ?>estilo/desk/Dicas/Grupo 7070@2x" alt="">
+                            <img src="<? echo $images ?>estilo/desk/Dicas/Grupo 7070@2x.png" alt="">
                             <p class="txt--padrao12 txt--bold">Original</p>
                         </div>
 
                         <div class="imagem">
-                            <img src="<? echo $images ?>estilo/desk/Dicas/Grupo 7104@2x" alt="">
+                            <img src="<? echo $images ?>estilo/desk/Dicas/Grupo 7104@2x.png" alt="">
                             <p class="txt--padrao12 txt--bold">Visualização do grid e posição da pessoa</p>
                         </div>
                     </div>
@@ -272,7 +272,7 @@
                         </div>
 
                         <div class="imagem">
-                            <img src="<? echo $images ?>estilo/desk/Dicas/Grupo 6868@2x" alt="">
+                            <img src="<? echo $images ?>estilo/desk/Dicas/Grupo 6868@2x.png" alt="">
                             <p class="txt--padrao12 txt--bold">Plano aberto</p>
                             <p class="txt--padrao12">
                                 Quando a câmera está distante do objeto
@@ -281,7 +281,7 @@
                         </div>
 
                         <div class="imagem">
-                            <img src="<? echo $images ?>estilo/desk/Dicas/Grupo 7068@2x" alt="">
+                            <img src="<? echo $images ?>estilo/desk/Dicas/Grupo 7068@2x.png" alt="">
                             <p class="txt--padrao12 txt--bold">Plano médio</p>
                             <p class="txt--padrao12">
                                 Quando a câmera está a uma distância média
@@ -296,7 +296,7 @@
                         </div>
 
                         <div class="imagem">
-                            <img src="<? echo $images ?>estilo/desk/Dicas/Grupo 7072@2x" alt="">
+                            <img src="<? echo $images ?>estilo/desk/Dicas/Grupo 7072@2x.png" alt="">
                             <p class="txt--padrao12 txt--bold">Plano americano</p>
                             <p class="txt--padrao12">
                                 Quando a figura humana é enquadrada
@@ -305,7 +305,7 @@
                         </div>
 
                         <div class="imagem">
-                            <img src="<? echo $images ?>estilo/desk/Dicas/Grupo 7071@2x" alt="">
+                            <img src="<? echo $images ?>estilo/desk/Dicas/Grupo 7071@2x.png" alt="">
                             <p class="txt--padrao12 txt--bold">Plano fechado</p>
                             <p class="txt--padrao12">
                                 Quando a câmera está bem próxima do objeto,

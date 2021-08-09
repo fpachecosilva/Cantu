@@ -2,10 +2,10 @@
 	$empresa = 'Cantu';
 	
 	// Local
-	$url = 'http://localhost/cantu/';
+	// $url = 'http://localhost/cantu/';
 	
 	// Server
-	// $url = 'http://previewbsagency.com.br/cantu/';
+	$url = 'http://previewbsagency.com.br/cantu/';
 	
 
 	$images = $url.'assets/img/';

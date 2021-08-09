@@ -37,23 +37,23 @@
 
                     <div class="wrapper">
                         <div class="box">
-                            <img src="<? echo $images ?>grafismos/desk/Inspiracao/Caminho 5083@2x" alt="">
+                            <img src="<? echo $images ?>grafismos/desk/Inspiracao/Caminho 5083@2x.png" alt="">
                         </div>
 
                         <div class="box">
-                            <img src="<? echo $images ?>grafismos/desk/Inspiracao/Grupo 6544@2x" alt="">
+                            <img src="<? echo $images ?>grafismos/desk/Inspiracao/Grupo 6544@2x.png" alt="">
                         </div>
 
                         <div class="box">
-                            <img src="<? echo $images ?>grafismos/desk/Inspiracao/Caminho 5084@2x" alt="">
+                            <img src="<? echo $images ?>grafismos/desk/Inspiracao/Caminho 5084@2x.png" alt="">
                         </div>
 
                         <div class="box">
-                            <img src="<? echo $images ?>grafismos/desk/Inspiracao/Grupo 6544@2x" alt="">
+                            <img src="<? echo $images ?>grafismos/desk/Inspiracao/Grupo 6544@2x.png" alt="">
                         </div>
 
                         <div class="box">
-                            <img src="<? echo $images ?>grafismos/desk/Inspiracao/Grupo 7100@2x" alt="">
+                            <img src="<? echo $images ?>grafismos/desk/Inspiracao/Grupo 7100@2x.png" alt="">
                         </div>
                     </div>
                 </article>
@@ -73,13 +73,13 @@
                             <div class="wrapper-topo desktopitem"></div>
                             <div class="wrapper-boxes">
                                 <div class="box">
-                                    <img class="linha1" src="<? echo $images ?>grafismos/desk/Composicao/Grupo-6567@2x" alt="">
+                                    <img class="linha1" src="<? echo $images ?>grafismos/desk/Composicao/Grupo-6567@2x.png" alt="">
                                     <div class="txt">
                                         <p class="txt--padrao12 txt--bold">1 FAIXA</p>
                                     </div>
                                 </div>
                                 <div class="box">
-                                    <img class="linha1" src="<? echo $images ?>grafismos/desk/Composicao/Grupo-7117@2x" alt="">
+                                    <img class="linha1" src="<? echo $images ?>grafismos/desk/Composicao/Grupo-7117@2x.png" alt="">
                                     <div class="txt">
                                         <p class="txt--padrao12 txt--bold">3 FAIXAS</p>
                                     </div>
@@ -89,7 +89,7 @@
 
                         <div class="bloco dir">
                             <div class="wrapper-topo">
-                                <img class="linha1" src="<? echo $images ?>grafismos/desk/Composicao/Grupo 6587@2x" alt="">
+                                <img class="linha1" src="<? echo $images ?>grafismos/desk/Composicao/Grupo 6587@2x.png" alt="">
                                 <p class="txt--padrao12">
                                     Recomendado para peças com menor volume
                                     de conteúdo ou maior área de aplicação.
@@ -97,13 +97,13 @@
                             </div>
                             <div class="wrapper-boxes">
                                 <div class="box">
-                                    <img class="linha1" src="<? echo $images ?>grafismos/desk/Composicao/Grupo-6557@2x" alt="">
+                                    <img class="linha1" src="<? echo $images ?>grafismos/desk/Composicao/Grupo-6557@2x.png" alt="">
                                     <div class="txt">
                                         <p class="txt--padrao12 txt--bold">6 FAIXAS</p>
                                     </div>
                                 </div>
                                 <div class="box">
-                                    <img class="linha1" src="<? echo $images ?>grafismos/desk/Composicao/Grupo-6577@2x" alt="">
+                                    <img class="linha1" src="<? echo $images ?>grafismos/desk/Composicao/Grupo-6577@2x.png" alt="">
                                     <div class="txt">
                                         <p class="txt--padrao12 txt--bold">PATTERN</p>
                                     </div>
@@ -126,32 +126,32 @@
                     <div class="wrapper">
                         <div class="wrapper-boxes">
                             <div class="box">
-                                <img class="linha1" src="<? echo $images ?>grafismos/desk/Proporcao/Grupo 7111@2x" alt="">
+                                <img class="linha1" src="<? echo $images ?>grafismos/desk/Proporcao/Grupo 7111@2x.png" alt="">
                             </div>
                             <div class="box">
-                                <img class="linha1" src="<? echo $images ?>grafismos/desk/Proporcao/Grupo 7112@2x" alt="">
+                                <img class="linha1" src="<? echo $images ?>grafismos/desk/Proporcao/Grupo 7112@2x.png" alt="">
                             </div>
                             <div class="box">
-                                <img class="linha1" src="<? echo $images ?>grafismos/desk/Proporcao/Grupo 7113@2x" alt="">
+                                <img class="linha1" src="<? echo $images ?>grafismos/desk/Proporcao/Grupo 7113@2x.png" alt="">
                             </div>
                             <div class="box">
-                                <img class="linha1" src="<? echo $images ?>grafismos/desk/Proporcao/Grupo 7114@2x" alt="">
+                                <img class="linha1" src="<? echo $images ?>grafismos/desk/Proporcao/Grupo 7114@2x.png" alt="">
                             </div>
                         </div>
 
                         <div class="wrapper-bolas">
                             <div class="bolas">
                                 <div class="box">
-                                    <img class="linha1" src="<? echo $images ?>grafismos/desk/Proporcao/Grupo 6604@2x" alt="">
+                                    <img class="linha1" src="<? echo $images ?>grafismos/desk/Proporcao/Grupo 6604@2x.png" alt="">
                                 </div>
                                 <div class="box">
-                                    <img class="linha1" src="<? echo $images ?>grafismos/desk/Proporcao/Grupo 6606@2x" alt="">
+                                    <img class="linha1" src="<? echo $images ?>grafismos/desk/Proporcao/Grupo 6606@2x.png" alt="">
                                 </div>
                                 <div class="box">
-                                    <img class="linha1" src="<? echo $images ?>grafismos/desk/Proporcao/Grupo 6606@2x" alt="">
+                                    <img class="linha1" src="<? echo $images ?>grafismos/desk/Proporcao/Grupo 6606@2x.png" alt="">
                                 </div>
                                 <div class="box">
-                                    <img class="linha1" src="<? echo $images ?>grafismos/desk/Proporcao/Grupo 6604@2x" alt="">
+                                    <img class="linha1" src="<? echo $images ?>grafismos/desk/Proporcao/Grupo 6604@2x.png" alt="">
                                 </div>
                             </div>
 
@@ -387,16 +387,16 @@
                         <div class="bloco esq">
                             <div class="wrapper-boxes">
                                 <div class="box">
-                                    <img class="linha1" src="<? echo $images ?>grafismos/desk/Interacao/Grupo 6766@2x" alt="">
+                                    <img class="linha1" src="<? echo $images ?>grafismos/desk/Interacao/Grupo 6766@2x.png" alt="">
 
                                 </div>
 
                                 <div class="box">
-                                    <img class="linha1" src="<? echo $images ?>grafismos/desk/Interacao/Grupo 6752@2x" alt="">
+                                    <img class="linha1" src="<? echo $images ?>grafismos/desk/Interacao/Grupo 6752@2x.png" alt="">
                                 </div>
 
                                 <div class="box">
-                                    <img class="linha1" src="<? echo $images ?>grafismos/desk/Interacao/Grupo 6757@2x" alt="">
+                                    <img class="linha1" src="<? echo $images ?>grafismos/desk/Interacao/Grupo 6757@2x.png" alt="">
                                 </div>
                                 <div class="txt">
                                     <p class="txt--padrao12">Grafismo com produto na perspectiva.</p>
@@ -407,7 +407,7 @@
                         <div class="bloco dir">
                             <div class="wrapper-boxes">
                                 <div class="box">
-                                    <img class="linha1" src="<? echo $images ?>grafismos/desk/Interacao/Grupo 6772@2x" alt="">
+                                    <img class="linha1" src="<? echo $images ?>grafismos/desk/Interacao/Grupo 6772@2x.png" alt="">
                                     <div class="txt">
                                         <p class="txt--padrao12">Grafismo com produto<br> na vista lateral.</p>
                                     </div>
@@ -435,10 +435,10 @@
                             <img class="estado estado2" src="<? echo $images ?>grafismos/desk/Solidos/estado2.png" alt="">
                         </div>
                         <div class="box">
-                            <img class="" src="<? echo $images ?>grafismos/desk/Solidos/Grupo 6818@2x" alt="">
+                            <img class="" src="<? echo $images ?>grafismos/desk/Solidos/Grupo 6818@2x.png" alt="">
                         </div>
                         <div class="box">
-                            <img class="" src="<? echo $images ?>grafismos/desk/Solidos/Grupo 6790@2x" alt="">
+                            <img class="" src="<? echo $images ?>grafismos/desk/Solidos/Grupo 6790@2x.png" alt="">
                         </div>
                     </div>
                 </article>
@@ -451,20 +451,20 @@
 
                     <div class="wrapper">
                         <div class="box">
-                            <img class="" src="<? echo $images ?>grafismos/desk/Usos/Grupo 7101@2x" alt="">
+                            <img class="" src="<? echo $images ?>grafismos/desk/Usos/Grupo 7101@2x.png" alt="">
                             <p class="txt--padrao12">
                                 Não combine diferentes orientações
                                 na mesma composição.
                             </p>
                         </div>
                         <div class="box">
-                            <img class="" src="<? echo $images ?>grafismos/desk/Usos/Grupo 7102@2x" alt="">
+                            <img class="" src="<? echo $images ?>grafismos/desk/Usos/Grupo 7102@2x.png" alt="">
                             <p class="txt--padrao12">
                                 Não aplique diferentes cores na mesma faixa.
                             </p>
                         </div>
                         <div class="box">
-                            <img class="" src="<? echo $images ?>grafismos/desk/Usos/Grupo 7103@2x" alt="">
+                            <img class="" src="<? echo $images ?>grafismos/desk/Usos/Grupo 7103@2x.png" alt="">
                             <p class="txt--padrao12">
                                 Não misture diferentes espessura de faixas.
                             </p>

@@ -287,7 +287,7 @@
 
                     <div class="composicao-wrapper grid--4linhas-auto">
 
-                        <div class="desktopitem wrapper-box grid--2colunas">
+                        <div class="somentedesktop wrapper-box grid--2colunas">
                             <div class="esq">
                             </div>
                             <div class="dir">

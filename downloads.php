@@ -1,100 +1,83 @@
-
 <!DOCTYPE HTML>
 <html>
-	<head>
-        <?php include 'assets/config.php'; ?>
-        <?php include 'assets/head.php'; ?>
-        
-        <? 
-        $paginaAtual = 'Downloads';
-        $tituloPagina = $paginaAtual ." - ". $empresa;
-        ?>
 
-        <title><? echo $tituloPagina ?></title>
-    </head>
+<head>
+    <?php include 'assets/config.php'; ?>
+    <?php include 'assets/head.php'; ?>
 
-    <body id="downloads">
+    <?
+    $paginaAtual = 'Downloads';
+    $tituloPagina = $paginaAtual . " - " . $empresa;
+    ?>
 
-        <div class="container">
+    <title><? echo $tituloPagina ?></title>
+</head>
 
-            <?php include 'assets/menu.php'; ?>
+<body id="downloads">
 
-            <main>
-                <section id="downloadspage">
-                    <article>
+    <div class="container">
 
-                        <div class="box">
-                            <p class="txt--padrao20">Aplicações</p>
-                            <hr>
+        <?php include 'assets/menu.php'; ?>
 
-                            <div class="links">
-                                <a href="assets/download/aplicacoes/AF_Merce_Enxoval.zip">AF_Merce_Enxoval.zip</a>                                
-                            </div>
+        <main>
+            <section id="downloadspage">
+                <article>
+
+                    <div class="box">
+                        <p class="txt--padrao20">Grafismos</p>
+                        <hr>
+
+                        <div class="links">
+                            <a href="assets/download/grafismos/AF_RGB_Grafismos.zip">AF_RGB_Grafismos.zip</a>
                         </div>
+                    </div>
 
-                        <div class="box">
-                            <p class="txt--padrao20">Cores</p>
-                            <hr>
+                    <div class="box">
+                        <p class="txt--padrao20">Iconografia</p>
+                        <hr>
 
-                            <div class="links">
-                                <a href="assets/download/cores/AF_Merce_Cores.zip">AF_Merce_Cores.zip</a>                                
-                            </div>
+                        <div class="links">
+                            <a href="assets/download/iconografia/AF_CantuStore_RGB_DeckIcones.zip">AF_CantuStore_RGB_DeckIcones.zip</a>
                         </div>
+                    </div>
 
-                        <div class="box">
-                            <p class="txt--padrao20">Essência</p>
-                            <hr>
+                    <div class="box">
+                        <p class="txt--padrao20">Logotipos e símbolos</p>
+                        <hr>
 
-                            <div class="links">
-                                <a href="assets/download/essencia/AF_Merce_Essencia.zip">Essencia.zip</a>
-                                <a href="assets/download/essencia/AF_Merce_Manifesto.zip">Manifesto.zip</a>
-                            </div>
+                        <div class="links">
+                            <a href="assets/download/logo/AF_CantuPneus_VersoesMarca.zip">AF_CantuPneus_VersoesMarca.zip</a>
+                            <a href="assets/download/logo/AF_CantuStore_LockupInternos.zip">AF_CantuStore_LockupInternos.zip</a>
+                            <a href="assets/download/logo/AF_CantuStore_VersoesMarca.zip">AF_CantuStore_VersoesMarca.zip</a>
+                            <a href="assets/download/logo/AF_PackSimbolos.zip">AF_PackSimbolos.zip</a>
+                            <a href="assets/download/logo/AF_PneuStore_VersoesMarca.zip">AF_PneuStore_VersoesMarca.zip</a>
                         </div>
+                    </div>
 
-                        <div class="box">
-                            <p class="txt--padrao20">Grafismos</p>
-                            <hr>
+                    <div class="box">
+                        <p class="txt--padrao20">Paleta</p>
+                        <hr>
 
-                            <div class="links">
-                                <a href="assets/download/grafismos/AF_Merce_Grafismos.zip">AF_Merce_Grafismos.zip</a>
-                            </div>
+                        <div class="links">
+                            <a href="assets/download/paleta/AF_CantuStore_Cores.zip">AF_CantuStore_Cores.zip</a>
                         </div>
+                    </div>
+                    
 
-                        <div class="box">
-                            <p class="txt--padrao20">Logotipo</p>
-                            <hr>
+                </article>
+            </section>
 
-                            <div class="links">
-                                <a href="assets/download/logo/AF_Merce_Assets_Logo.zip">AF_Merce_Assets_Logo.zip</a>
-                                <a href="assets/download/logo/AF_Merce_Customizacao_Logo.zip">AF_Merce_Customizacao_Logo.zip</a>
-                                <a href="assets/download/logo/AF_Merce_Versoes_Icone.zip">AF_Merce_Versoes_Icone.zip</a>
-                                <a href="assets/download/logo/AF_Merce_Versoes_Logo.zip">AF_Merce_Versoes_Logo.zip</a>
-                            </div>
-                        </div>
+            <? include('assets/footer.php') ?>
+        </main>
 
-                        <div class="box">
-                            <p class="txt--padrao20">Pictografia</p>
-                            <hr>
+    </div>
 
-                            <div class="links">
-                                <a
-                                    href="assets/download/pictografia/AF_Merce_Pictos.zip">AF_Merce_Pictos.zip</a>
-                            </div>
-                        </div>                        
 
-                    </article>
-                </section>
-                
-                <? include ('assets/footer.php') ?>
-            </main>
+    <script type="text/javascript">
+        $('.link-abre').removeClass('active')
+        $('.menu li').hide();
+        $('.link-abre:eq(7)').addClass('active');
+    </script>
+</body>
 
-        </div>
-
-    
-        <script type="text/javascript">
-            $('.link-abre').removeClass('active')
-            $('.menu li').hide();
-			$('.link-abre:eq(7)').addClass('active');
-		</script>
-    </body>
 </html>

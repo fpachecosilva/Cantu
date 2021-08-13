@@ -1,6 +1,8 @@
 <nav class="menu">
-    <img class="logo" src="assets/img/logo.svg" alt="" />
-    
+    <a href="index.php">
+        <img class="logo" src="assets/img/logo.svg" alt="" />
+    </a>
+        
     <a href="javascript:void(0)" class="MobileItem" id="abrirmenu">
         <span id="Cima"></span>
         <span id="Meio"></span>

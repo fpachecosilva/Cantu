@@ -115,8 +115,8 @@
                                 <p>
                                     Olhamos lá na frente para <strong>transformar</strong> o impossível em realidade. <strong>Pessoas</strong> são o coração, <strong>inquietude</strong>
                                     o combustível, e a <strong>tecnologia</strong> nosso motor pra avançar na <strong>vanguarda</strong> do setor.
-                                    <br>
-                                    VISIONÁRIOS
+                                    <br><br>
+                                    <strong>VISIONÁRIOS</strong>
                                 </p>
                             </div>
                         </div>
@@ -130,8 +130,8 @@
                                     cada conquista e nos apoiamos a cada incerteza.
                                     Com <strong>respeito, colaboração e troca,</strong>
                                     vamos com tudo!
-                                    <br>
-                                    UNIDOS
+                                    <br><br>
+                                    <strong>UNIDOS</strong>
                                 </p>
                             </div>
                         </div>
@@ -142,11 +142,11 @@
                     <div class="modulo-home">
                         <div class="mini-titulo">
                             <img src="<? echo $images ?>/seta_auxiliar.svg" alt="">
-                            <p class="txt--padrao20">Para</p>
+                            <p class="txt--padrao24">Para</p>
                         </div>
 
                         <div class="content">
-                            <p class="txt--padrao20">
+                            <p class="txt--padrao24">
                                 Os inquietos. Aqueles que transformam barreiras em soluções.
                             </p>
                         </div>
@@ -334,7 +334,28 @@
                 <article>
                     <p class="txt--padrao40">Somos CantuStore.</p>
                     <p class="txt--padrao32">Evoluímos. E a nossa identidade visual também.</p>
-                    <img src="<? echo $images ?>essencia/desk/Grupo 6934.png" alt="">
+
+                    <div class="wrapper-img">
+                        <ul id="scroller">
+                            <li>
+                                <img src="<? echo $images ?>pranchas/Faixa.png" alt="">
+                            </li>
+                            <li>
+                                <img src="<? echo $images ?>pranchas/Carro.png" alt="">
+                            </li>
+                            <li>
+                                <img src="<? echo $images ?>pranchas/Atendimento parceiro.png" alt="">
+                            </li>
+                            <li>
+                                <img src="<? echo $images ?>pranchas/Camisa.png" alt="">
+                            </li>
+                            <li>
+                                <img src="<? echo $images ?>pranchas/Roda.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+
+
                 </article>
             </section>
 

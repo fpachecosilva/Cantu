@@ -123,8 +123,8 @@
                                     <div class="wrapper grid--2colunasversoes">
                                         <div class="esq grid--2linhas">
                                             <div class="cima">
-                                                <img class="desktopitem" src="<? echo $images ?>logo/desk/Versoes Logo/logo pneustore horizontal@2x.png" alt="">
-                                                <img class="mobileitem" src="<? echo $images ?>logo/desk/Versoes Logo/logo pneustore horizontal@2x.png" alt="">
+                                                <img class="desktopitem" src="<? echo $images ?>logo/desk/Versoes Logo/Group 7127@2x.png" alt="">
+                                                <img class="mobileitem" src="<? echo $images ?>logo/desk/Versoes Logo/Group 7127@2x.png" alt="">
                                                 <p class="txt--padrao12">Versão preferencial positiva</p>
                                             </div>
 
@@ -219,56 +219,56 @@
 
                     <div class="baixo modulo-imagens-com-texto">
                         <div>
-                            <img src="<? echo $images ?>logo/desk/Reducao Max/Grupo 7114@2x.png" alt="">
+                            <img src="<? echo $images ?>logo/desk/Reducao Max/Group 7119@2x.png" alt="">
 
                             <div class="textos-inline">
-                                <p class="txt--padrao12">Impresso: H = 6 mm</p>
-                                <p class="txt--padrao12">Digital: H = 64 px</p>
+                                <p class="txt--padrao12">Impresso: H = 4 mm</p>
+                                <p class="txt--padrao12">Digital: H = 40 px</p>
                             </div>
                         </div>
 
                         <div>
-                            <img src="<? echo $images ?>logo/desk/Reducao Max/Grupo 7115@2x.png" alt="">
+                            <img src="<? echo $images ?>logo/desk/Reducao Max/Group 7120@2x.png" alt="">
 
                             <div class="textos-inline">
-                                <p class="txt--padrao12">Impresso: H = 6 mm</p>
-                                <p class="txt--padrao12">Digital: H = 64 px</p>
+                                <p class="txt--padrao12">Impresso: H = 4 mm</p>
+                                <p class="txt--padrao12">Digital: H = 40 px</p>
                             </div>
                         </div>
 
                         <div>
-                            <img src="<? echo $images ?>logo/desk/Reducao Max/Grupo 7076@2x.png" alt="">
+                            <img src="<? echo $images ?>logo/desk/Reducao Max/Group 7076@2x.png" alt="">
 
                             <div class="textos-inline">
-                                <p class="txt--padrao12">Impresso: H = 6 mm</p>
-                                <p class="txt--padrao12">Digital: H = 64 px</p>
+                                <p class="txt--padrao12">Impresso: H = 4 mm</p>
+                                <p class="txt--padrao12">Digital: H = 40 px</p>
                             </div>
                         </div>
 
                         <div>
-                            <img src="<? echo $images ?>logo/desk/Reducao Max/Grupo 7116@2x.png" alt="">
+                            <img src="<? echo $images ?>logo/desk/Reducao Max/Group 7121@2x.png" alt="">
 
                             <div class="textos-inline">
-                                <p class="txt--padrao12">Impresso: H = 6 mm</p>
-                                <p class="txt--padrao12">Digital: H = 64 px</p>
+                                <p class="txt--padrao12">Impresso: H = 10 mm</p>
+                                <p class="txt--padrao12">Digital: H = 100 px</p>
                             </div>
                         </div>
 
                         <div>
-                            <img src="<? echo $images ?>logo/desk/Reducao Max/Grupo 7077.png" alt="">
+                            <img src="<? echo $images ?>logo/desk/Reducao Max/Group 7077@2x.png" alt="">
 
                             <div class="textos-inline">
-                                <p class="txt--padrao12">Impresso: H = 6 mm</p>
-                                <p class="txt--padrao12">Digital: H = 64 px</p>
+                                <p class="txt--padrao12">Impresso: H = 10 mm</p>
+                                <p class="txt--padrao12">Digital: H = 100 px</p>
                             </div>
                         </div>
 
                         <div>
-                            <img src="<? echo $images ?>logo/desk/Reducao Max/Grupo 7078.png" alt="">
+                            <img src="<? echo $images ?>logo/desk/Reducao Max/Group 7078@2x.png" alt="">
 
                             <div class="textos-inline">
-                                <p class="txt--padrao12">Impresso: H = 6 mm</p>
-                                <p class="txt--padrao12">Digital: H = 64 px</p>
+                                <p class="txt--padrao12">Impresso: H = 10 mm</p>
+                                <p class="txt--padrao12">Digital: H = 100 px</p>
                             </div>
                         </div>
                     </div>
@@ -296,7 +296,7 @@
                         <strong>Qualquer objeto deve vir depois da área demarcada, ok?</strong>
                     </p>
 
-                    <img class="principal" src="<? echo $images ?>logo/desk/Area Prot/Medidas area de proteção@2x.png" alt="">
+                    <img class="principal" src="<? echo $images ?>logo/desk/Area Prot/Medidas area de protecao@2x.png" alt="">
 
                     <div class="modulo-abas">
                         <div class="nav_tabs">
@@ -434,7 +434,7 @@
                             </p>
                         </div>
                         <div>
-                            <img src="<? echo $images ?>logo/desk/Usos incorretos/Retângulo 2039@2x.png" alt="">
+                            <img src="<? echo $images ?>logo/desk/Usos incorretos/Retangulo 2039@2x.png" alt="">
                             <p class="txt--padrao12">
                                 Não aplique em baixa resolução.
                             </p>

@@ -68,15 +68,15 @@ jQuery(document).ready(function () {
 
 
 	// Controle do ver mais
-	$(document).scroll(function () {
-		if ($(window).scrollTop() === 0) {
-			$('.toporodape p').fadeIn();
-			$('.toporodape span').fadeIn();
-		} else {
-			$('.toporodape p').fadeOut();
-			$('.toporodape span').fadeOut();
-		}
-	});
+	// $(document).scroll(function () {
+	// 	if ($(window).scrollTop() === 0) {
+	// 		$('.toporodape p').fadeIn();
+	// 		$('.toporodape span').fadeIn();
+	// 	} else {
+	// 		$('.toporodape p').fadeOut();
+	// 		$('.toporodape span').fadeOut();
+	// 	}
+	// });
 
 
 	// Aplicacoes Slider
@@ -148,12 +148,12 @@ jQuery(document).ready(function () {
 
 
 	// Beer Slider		
-	window.onload = (function () {
-		var altura = $('#beer-slider').height() - 4 + 'px';
+	// window.onload = (function () {
+	// 	var altura = $('#beer-slider').height() - 4 + 'px';
 
-		$('.beer-handle').append('<div class="risco"></div>');
-		$('.risco').css('height', altura);
-	})
+	// 	$('.beer-handle').append('<div class="risco"></div>');
+	// 	$('.risco').css('height', altura);
+	// })
 
 
 	// Accordeon		
@@ -163,13 +163,13 @@ jQuery(document).ready(function () {
 	})
 
 
-	// Definir cores de background dos blocos em Ilustracao
-	$('.bloco').each(function (index, element) {
-		var str = element.innerText
-		var ultima = str.substring(str.lastIndexOf('#'))
-		ultima = ultima.replace(/\s/g, '');
-		$(this).css('background-color', ultima);
-	});
+	// // Definir cores de background dos blocos em Ilustracao
+	// $('.bloco').each(function (index, element) {
+	// 	var str = element.innerText
+	// 	var ultima = str.substring(str.lastIndexOf('#'))
+	// 	ultima = ultima.replace(/\s/g, '');
+	// 	$(this).css('background-color', ultima);
+	// });
 
 
 	// Procurar cor e setar como background

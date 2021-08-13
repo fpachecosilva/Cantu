@@ -38,7 +38,7 @@
                 <article>
                     <p class="txt--padrao40 proximo">Boas práticas</p>
                     <p class="txt--padrao12 pos-titulo">
-                        Nossos sistema possuí um deck de ícones variados. Eles transmitem mensagens
+                        Nosso sistema possuí um deck de ícones variados. Eles transmitem mensagens
                         de maneira simplificada e podem auxiliar no destaque das informações.
                         <br><br>
                         Para criar novos ícones, use o grid disponível no deck para download

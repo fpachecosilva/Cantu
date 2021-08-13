@@ -337,7 +337,7 @@
                                 </div>
                                 <div class="box bgblue roxo">
                                     <div>
-                                        <p class="txt-maior">Para títulos na cor laranja.</p>
+                                        <p class="txt-maior">Para títulos na cor roxa.</p>
                                         <p class="txt-menor">Para textos menores na cor roxa.</p>
                                     </div>
                                 </div>

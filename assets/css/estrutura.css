@@ -2011,6 +2011,10 @@ header h1 {
   max-width: 245px;
 }
 
+#logotipo #sessao1 img {
+  width: 460.5px;
+}
+
 #logotipo #sessao2 .arquitetura {
   max-width: 958px;
   display: -ms-grid;
@@ -2060,9 +2064,21 @@ header h1 {
   height: 280px;
 }
 
+#logotipo #sessao2 .arquitetura .linha100 img {
+  width: 450.5px;
+}
+
 #logotipo #sessao2 .arquitetura .linha50 {
   width: 50%;
   height: 185px;
+}
+
+#logotipo #sessao2 .arquitetura .linha50:nth-of-type(1) img {
+  width: 300px;
+}
+
+#logotipo #sessao2 .arquitetura .linha50:nth-of-type(2) img {
+  width: 328.5px;
 }
 
 #logotipo #sessao2 .txt--padrao40 {
@@ -2090,15 +2106,15 @@ header h1 {
 }
 
 #logotipo #sessao3 .tab.cantustore .wrapper .dir .cima {
-  background-color: var(--auxiliar3);
+  background-color: var(--bgcinza);
 }
 
 #logotipo #sessao3 .tab.cantustore .wrapper .dir .baixo {
-  background-color: var(--secundaria);
+  background-color: var(--terciaria);
 }
 
 #logotipo #sessao3 .tab.pneustore .wrapper .esq img {
-  width: 260px;
+  width: 260.5px;
 }
 
 #logotipo #sessao3 .tab.pneustore .wrapper .dir img {
@@ -2174,6 +2190,30 @@ header h1 {
   margin-bottom: 20px;
 }
 
+#logotipo #sessao4 .modulo-imagens-com-texto > div:nth-of-type(1) img {
+  width: 233px;
+}
+
+#logotipo #sessao4 .modulo-imagens-com-texto > div:nth-of-type(2) img {
+  width: 200px;
+}
+
+#logotipo #sessao4 .modulo-imagens-com-texto > div:nth-of-type(3) img {
+  width: 218.5px;
+}
+
+#logotipo #sessao4 .modulo-imagens-com-texto > div:nth-of-type(4) img {
+  width: 162.5px;
+}
+
+#logotipo #sessao4 .modulo-imagens-com-texto > div:nth-of-type(5) img {
+  width: 58.5px;
+}
+
+#logotipo #sessao4 .modulo-imagens-com-texto > div:nth-of-type(6) img {
+  width: 70px;
+}
+
 #logotipo #sessao4 .modulo-imagens-com-texto .textos-inline {
   width: 100%;
   -webkit-box-pack: justify;
@@ -2225,6 +2265,7 @@ header h1 {
   margin: auto;
   margin-top: 80px;
   margin-bottom: 40px;
+  width: 402.5px;
 }
 
 #logotipo #sessao5 .modulo-abas {
@@ -2429,12 +2470,24 @@ header h1 {
   background-color: var(--bgcinza);
 }
 
+#logotipo #sessao10 .wrapper.imagemExemplo .esq img {
+  width: 217.5px;
+}
+
+#logotipo #sessao10 .wrapper.imagemExemplo .dir img {
+  width: 217px;
+}
+
 #logotipo #sessao11 .wrapper.imagemExemplo {
   min-height: 230px;
 }
 
 #logotipo #sessao11 .wrapper.imagemExemplo > div.dir .ex {
   margin-right: 16px;
+}
+
+#logotipo #sessao11 .wrapper.imagemExemplo > div.esq img {
+  width: 217px;
 }
 
 #logotipo #sessao11 .desc {
@@ -2563,6 +2616,18 @@ header h1 {
 
 #logotipo #sessao14 .modulo-imagens-com-texto {
   margin-top: 0;
+}
+
+#logotipo #sessao14 .modulo-imagens-com-texto:nth-of-type(1) img {
+  width: 179px;
+}
+
+#logotipo #sessao14 .modulo-imagens-com-texto:nth-of-type(2) .central-com-texto:nth-of-type(1) img {
+  width: 126px;
+}
+
+#logotipo #sessao14 .modulo-imagens-com-texto:nth-of-type(2) .central-com-texto:nth-of-type(1) img:nth-of-type(2) {
+  width: 192px;
 }
 
 #logotipo #sessao14 .txt-wrapper {
@@ -2726,6 +2791,11 @@ header h1 {
   position: relative;
   -ms-grid-columns: 310px 650px;
       grid-template-columns: 310px 650px;
+}
+
+#paleta #sessao2 .composicao-wrapper .wrapper-box.somentedesktop {
+  display: -ms-grid;
+  display: grid;
 }
 
 #paleta #sessao2 .composicao-wrapper .wrapper-box:not(:first-of-type) {
@@ -4823,6 +4893,12 @@ footer .trademark p {
   #essencia #sessao5 article {
     padding-left: 35px;
   }
+  #essencia #sessao5 img {
+    margin-top: 0;
+  }
+  #essencia #sessao5 .wrapper-img {
+    margin-top: 50px;
+  }
   #essencia #download {
     margin-bottom: 0;
     padding-bottom: 0;
@@ -5206,6 +5282,9 @@ footer .trademark p {
         grid-template-rows: auto auto;
     -ms-grid-columns: initial;
         grid-template-columns: initial;
+  }
+  #paleta #sessao2 .composicao-wrapper .wrapper-box.somentedesktop {
+    display: none;
   }
   #paleta #sessao2 .composicao-wrapper .wrapper-box:not(:first-of-type) {
     margin-top: 35px;

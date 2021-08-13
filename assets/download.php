@@ -7,24 +7,24 @@ $compartilhar = "";
 if ( $paginaAtual == 'Logotipo' ) {    
     
     $logotipoTitulo_01 = "Versões de marca";
-    $logotipoLink_01 = $download. "logo/AF_CantuStore_Versoes_Marca.zip.zip";
-    $logotipoTexto_01 = "AF_CantuStore_Versoes_Marca.zip.zip";
+    $logotipoLink_01 = $download. "logo/AF_CantuPneus_VersoesMarca.zip";
+    $logotipoTexto_01 = "AF_CantuPneus_VersoesMarca.zip";
     
     $logotipoTitulo_02 = "Lookups Internos";
     $logotipoLink_02 = $download. "logo/AF_CantuStore_LockupInternos.zip";
     $logotipoTexto_02 = "AF_CantuStore_LockupInternos.zip";
     
     $logotipoTitulo_03 = "";
-    $logotipoLink_03 = $download. "logo/AF_PneuStore_Versoes_Marca.zip";
-    $logotipoTexto_03 = "AF_PneuStore_Versoes_Marca.zip";
+    $logotipoLink_03 = $download. "logo/AF_CantuStore_VersoesMarca.zip";
+    $logotipoTexto_03 = "AF_CantuStore_VersoesMarca.zip";
     
-    $logotipoTitulo_04 = "Símbolo";
+    $logotipoTitulo_04 = "Símbolos";
     $logotipoLink_04 = $download. "logo/AF_PackSimbolos.zip";
     $logotipoTexto_04 = "AF_PackSimbolos.zip";
 
     $logotipoTitulo_05 = "";
-    $logotipoLink_05 = $download. "logo/AF_CantuPneus_Versoes_Marca.zip";
-    $logotipoTexto_05 = "AF_CantuPneus_Versoes_Marca.zip";
+    $logotipoLink_05 = $download. "logo/AF_PneuStore_VersoesMarca.zip";
+    $logotipoTexto_05 = "AF_PneuStore_VersoesMarca.zip";
 
     echo'
         <section id="download">
@@ -80,7 +80,7 @@ if ( $paginaAtual == 'Logotipo' ) {
 if ( $paginaAtual == 'Paleta' ) {
     
     $logotipoTitulo_01 = "";
-    $logotipoLink_01 = $download. "AF_CantuStore_Cores.zip";
+    $logotipoLink_01 = $download. "paleta/AF_CantuStore_Cores.zip";
     $logotipoTexto_01 = "AF_CantuStore_Cores.zip";
 
     echo'
@@ -108,29 +108,10 @@ if ( $paginaAtual == 'Paleta' ) {
 }
 
 
-if ( $paginaAtual == 'Tipografia' ) {
-    
-    $logotipoTitulo_01 = "";
-    $logotipoLink_01 = $download. "";
-    $logotipoTexto_01 = "";
-
-    echo'
-        <section id="download">
-            <article>
-                <div class="compartilhar desktopitem">
-                    <a href=" '.$compartilhar.' " class="share">
-                        <p>Compartilhar sessão</p>
-                    </a>
-                </div>
-            </article>
-        </section>
-    ';
-}
-
 if ($paginaAtual == 'Iconografia') {
 
     $logotipoTitulo_01 = "";
-    $logotipoLink_01 = $download . "AF_CantuStore_RGB_DeckIcones.zip";
+    $logotipoLink_01 = $download . "iconografia/AF_CantuStore_RGB_DeckIcones.zip";
     $logotipoTexto_01 = "AF_CantuStore_RGB_DeckIcones.zip";
 
     echo '
@@ -161,7 +142,7 @@ if ($paginaAtual == 'Iconografia') {
 if ( $paginaAtual == 'Grafismos' ) {
     
     $logotipoTitulo_01 = "";
-    $logotipoLink_01 = $download. "AF_RGB_Grafismos.zip";
+    $logotipoLink_01 = $download. "grafismos/AF_RGB_Grafismos.zip";
     $logotipoTexto_01 = "AF_RGB_Grafismos.zip";
 
     echo'
@@ -187,46 +168,6 @@ if ( $paginaAtual == 'Grafismos' ) {
         </section>
     ';
 }
-
-
-if ( $paginaAtual == 'Estilo fotográfico' ) {
-    
-    $logotipoTitulo_01 = "";
-    $logotipoLink_01 = "";
-    $logotipoTexto_01 = "";
-
-    echo'
-        <section id="download">
-            <article> 
-                <div class="compartilhar desktopitem">
-                    <a href=" '.$compartilhar.' " class="share">
-                        <p>Compartilhar sessão</p>
-                    </a>
-                </div>                
-            </article>
-        </section>
-    ';
-}
-
-if ( $paginaAtual == 'Aplicações' ) {
-    
-    $logotipoTitulo_01 = "";
-    $logotipoLink_01 = $download. "";
-    $logotipoTexto_01 = "";
-
-    echo'
-        <section id="download">
-            <article>
-                <div class="compartilhar desktopitem">
-                    <a href=" '.$compartilhar.' " class="share">
-                        <p>Compartilhar sessão</p>
-                    </a>
-                </div>                
-            </article>
-        </section>
-    ';
-}
-
 
 
 ?>

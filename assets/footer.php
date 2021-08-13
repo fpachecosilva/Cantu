@@ -17,7 +17,7 @@
 	<script type="text/javascript" src="assets/js/jquery.js"></script>
     <script type="text/javascript" src="assets/js/estrutura.js"></script>    
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="assets/js/BeerSlider.js"></script>
+    <!-- <script src="assets/js/BeerSlider.js"></script> -->
     <script type="text/javascript" src="assets/js/jquery.simplyscroll.js"></script> 
     
     <script type="text/javascript">
@@ -29,11 +29,11 @@
     </script>
     
     <script>
-        $.fn.BeerSlider = function ( options ) {
-            options = options || {};
-            return this.each(function() {
-            new BeerSlider(this, options);
-            });
-        };
-        $('.beer-slider').BeerSlider({start: 50});
+        // $.fn.BeerSlider = function ( options ) {
+        //     options = options || {};
+        //     return this.each(function() {
+        //     new BeerSlider(this, options);
+        //     });
+        // };
+        // $('.beer-slider').BeerSlider({start: 50});
     </script>

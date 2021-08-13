@@ -222,12 +222,12 @@
 
                         <div class="switchWrapper">
                             <div class="boxImg boxImg1 ativado">
-                                <p class="txt--padrao12 txt--bold">VERTICAL A CORRIGIR 3 ESTADOS</p>
+                                <p class="txt--padrao12 txt--bold">VERTICAL</p>
                                 <img src="<? echo $images ?>grafismos/desk/Orientacao/Grupo 6625@2x.png" alt="">
                             </div>
 
                             <div class="boxImg boxImg2">
-                                <p class="txt--padrao12 txt--bold">VERTICAL A CORRIGIR 3 ESTADOS</p>
+                                <p class="txt--padrao12 txt--bold">VERTICAL</p>
                                 <img src="<? echo $images ?>grafismos/desk/Orientacao/Grupo 6629@2x.png" alt="">
                             </div>
 

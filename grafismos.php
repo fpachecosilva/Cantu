@@ -378,7 +378,7 @@
                 <article>
                     <p class="txt--padrao40">Interação com produto</p>
                     <p class="txt--padrao12 pos-titulo">
-                        Acompanhando a orientação da perspectivado
+                        Acompanhando a orientação da perspectiva
                         do produto, ampliam a sensação de movimento.
                         Como um caminho sendo trilhado.
                     </p>

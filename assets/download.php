@@ -10,7 +10,7 @@ if ( $paginaAtual == 'Logotipo' ) {
     $logotipoLink_01 = $download. "logo/AF_CantuPneus_VersoesMarca.zip";
     $logotipoTexto_01 = "AF_CantuPneus_VersoesMarca.zip";
     
-    $logotipoTitulo_02 = "Lookups Internos";
+    $logotipoTitulo_02 = "Lockups Internos";
     $logotipoLink_02 = $download. "logo/AF_CantuStore_LockupInternos.zip";
     $logotipoTexto_02 = "AF_CantuStore_LockupInternos.zip";
     

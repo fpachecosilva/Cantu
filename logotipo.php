@@ -507,7 +507,7 @@
                         criamos uma assinatura através de um lockup fixo.
                         <br><br>
                         Seja criativo nos ícones e, a partir da nossa paleta de cores,<br>
-                        elecione uma cor que melhor representa o programa.
+                        selecione uma cor que melhor representa o programa.
                     </p>
 
                     <div class="wrapper imagemExemplo">
@@ -617,8 +617,8 @@
                                 <p class="txt--padrao20 txt--bold">Redução máxima</p>
                                 <img src="<? echo $images ?>logo/desk/Simbolos/Grupo 6289@2x.png" alt="">
                                 <div class="txt-wrapper">
-                                    <p class="txt--padrao12">Impresso: H = 10 mm</p>
-                                    <p class="txt--padrao12">Digital: H = 100 px</p>
+                                    <p class="txt--padrao12">Impresso: H = 4 mm</p>
+                                    <p class="txt--padrao12">Digital: H = 40 px</p>
                                 </div>
                             </div>
                         </div>
